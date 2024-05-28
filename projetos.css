@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Montserrat:wght@400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body{
+  background-color: #111213;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Adicionado para evitar overflow horizontal */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  font-family: 'Epilogue', 'sans-serif';
+}
+
+.barra-navegacao {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  background-color: #000000;
+  box-shadow: 0px 3px 10px #190029;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  top: 0;
+}
+
+.botao-logo {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.lista-navegacao {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 3%;
+}
+
+.item-navegacao {
+  margin: 0 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item-navegacao:hover {
+  transform: scale(1.1);
+}
+
+.link-navegacao {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: white;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-navegacao:hover {
+  transform: scale(1.1);
+}
+
+.lista-lista-navegacao {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.menu-icone {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#baixarCV {
+  background-color: transparent;
+  color: white;
+  border-color: #190029;
+  border: solid;
+  border-width: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(167, 0, 167);
+  padding: 10px 15px;
+  height: 55px;
+  cursor: pointer;
+  right: 8rem;
+  position: relative;
+}
+
+.menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .lista-navegacao {
+    display: none;
+  }
+  #baixarCV {
+    display: none;
+  }
+  .barra-navegacao {
+    padding: 1.5rem 4rem;
+  }
+  .menu-mobileicone {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .menumobile ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .menumobile .item-navegacao {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .menumobile .botaocurriculo-mobile button {
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
+}
+
+/* ---------------------------------------Body------------------------------------------------ */
+
+/* ---------------------------------------Section 1------------------------------------------------ */
+
+.section1{
+  position: relative;
+  margin-top: 6.5%;
+  justify-content: center;
+  width: 100%;
+  background-color: #190029;
+  height: 107vh;
+  transition: margin-bottom 0.3s ease-in-out; 
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-left: 0;
+  border-right: 0;
+}
+
+.section1.expanded{
+  margin-bottom: 70vh;
+}
+
+#visual {
+  display: flex;
+  flex-direction: row;
+  gap: 14%;
+  margin-bottom: 2%;
+  transition: all 0.3s ease;
+  position: relative;
+  top: 10%;
+}
+
+#visual img {
+  border-radius: 5px;
+  height: 60vh;
+  margin-right: 2%;
+  margin-top: 2.5vh;
+}
+
+#tituloprojeto {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 35px;
+  margin-top: 5%;
+}
+
+#paragrafoprojeto {
+  font-size: 16px;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 400;
+}
+
+#textosec1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+  margin-left: 3%;
+}
+
+#palavraschaves {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin-top: 10%;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 600;
+}
+
+#botaoexpandir{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  padding-top: 5%;
+  width: 50px;
+  height: 50px;
+}
+
+#imagembotaoup{
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  width: 50px;
+}
+
+#imagembotaoup.up{
+  transform: rotate(180deg);
+}
+
+#escondido {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(52, 6, 89, 0.841);
+  width: 100%;
+  height: 70vh;  
+  padding-bottom: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(20px);
+  top: 2vh;
+  border-color: white;
+}
+
+#escondido.show{
+  opacity: 1;
+}
+
+#tituloprojetoescondido {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 35px;
+  position: relative;
+  top: 5vh;
+}
+
+#textosescondidosec1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+  margin-left: 3%;
+}
+
+#paragrafoprojetoescondido {
+  font-size: 16px;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 400;
+}
+
+#organizartexto {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+#instrucoes {
+  position: relative;
+  width: 50%;
+  right: 10px;
+  top: 5vh;
+}
+
+#organizarinstrucoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  color: white;
+}
+
+#tituloprojetoescondidocomousar {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 35px;
+  top: 5vh;
+  color: white;
+}
+
+#baixar{
+  position: relative;
+  left: 80%;
+  border: 1px white solid;
+  background-color: transparent;
+  color: white;
+  width: 30vh;
+  height: 10vh;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Epilogue','sans serif';
+  cursor: pointer;
+}
+
+#paragrafobaixeaqui{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  color: white;
+  position: relative;
+  left: 83%;
+}
+
+/* ---------------------------------------Section 2------------------------------------------------ */
+
+
+.section2.pull{
+  margin-top: 90vh;
+}
+
+.section2{
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  background-color: #190029;
+  height: 107vh;
+  transition: margin-bottom 0.3s ease-in-out; 
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 5%;
+}
+
+#escondido2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(52, 6, 89, 0.841);
+  width: 100%;
+  height: 70vh;  
+  padding-bottom: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(20px);
+  top: 2vh;
+  border-color: white;
+}
+
+#botaoexpandir2{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: 25%;
+  cursor: pointer;
+  padding-top: 14%;
+  width: 50%;
+  height: 50%;
+}
+
+#imagembotaoup2{
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  width: 50px;
+}
+
+#imagembotaoup.up2{
+  transform: rotate(180deg);
+}
