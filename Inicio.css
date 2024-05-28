@@ -36,19 +36,20 @@ a{
 
 header {
     font-family: 'Epilogue', 'sans-serif';
-    overflow: hidden; /* Esconde overflow no header */
+    overflow: hidden; 
 }
 
 .barra-navegacao {
     position: fixed;
-    z-index: 1000; /* Certifique-se de que a barra de navegação esteja acima de outros elementos */
+    z-index: 1000; 
     display: flex;
     background-color: #000000;
-    box-shadow: 0px 3px 10px #190029;
+    box-shadow: 0vh 0.43vh 1.45vh #190029;
     justify-content: space-between;
-    padding: 1rem 0rem;
+    padding: 0.4vh 0vh;
     width: 100%;
-    overflow: hidden; /* Esconde overflow na barra de navegação */
+    overflow: hidden; 
+    height: 10vh;
 }
 
 .barra-navegacao a{
@@ -61,11 +62,11 @@ header {
 .barra-navegacao a::after{
     content: " ";
     width: 0%;
-    height: 2px;
+    height: 0.29vh;
     background-color: #FFF;
     position: absolute;
     left: 20%;
-    bottom: -10px;
+    bottom: -1.45vh;
     display: flex;
     transition: width 0.3s ease-in-out;
 }
@@ -75,8 +76,8 @@ header {
 }
 
 .barra-navegacao a:active, .barra-navegacao a:focus {
-    color: #808080; /* Cor cinza mais escuro ao clicar */
-    outline: none; /* Remove o contorno padrão do foco */
+    color: #808080; 
+    outline: none;
 }
 
 .barra-navegacao :not(a:active){
@@ -88,7 +89,7 @@ header {
     border: none;
     font-family: 'Epilogue', 'sans-serif';
     position: relative;
-    font-size: 20px;
+    font-size: 2.2vh;
     font-weight: bold;
     left: 5%;
 }
@@ -110,11 +111,11 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    right: 3%;
+    right: 2%;
 }
 
 .item-navegacao {
-    margin: 0 15px;
+    margin: 0 2.19vh;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -125,7 +126,7 @@ header {
 
 .link-navegacao {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 2.2vh;
     color: white;
     font-weight: 400;
     transition: transform 0.3s ease-in-out;
@@ -153,18 +154,18 @@ header {
     color: white;
     border-color: #190029;
     border: solid;
-    border-width: 2px;
-    font-size: 15px;
+    border-width: 0.29vh;
+    font-size: 1.9vh;
     font-weight: 1000;
     color: rgb(167, 0, 167);
-    height: 40px;
+    height: 5.5vh;
     cursor: pointer;
-    right: 5rem;
     position: relative;
-    width: 150px;
-    top: 1.5vh;
+    width: 20vh;
+    top: 2.2vh;
     padding: 0;
     margin: 0;
+    right: 5%;
     transition: transform 0.5s ease;
 }
 
@@ -184,7 +185,7 @@ header {
         display: none;
     }
     .barra-navegacao{
-        padding: 1.5rem 4rem;
+        padding: 0.15vh 0.4vh;
     }
     .menu-mobileicone{
         display: block;
@@ -196,11 +197,11 @@ header {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 0.1vh;
     }
     .menumobile .item-navegacao{
         display: block;
-        padding: 1rem 2rem;
+        padding: 0.1vh 0.2vh;
     }    
     .menumobile .botaocurriculo-mobile button{
         width: 100%;
@@ -222,7 +223,7 @@ header {
     background: linear-gradient(to bottom, #000000, #190029);
     height: 100vh;
     justify-content: center;
-    overflow: hidden; /* Esconde overflow na seção */
+    overflow: hidden; 
 }
 
 #containersobre {
@@ -239,7 +240,7 @@ header {
     gap: 4vh;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
-    transform: translateY(70px);}
+    transform: translateY(10.21vh);}
 
 #containersobre.show{
     opacity: 1;
@@ -262,16 +263,16 @@ header {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 40px;
+    top: 6vh;
 }
 
 
 #textao {
     font-family: 'Epilogue', 'sans-serif';
     position: relative;
-    font-size: 40px;
+    font-size: 5.83vh;
     width: 60vh;
-    top: 30px;
+    top: 4.37vh;
     text-align: center;
     transition: transform 0.9s ease-in-out;
 }
@@ -282,14 +283,14 @@ header {
 
 #Ryenanhigh {
     color: rgb(167, 0, 167);
-    font-size: 40px;
+    font-size: 5.83vh;
     font-family: 'Epilogue', 'sans-serif';
     transition: transform 0.3s ease-in-out;
 }
 
 #paragrafo {
     position: relative;
-    font-size: 15px;
+    font-size: 2.2vh;
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     width: 70vh;
@@ -302,18 +303,29 @@ header {
 }
 
 #textaoredes {
-    top: 110px;
+    top: 16vh;
     font-family: 'Epilogue', sans-serif;
     position: relative;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-align: center;
 }
 
-#redessociais {
+#redessociais{
+    padding-left: 7%;
+    width: 40vh;
     position: relative;
-    gap: 15px;
     display: flex;
-    top: 100px;
+    top: 14.59vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#redessociais img{
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    height: auto;
 }
 
 
@@ -326,7 +338,7 @@ header {
     display: block;
     background: linear-gradient(to bottom, #000000, #202225);
     height: 140vh;
-    overflow-x: hidden; /* Esconde overflow na seção */
+    overflow-x: hidden; 
 }
 
 .section2::-webkit-scrollbar {
@@ -334,7 +346,7 @@ header {
 }
 
 #habil {
-    font-size: 50px;
+    font-size: 7.29vh;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -345,7 +357,7 @@ header {
     display: flex;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
-    transform: translateY(70px);
+    transform: translateY(10.21vh);
 }
 
 #habil.show:hover{
@@ -367,7 +379,7 @@ header {
     font-family: 'Epilogue', 'sans-serif';
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
-    transform: translateY(70px);
+    transform: translateY(10.21vh);
 }
 
 #textossobremim.show {
@@ -382,7 +394,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 17px;
+    font-size: 2.48vh;
     font-family: 'Epilogue', sans-serif;
     position: relative;
 }
@@ -390,15 +402,15 @@ header {
 .linguagem {
     display: flex;
     flex-direction: row;
-    gap: 30vh;
+    gap: 25vh;
     margin: 0;
     position: relative;
-    left: 50%;
-    top: 20px;
-    font-size: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    overflow: hidden; /* Esconde overflow na lista de linguagens */
+    left: 50vh;
+    top: 2.91vh;
+    font-size: 2.91vh;
+    padding-left: 0.72vh;
+    padding-right: 0.72vh;
+    overflow: hidden; 
 }
 
 .linguagem p{
@@ -414,35 +426,35 @@ header {
     position: relative;
     justify-content: center;
     gap: 30vh;
-    top: 15px;
+    top: 2.18vh;
     left: 50%;
 }
 
 #htmlcss {
     display: flex;
     position: relative;
-    left: 30px;
+    left: 4.37vh;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
 }
 
 #jsicon {
     display: flex;
     position: relative;
-    left: 5px;
+    left: 0.72vh;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
 }
 
 #csharpicon {
     display: flex;
     position: relative;
-    right: 10px;
+    right: 1.45vh;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
 }
 
 #mysqlicon {
     display: flex;
     position: relative;
-    left: 20px;
+    left: 2.91vh;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
 }
 
@@ -457,12 +469,12 @@ header {
     left: 50%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
-    transform: translateY(70px);
+    transform: translateY(10.21vh);
 }
 
 #postit.show {
     opacity: 1;
-    transform: translateX(20px);
+    transform: translateX(2.91vh);
 }
 
 #postit.show:hover{
@@ -476,7 +488,7 @@ header {
 
 #backgroundcarousel {
     background-color: #202225;
-    overflow-x: hidden; /* Esconde overflow no carousel */
+    overflow-x: hidden;
 }
 #backgroundcarousel::-webkit-scrollbar {
         display: none;
@@ -490,8 +502,8 @@ header {
     width: 100%;
     height: 75vh;
     display: flex;
-    gap: 8px;
-    padding: 0 16px;
+    gap: 1.16vh;
+    padding: 0 2.33vh;
     margin: 0;
     scrollbar-width: none;
     list-style: none;
@@ -516,14 +528,14 @@ header {
     height: 75vh;
     background-color: #FFF;
     scroll-snap-align: center;
-    border-radius: 8px;
+    border-radius: 1.16vh;
     margin: 0;
     box-sizing: border-box;
 }
 
 .item.empty {
-    background-color: transparent; /* Make the empty item invisible */
-    width: calc(80% + 16px); /* Same width as other items plus gap */
+    background-color: transparent; 
+    width: calc(80% + 2.33vh);
 }
 
 .item1{
@@ -540,7 +552,7 @@ header {
     justify-content: center;
     height: 100%;
     font-family: sans-serif;
-    font-size: 32px;
+    font-size: 4.67vh;
     font-weight: bold;
 }
 
@@ -555,23 +567,23 @@ header {
     background: linear-gradient(to bottom, #202225, #111213); /* Adicionando um background ao carrossel */
     padding: 0;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 1.16vh;
     margin: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
-    transform: translateY(70px);
+    transform: translateY(10.2vh);
 }
 
 #carousel.show{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0vh);
 }
   
 .btncarousel{
     position: absolute;
     top: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 0.3vh;
+    height: 0.3vh;
     transform: translateY(-50%);
     background: transparent;
     border: none;
@@ -579,12 +591,12 @@ header {
 }
   
 .btnvoltar {
-    left: 1.5rem;
+    left: 0.15vh;
     transform: rotate(180deg);
 }
   
 .btnpassar {
-    right: 1.5rem;
+    right: 0.15vh;
 }
   
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
@@ -606,17 +618,17 @@ header {
     text-align: center;
     top: 40vh;
     bottom: 25vh;
-    font-size: 25px;
+    font-size: 3.6vh;
     left: 20%;
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
-    transform: translateY(70px); 
+    transform: translateY(10.21vh); 
 }
 
 #frase.show{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0vh);
 }
 
 #frase.show:hover{
@@ -629,12 +641,12 @@ header {
     left: 10%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
-    transform: translateY(70px); 
+    transform: translateY(10.21vh); 
 }
 
 #postit2.show{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0vh);
 }
 
 #postit2.show:hover{
@@ -659,7 +671,7 @@ header {
     position: relative;
     text-align: center;
     padding-top: 5vh;
-    font-size: 12px;
+    font-size: 1.75vh;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
 }
 
@@ -673,7 +685,7 @@ header {
 }
 
 .voltarparaotop{
-    visibility: hidden; /* Inicialmente invisível, mas ocupando espaço */
+    visibility: hidden; 
     position: fixed;
     background-color: transparent;
     border: none;
@@ -682,8 +694,8 @@ header {
     z-index: 100;
     top: 15%;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0s 0.3s; /* Atraso na visibilidade */
-    transform: translateY(70px); /* Inicia o botão 20px abaixo */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0s 0.3s; 
+    transform: translateY(10.21vh); 
 }
 
 .voltarparaotop img{
