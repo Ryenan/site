@@ -397,15 +397,18 @@ header {
     font-size: 2.48vh;
     font-family: 'Epilogue', sans-serif;
     position: relative;
+    width: 100%;
+    left: 49vh;
 }
 
 .linguagem {
     display: flex;
     flex-direction: row;
-    gap: 25vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30vh;
     margin: 0;
     position: relative;
-    left: 50vh;
     top: 2.91vh;
     font-size: 2.91vh;
     padding-left: 0.72vh;
@@ -425,9 +428,8 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-    gap: 30vh;
+    gap: 35vh;
     top: 2.18vh;
-    left: 50%;
 }
 
 #htmlcss {
@@ -465,8 +467,11 @@ header {
 #postit {
     position: relative;
     top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60vh;
-    left: 50%;
+    right: 5%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
     transform: translateY(10.21vh);
@@ -582,12 +587,13 @@ header {
 .btncarousel{
     position: absolute;
     top: 50%;
-    width: 0.3vh;
+    width: 15vh;
     height: 0.3vh;
     transform: translateY(-50%);
     background: transparent;
     border: none;
     cursor: pointer;
+    font-size: 2vh;
 }
   
 .btnvoltar{

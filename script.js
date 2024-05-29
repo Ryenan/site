@@ -82,10 +82,17 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function(){
     
     var botaologo = document.getElementById("botaologo");
-        botaologo.addEventListener("click", function(){
-
-            botaologo.classList.toggle("tremor");
-        });
+       if (botaologo){
+            botaologo.addEventListener("click", function(){
+                if(!botaologo.classList.contains("tremor")){
+                    botaologo.classList.add("tremor");
+                
+                    setTimeout(function(){
+                        botaologo.classList.remove("tremor");
+                    }, 1000);
+                }
+            })
+       }
 });
 
 document.addEventListener("DOMContentLoaded", function() {

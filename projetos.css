@@ -17,127 +17,183 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 header {
-  font-family: 'Epilogue', 'sans-serif';
+    font-family: 'Epilogue', 'sans-serif';
+    overflow: hidden; 
 }
 
 .barra-navegacao {
-  position: fixed;
-  z-index: 1000;
-  display: flex;
-  background-color: #000000;
-  box-shadow: 0px 3px 10px #190029;
-  justify-content: space-between;
-  padding: 1rem 4rem;
-  width: 100%;
-  color: white;
-  overflow: hidden;
-  top: 0;
+    position: fixed;
+    z-index: 1000; 
+    display: flex;
+    background-color: #000000;
+    box-shadow: 0vh 0.43vh 1.45vh #190029;
+    justify-content: space-between;
+    padding: 0.4vh 0vh;
+    width: 100%;
+    overflow: hidden; 
+    height: 10vh;
 }
 
-.botao-logo {
-  background: none;
-  border: none;
-  cursor: pointer;
+.barra-navegacao a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
+.barra-navegacao a::after{
+    content: " ";
+    width: 0%;
+    height: 0.29vh;
+    background-color: #FFF;
+    position: absolute;
+    left: 20%;
+    bottom: -1.45vh;
+    display: flex;
+    transition: width 0.3s ease-in-out;
 }
+
+.barra-navegacao a:hover::after{
+    width: 60%;
+}
+
+.barra-navegacao a:active, .barra-navegacao a:focus {
+    color: #808080; 
+    outline: none;
+}
+
+.barra-navegacao :not(a:active){
+    color: white;
+}
+
+#botaologo {
+    background: none;
+    border: none;
+    font-family: 'Epilogue', 'sans-serif';
+    position: relative;
+    font-size: 2.2vh;
+    font-weight: bold;
+    left: 5%;
+}
+
+#botaologo.tremor{
+    animation: tremor 1s;
+}
+
+@keyframes tremor{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+  
 
 .lista-navegacao {
-  display: flex;
-  align-items: center;
-  position: relative;
-  right: 3%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 2%;
 }
 
 .item-navegacao {
-  margin: 0 15px;
-  transition: transform 0.3s ease-in-out;
+    margin: 0 2.19vh;
+    transition: transform 0.3s ease-in-out;
 }
 
-.item-navegacao:hover {
-  transform: scale(1.1);
+.item-navegacao:hover{
+    transform: scale(1.1);
 }
+
 
 .link-navegacao {
-  text-decoration: none;
-  font-size: 1.15rem;
-  color: white;
-  font-weight: 400;
-  transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 2.2vh;
+    color: white;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
 }
 
-.link-navegacao:hover {
-  transform: scale(1.1);
+.link-navegacao:hover{
+    transform: scale(1.1);
 }
 
 .lista-lista-navegacao {
-  display: flex;
-  list-style: none;
-  justify-content: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
 .menu-icone {
-  background: transparent;
-  border: none;
-  cursor: pointer;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-#baixarCV {
-  background-color: transparent;
-  color: white;
-  border-color: #190029;
-  border: solid;
-  border-width: 2px;
-  font-size: 15px;
-  font-weight: bold;
-  color: rgb(167, 0, 167);
-  padding: 10px 15px;
-  height: 55px;
-  cursor: pointer;
-  right: 8rem;
-  position: relative;
+#baixarCV{
+    background-color: transparent;
+    color: white;
+    border-color: #190029;
+    border: solid;
+    border-width: 0.29vh;
+    font-size: 1.9vh;
+    font-weight: 1000;
+    color: rgb(167, 0, 167);
+    height: 5.5vh;
+    cursor: pointer;
+    position: relative;
+    width: 20vh;
+    top: 2.2vh;
+    padding: 0;
+    margin: 0;
+    right: 5%;
+    transition: transform 0.5s ease;
+}
+
+#baixarCV.up{
+    transform: scale(1.1);
 }
 
 .menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
-  display: none;
+    display: none;
 }
 
-@media screen and (max-width: 730px) {
-  .lista-navegacao {
-    display: none;
-  }
-  #baixarCV {
-    display: none;
-  }
-  .barra-navegacao {
-    padding: 1.5rem 4rem;
-  }
-  .menu-mobileicone {
-    display: block;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  .menumobile ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-  .menumobile .item-navegacao {
-    display: block;
-    padding: 1rem 2rem;
-  }
-  .menumobile .botaocurriculo-mobile button {
-    width: 100%;
-  }
-  .open {
-    display: block;
-  }
+@media screen and (max-width: 730px){
+    .lista-navegacao{
+        display: none;
+    }
+    #baixarCV{
+        display: none;
+    }
+    .barra-navegacao{
+        padding: 0.15vh 0.4vh;
+    }
+    .menu-mobileicone{
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .menumobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0.1vh;
+    }
+    .menumobile .item-navegacao{
+        display: block;
+        padding: 0.1vh 0.2vh;
+    }    
+    .menumobile .botaocurriculo-mobile button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
 }
 
 /* ---------------------------------------Body------------------------------------------------ */
