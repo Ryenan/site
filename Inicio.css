@@ -311,7 +311,6 @@ header {
 }
 
 #redessociais{
-    padding-left: 7%;
     width: 40vh;
     position: relative;
     display: flex;
@@ -326,6 +325,12 @@ header {
     padding: 0;
     margin: 0;
     height: auto;
+}
+
+#redessociais a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
