@@ -206,7 +206,7 @@ header {
   justify-content: center;
   width: 100%;
   background-color: #190029;
-  height: 107vh;
+  height: 86vh;
   transition: margin-bottom 0.3s ease-in-out; 
   border: 1px solid white;
   box-sizing: border-box;
@@ -362,6 +362,7 @@ header {
   width: 30vh;
   height: 10vh;
   font-size: 35px;
+  top: 10vh;
   font-weight: bold;
   font-family: 'Epilogue','sans serif';
   cursor: pointer;
@@ -372,7 +373,8 @@ header {
   font-size: 15px;
   color: white;
   position: relative;
-  left: 83%;
+  top: 10vh;
+  left: 84%;
 }
 
 /* ---------------------------------------Section 2------------------------------------------------ */
