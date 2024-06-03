@@ -213,42 +213,117 @@ header {
 /* SECTION1 */
 /* INICIO */
 
-.section1{
-    background:#2c2e32;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    flex-direction: row;
-    gap: 25vh;
-    display: flex;
+.body{
+  background:linear-gradient(#202225, #150a1b) ;
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", 'sans-serif';
+  text-shadow: 0vh 0.13vh 0.13vh #000000b3;
 }
 
-#curriculo1,#curriculo2,#curriculo3{
-    display: flex;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    position: relative;
-    flex-direction: column;
+#comingsoon{
+  position: relative;
+  color: white;
+  top: 8vh;
+  font-size: 5vh;
+}
+
+.section1{
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  flex-direction: row;
+  gap: 25vh;
+  display: flex;
+  padding-top: 10vh;
+  width: 100%;
+}
+
+.coluna1, .coluna2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
+  padding-top: 10vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
+}
+
+#curriculo{
+  position: relative;
+  width: 60vh;
+  height: 35vh;
+  color: black;
+}
+
+#curriculo:hover .flip{
+  transform: rotateY(180deg);
 }
 
 #certificados{
-    display: none;
-    flex-direction: column;
-    gap: 5vh;
-    font-family: 'Nunito', sans-serif;
-    position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 5vh;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
 }
 
-.image-certificado{
-    min-width: 35vh;
-    min-height: 30vh;
-    max-width: 35vh;
-    max-height: 35vholh;
-    height: auto;
-    padding-bottom: 5vh;
+.flip{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
 }
+
+.frente,.tras{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1vh;
+  box-shadow: 0.2vh 0.2vh 0.2vh 0.2vh #000;
+}
+
+#frente1{
+  background-image: url(imgs/certificados/Google\ Cloud\ Computing\ Foundations\ Data\,\ ML\ and\ AI\ in\ Google\ Cloud.png);
+  background-size: 100%;
+}
+
+#frente2{
+  background-image: url(imgs/certificados/Google\ computing\ foudantions.png);
+  background-size:100%;
+}
+
+#frente3{
+  background-image: url(imgs/certificados/Infraestrutura\ em\ google\ cloud.png);
+  background-size: 100%;
+}
+
+#frente4{
+  background-image: url(imgs/certificados/Lead\ Dell\ Suporte\ Técnico\ em\ Tecnologia\ da\ informação.png);
+  background-size: 100%;
+}
+
+#frente5{
+  background-image: url(imgs/certificados/Network\ and\ security.png);
+  background-size: 100%;
+}
+
+#frente6{
+  background-image: url(imgs/certificados/Network\ and\ security.png);
+  background-size: 100%;
+}
+
+#tras1{
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
 
 .hide{
     display: none;

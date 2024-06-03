@@ -205,7 +205,8 @@ header {
   margin-top: 6.5%;
   justify-content: center;
   width: 100%;
-  background-color: #190029;
+  background-image: url("https://i.pinimg.com/originals/55/e8/1e/55e81ed4b955587451af5555921d8002.jpg");
+  background-size: cover; 
   height: 86vh;
   transition: margin-bottom 0.3s ease-in-out; 
   border: 1px solid white;
