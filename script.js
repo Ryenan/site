@@ -175,4 +175,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Certificados
+// Aba contato
+
+    function abrirContato(){
+        const contatar = document.getElementById("janelacontato")
+        contatar.classList.add('abrir')
+
+        contatar.addEventListener('click', (e) => {
+            if(e.target.id == "fechar")
+
+        })
+    }
