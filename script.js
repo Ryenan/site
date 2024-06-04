@@ -179,10 +179,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function abrirContato(){
         const contatar = document.getElementById("janelacontato")
+
         contatar.classList.add('abrir')
 
         contatar.addEventListener('click', (e) => {
-            if(e.target.id == "fechar")
-
+            if(e.target.id == "fechar" || e.target.id == 'janelacontato')
+                contatar.classList.remove('abrir')
         })
     }
+
+    function obrigadoContato(){
+        const obrigado = document.getElementById("obrigadoContato")
+
+        obrigado.classList.add('abrir')
+
+        obrigado.addEventListener('click', (e) => {
+            if(e.target.id == "fecharObrigado" || e.target.id == 'janelacontato')
+                obrigado.classList.remove('abrir')
+        })
+    }
+
+    document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
+    
+        const formData = new FormData(this);
+        
+        fetch('https://api.staticforms.xyz/submit', {
+            method: 'POST',
+            body: formData
+        })});

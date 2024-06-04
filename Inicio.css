@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+textarea{
+    resize: none;
+}
+
 main {
     background-color: #111213;
 }
@@ -724,11 +728,10 @@ header {
     transform: translateY(0);
 }
 
-<<<<<<< Updated upstream
 .janelacontato{
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #0000006f;
@@ -746,13 +749,79 @@ header {
 
 .jancontato{
     width: 60%;
+    height: 50vh;
     min-width: 45vh;
     min-height: 20vh;
     background-color: #151618dc;
     border-radius: 2vh;
     backdrop-filter: blur(10px);
     padding: 5vh;
-    box-shadow: 0 0 0.1vh 0.2vh #190029;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.jancontato h1{
+    font-family: 'Epilogue', 'sans-serif';
+    padding-bottom: 2vh;
+    font-size: 4vh;
+}
+
+#meuFormulario{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    font-size: 1.5vh;
+    font-family: 'Epilogue', 'sans-serif';
+    font-weight: bold;
+}
+
+#meuFormulario input{
+    margin-bottom: 1.5vh;
+    font-size: 14px;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+#baixoform{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 2vh;
+}
+
+#baixoform p{
+    margin: 0;
+}
+
+#botaoenviarform{
+    position: relative;
+    left: 73.5%;
+    width: 15vh;
+    height: 6vh;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: transparent;
+    border: solid, white, 0.3vh;
+    color: white;
+    cursor: pointer;
+}
+
+#redessociaisemail{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#iconsredessociaisemail{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    justify-content: center;
+}
+
+#iconsredessociaisemail img{
+    display: flex;
+    flex-direction: row;
+    width: 3.5vh;
+    cursor: pointer;
 }
 
 .fechar{
@@ -771,16 +840,57 @@ header {
     box-shadow: 0 0.1vh 0.1vh 0.1vh #000000;
 }
 
+@keyframes abrirjanelacontato{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -2vh, -0.5vh);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
 
+}
 
+.abrir .jancontato{
+    animation: abrirjanelacontato 0.5s;
+}
 
+#obrigadoContato{
+    display: none;
+    flex-direction: column;
+    width: 30%;
+    min-width: 25vh;
+    min-height: 10vh;
+    color: white;
+    align-items: center;
+    background-color: #252525;
+    padding: 3vh;
+    border-radius: 2vh;
+    text-align: center;
+    position: absolute;
+    z-index: 1000;
+    left: 30%;
+    bottom: 25%;
+    font-family: 'Epilogue', 'sans-serif';
+    font-size: 2.0vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
+#obrigadoContato.abrir{
+    display: flex;
+}
 
+#obrigadoContato h1{
+    font-size: 3.0vh;
+}
 
+#obrigadoContato p{
+    position: relative;
+    bottom: 1.5vh;
+}
 
-
-
-
-
-=======
->>>>>>> Stashed changes
+#iconeobrigadocontato{
+    width: 5vh;
+}

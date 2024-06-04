@@ -215,7 +215,7 @@ header {
 
 .body{
   background:linear-gradient(#202225, #150a1b) ;
-  height: 180vh;
+  height: 195vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +226,7 @@ header {
 #comingsoon{
   position: relative;
   color: white;
-  top: 8vh;
+  top: 15vh;
   font-size: 5vh;
 }
 
@@ -286,12 +286,12 @@ header {
   height: 100%;
   backface-visibility: hidden;
   border-radius: 1vh;
-  box-shadow: 0.2vh 0.2vh 0.2vh 0.2vh #000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #frente1{
-  background-image: url(imgs/certificados/Google\ Cloud\ Computing\ Foundations\ Data\,\ ML\ and\ AI\ in\ Google\ Cloud.png);
-  background-size: 100%;
+  background-image: url(imgs/certificados/Certificado\ senac.png);
+  background-size:100%;
 }
 
 #frente2{
@@ -315,6 +315,11 @@ header {
 }
 
 #frente6{
+  background-image: url(imgs/certificados/Google\ Cloud\ Computing\ Foundations\ Data\,\ ML\ and\ AI\ in\ Google\ Cloud.png);
+  background-size: 100%;
+}
+
+#frente7{
   background-image: url(imgs/certificados/Network\ and\ security.png);
   background-size: 100%;
 }
