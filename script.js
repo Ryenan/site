@@ -198,13 +198,3 @@ document.addEventListener("DOMContentLoaded", function() {
                 obrigado.classList.remove('abrir')
         })
     }
-
-    document.getElementById('meuFormulario').addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede o comportamento padrão do formulário
-    
-        const formData = new FormData(this);
-        
-        fetch('https://api.staticforms.xyz/submit', {
-            method: 'POST',
-            body: formData
-        })});
