@@ -121,11 +121,11 @@
                 <h1>Me envie um email</h1>
                 <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
                     <label>Nome:</label>
-                    <input type="text" name="name" placeholder="Digite seu nome">
+                    <input id="nameform" type="text" name="name" placeholder="Digite seu nome" required>
                     <label>Email:</label>
-                    <input type="text" name="email" placeholder="Digite seu email">
+                    <input id="emailform" type="text" name="email" placeholder="Digite seu email" required>
                     <label>Mensagem:</label>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <textarea name="message" id="textform" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
                     <div id="baixoform">
                         <div id="redessociaisemail">
                             <p>Ou me contate por:</p>
@@ -138,18 +138,19 @@
                         <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
                     </div>
                     <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
+                    <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Portifolio-Ryenan/">
 
                     <div onclick="obrigadoContato()" id="obrigadoContato">
                         <h1>Email enviado!</h1>
                         <p>Muito obrigado pelo o contato!</p>
                         <img id="iconeobrigadocontato" src="https://img.icons8.com/?size=100&id=71474&format=png&color=000000" alt="Icone de email">
-                        <button class="fechar" id="fecharObrigado">X</button>
                     </div>
                 </form>
             </div>
         </div>
 
         <script src="script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 </html>

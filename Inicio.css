@@ -776,9 +776,17 @@ header {
 }
 
 #meuFormulario input,textarea{
+    padding: 0.5vh;
     margin-bottom: 1.5vh;
     font-size: 14px;
     font-family: 'Epilogue', 'sans-serif';
+    transition: all 0.5s;
+    outline: none;
+    border: none;
+}
+
+#meuFormulario input:focus,textarea:focus{
+    border-radius: 1vh;
 }
 
 #baixoform{
@@ -803,6 +811,12 @@ header {
     border: solid, white, 0.3vh;
     color: white;
     cursor: pointer;
+}
+
+#botaoenviarform:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
 }
 
 #redessociaisemail{

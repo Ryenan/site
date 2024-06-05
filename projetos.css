@@ -202,17 +202,28 @@ header {
 
 .section1{
   position: relative;
-  margin-top: 6.5%;
-  justify-content: center;
+  margin-top: 5.5%;
   width: 100%;
   background-image: url("https://i.pinimg.com/originals/55/e8/1e/55e81ed4b955587451af5555921d8002.jpg");
   background-size: cover; 
-  height: 86vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 86%;
   transition: margin-bottom 0.3s ease-in-out; 
-  border: 1px solid white;
+  border: 0.1vh solid white;
   box-sizing: border-box;
   border-left: 0;
   border-right: 0;
+}
+
+.section1bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 86vh;
+  background-color: #000000ae;
 }
 
 .section1.expanded{
@@ -230,7 +241,7 @@ header {
 }
 
 #visual img {
-  border-radius: 5px;
+  border-radius: 0.5vh;
   height: 60vh;
   margin-right: 2%;
   margin-top: 2.5vh;
@@ -238,17 +249,19 @@ header {
 
 #tituloprojeto {
   font-family: 'Epilogue', sans-serif;
-  font-size: 35px;
+  font-size: 5vh;
+  text-align: center;
   margin-top: 5%;
 }
 
 #paragrafoprojeto {
-  font-size: 16px;
+  font-size: 1.6vh;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
 }
 
 #textosec1 {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -259,7 +272,7 @@ header {
 #palavraschaves {
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  font-size: 1.6vh;
   margin-top: 10%;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 600;
@@ -269,17 +282,17 @@ header {
   background-color: transparent;
   border: none;
   position: relative;
-  left: 50%;
   cursor: pointer;
-  padding-top: 5%;
-  width: 50px;
-  height: 50px;
+  padding-top: 50%;
+  width: 5vh;
+  height: 5vh;
+  top: 15vh;
 }
 
 #imagembotaoup{
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
-  width: 50px;
+  width: 5vh;
 }
 
 #imagembotaoup.up{
@@ -293,11 +306,11 @@ header {
   background-color: rgba(52, 6, 89, 0.841);
   width: 100%;
   height: 70vh;  
-  padding-bottom: 20px;
+  padding-bottom: 2vh;
   overflow: hidden;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(20px);
+  transform: translateY(2vh);
   top: 2vh;
   border-color: white;
 }
@@ -308,7 +321,7 @@ header {
 
 #tituloprojetoescondido {
   font-family: 'Epilogue', sans-serif;
-  font-size: 35px;
+  font-size: 3.5vh;
   position: relative;
   top: 5vh;
 }
@@ -322,7 +335,7 @@ header {
 }
 
 #paragrafoprojetoescondido {
-  font-size: 16px;
+  font-size: 1.6vh;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
 }
@@ -336,7 +349,7 @@ header {
 #instrucoes {
   position: relative;
   width: 50%;
-  right: 10px;
+  right: 1vh;
   top: 5vh;
 }
 
@@ -349,7 +362,7 @@ header {
 
 #tituloprojetoescondidocomousar {
   font-family: 'Epilogue', sans-serif;
-  font-size: 35px;
+  font-size: 3.5vh;
   top: 5vh;
   color: white;
 }
@@ -357,12 +370,12 @@ header {
 #baixar{
   position: relative;
   left: 80%;
-  border: 1px white solid;
+  border: 0.1vh white solid;
   background-color: transparent;
   color: white;
   width: 30vh;
   height: 10vh;
-  font-size: 35px;
+  font-size: 3.5vh;
   top: 10vh;
   font-weight: bold;
   font-family: 'Epilogue','sans serif';
@@ -371,7 +384,7 @@ header {
 
 #paragrafobaixeaqui{
   font-family: 'Epilogue', sans-serif;
-  font-size: 15px;
+  font-size: 1.5vh;
   color: white;
   position: relative;
   top: 10vh;
@@ -392,7 +405,7 @@ header {
   background-color: #190029;
   height: 107vh;
   transition: margin-bottom 0.3s ease-in-out; 
-  border: 1px solid white;
+  border: 0.1vh solid white;
   box-sizing: border-box;
   border-left: 0;
   border-right: 0;
@@ -406,11 +419,11 @@ header {
   background-color: rgba(52, 6, 89, 0.841);
   width: 100%;
   height: 70vh;  
-  padding-bottom: 20px;
+  padding-bottom: 2vh;
   overflow: hidden;
   opacity: 0;
   transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(20px);
+  transform: translateY(2vh);
   top: 2vh;
   border-color: white;
 }
@@ -429,9 +442,125 @@ header {
 #imagembotaoup2{
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
-  width: 50px;
+  width: 5vh;
 }
 
 #imagembotaoup.up2{
   transform: rotate(180deg);
 }
+
+/* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
+
+/* CAROUSEL */
+/* INICIO */
+
+#backgroundcarousel {
+  overflow-x: hidden;
+  position: relative;
+  right: 5%;
+  height: 100%;
+}
+#backgroundcarousel::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1.16vh;
+  margin: 0;
+  scrollbar-width: none;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+.list::-webkit-scrollbar{
+  display: none;
+}
+
+.item{
+  flex-shrink: 0;
+  width: 105%;
+  height: 100%;
+  scroll-snap-align: center;
+  border-radius: 1.16vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.item.empty {
+  background-color: transparent; 
+  width: calc(80% + 2.33vh);
+}
+
+.item1{
+  left: 0.55vh;
+}
+
+.item5{
+  margin-right: 1vh;
+}
+
+.conteudo{
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+  height: 50vh;
+  font-family: sans-serif;
+  font-size: 4.67vh;
+  font-weight: bold;
+}
+
+.conteudo:hover{ /* revisar isso */
+  transform: (1.1);
+}
+
+#carousel{
+  font-family: 'Epilogue', sans-serif;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 1.16vh;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dotted;
+  border-color: white;
+}
+
+
+.btncarousel{
+  position: absolute;
+  top: 50%;
+  width: 15vh;
+  height: 0.3vh;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+.btnvoltar{
+  left: 0.15vh;
+  transform: rotateY(180deg);
+}
+
+.btnpassar{
+  right: 0.15vh;
+}
+
+/* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
