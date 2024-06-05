@@ -115,43 +115,41 @@
             </section>    
 </main>
 
-    <div onclick="abrirContato()" class="janelacontato" id="janelacontato">
-        <div class="jancontato">
-            <button class="fechar" id="fechar">X</button>
-            <h1>Me envie um email</h1>
-            <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
-                <label>Nome:</label>
-                <input type="text" name="name" placeholder="Digite seu nome">
-                <label>Email:</label>
-                <input type="text" name="email" placeholder="Digite seu email">
-                <label>Mensagem:</label>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-                <div id="baixoform">
-                    <div id="redessociaisemail">
-                        <p>Ou me contate por:</p>
-                        <div id="iconsredessociaisemail">
-                            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap">
-                            <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="Linkedin">
-                            <img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord">
+        <div onclick="abrirContato()" class="janelacontato" id="janelacontato">
+            <div class="jancontato">
+                <button class="fechar" id="fechar">X</button>
+                <h1>Me envie um email</h1>
+                <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
+                    <label>Nome:</label>
+                    <input type="text" name="name" placeholder="Digite seu nome">
+                    <label>Email:</label>
+                    <input type="text" name="email" placeholder="Digite seu email">
+                    <label>Mensagem:</label>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <div id="baixoform">
+                        <div id="redessociaisemail">
+                            <p>Ou me contate por:</p>
+                            <div id="iconsredessociaisemail">
+                                <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap">
+                                <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="Linkedin">
+                                <img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord">
+                            </div>
                         </div>
+                        <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
                     </div>
-                    <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
-                </div>
-                <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
-                <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Portifolio-Ryenan/">
+                    <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
 
-                <div onclick="obrigadoContato()" id="obrigadoContato">
-                    <h1>Email enviado!</h1>
-                    <p>Muito obrigado pelo o contato!</p>
-                    <img id="iconeobrigadocontato" src="https://img.icons8.com/?size=100&id=71474&format=png&color=000000" alt="Icone de email">
-                    <button class="fechar" id="fecharObrigado">X</button>
-                </div>
-            </form>
+                    <div onclick="obrigadoContato()" id="obrigadoContato">
+                        <h1>Email enviado!</h1>
+                        <p>Muito obrigado pelo o contato!</p>
+                        <img id="iconeobrigadocontato" src="https://img.icons8.com/?size=100&id=71474&format=png&color=000000" alt="Icone de email">
+                        <button class="fechar" id="fecharObrigado">X</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 
-    
+        <script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>

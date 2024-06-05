@@ -9,6 +9,7 @@ html {
 
 textarea{
     resize: none;
+    padding-top: 0.5vh;
 }
 
 main {
@@ -749,9 +750,9 @@ header {
 
 .jancontato{
     width: 60%;
-    height: 50vh;
+    height: 60vh;
     min-width: 45vh;
-    min-height: 20vh;
+    min-height: 60vh;
     background-color: #151618dc;
     border-radius: 2vh;
     backdrop-filter: blur(10px);
@@ -774,10 +775,10 @@ header {
     font-weight: bold;
 }
 
-#meuFormulario input{
+#meuFormulario input,textarea{
     margin-bottom: 1.5vh;
     font-size: 14px;
-    font-family: 'Montserrat', 'sans-serif';
+    font-family: 'Epilogue', 'sans-serif';
 }
 
 #baixoform{
