@@ -10,13 +10,13 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 200vh;
   overflow-x: hidden; /* Adicionado para evitar overflow horizontal */
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
-
 
 header {
     font-family: 'Epilogue', 'sans-serif';
@@ -232,32 +232,43 @@ header {
 
 #visual {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 14%;
   margin-bottom: 2%;
   transition: all 0.3s ease;
   position: relative;
-  top: 10%;
+}
+
+#linha2{
+  display: flex;
+  flex-direction: row;
+  gap: 15vh;
 }
 
 #visual img {
   border-radius: 0.5vh;
   height: 60vh;
   margin-right: 2%;
-  margin-top: 2.5vh;
 }
 
 #tituloprojeto {
   font-family: 'Epilogue', sans-serif;
-  font-size: 5vh;
+  font-size: 7vh;
+  text-shadow: #8731b2 1px 0 10px;
   text-align: center;
   margin-top: 5%;
+  color: white;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 #paragrafoprojeto {
-  font-size: 1.6vh;
+  font-size: 2.6vh;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
+  text-align: justify;
+  width: 60vh;
+  text-shadow: 1px 1px 2px #8731b2;
 }
 
 #textosec1 {
@@ -267,15 +278,18 @@ header {
   width: 50%;
   color: white;
   margin-left: 3%;
+  top: 10%;
 }
 
 #palavraschaves {
   display: flex;
   justify-content: center;
   font-size: 1.6vh;
-  margin-top: 10%;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 600;
+  position: relative;
+  right: 5%;  
+  text-shadow: 1px 1px 2px #8731b2;
 }
 
 #botaoexpandir{
@@ -286,7 +300,7 @@ header {
   padding-top: 50%;
   width: 5vh;
   height: 5vh;
-  top: 15vh;
+  left: 45vh;
 }
 
 #imagembotaoup{
@@ -299,7 +313,7 @@ header {
   transform: rotate(180deg);
 }
 
-#escondido {
+#escondido{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -457,8 +471,9 @@ header {
 #backgroundcarousel {
   overflow-x: hidden;
   position: relative;
-  right: 5%;
   height: 100%;
+  width: 90vh;
+  margin-left: 5vh;
 }
 #backgroundcarousel::-webkit-scrollbar {
   display: none;
@@ -495,6 +510,14 @@ header {
   border-radius: 1.16vh;
   margin: 0;
   box-sizing: border-box;
+  color: white;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
 }
 
 .item.empty {
@@ -518,6 +541,7 @@ header {
   font-family: sans-serif;
   font-size: 4.67vh;
   font-weight: bold;
+  background-color: blue;
 }
 
 .conteudo:hover{ /* revisar isso */
@@ -537,30 +561,46 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: dotted;
-  border-color: white;
 }
 
 
 .btncarousel{
   position: absolute;
-  top: 50%;
+  top: 75%;
   width: 15vh;
   height: 0.3vh;
+  left: 5vh;
   transform: translateY(-50%);
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 2vh;
+  color: transparent;
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+
+.btncarousel:hover{
+  color: white;
+}
+
+#buttoncarousel{
+  position: absolute;
 }
 
 .btnvoltar{
-  left: 0.15vh;
+  background: linear-gradient(to left, #000, transparent);
   transform: rotateY(180deg);
+  height: 50vh;
+  width: 4vh;
 }
 
 .btnpassar{
-  right: 0.15vh;
+  background: linear-gradient(to left, #000, transparent);
+  left: 76vh;
+  height: 50vh;
+  width: 4vh;
+  top: 25vh;
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
