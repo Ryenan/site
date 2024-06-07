@@ -19,12 +19,22 @@ function mostrarDiv() {
     var escondido = document.getElementById('escondido');
     var sections = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
-    var botaosubir = document.getElementById('imagembotaoup')
+    var botaosubir = document.getElementById('imagembotaoup');
 
     // Alternar a classe 'show' no elemento escondido
     escondido.classList.toggle('show');
     section2.classList.toggle('pull');
-    botaosubir.classList.toggle('up')
+    botaosubir.classList.toggle('up');
+
+    if (escondido.classList.contains('show')) {
+        // Se a div está sendo mostrada, mudar o z-index após 1 segundo
+        setTimeout(function() {
+            escondido.classList.add('zindex');
+        }, 1000);
+    } else {
+        // Se a div está sendo escondida, remover a classe de z-index
+        escondido.classList.remove('zindex');
+    }
 
     // Adicionar ou remover a classe 'expanded' nas seções abaixo do elemento escondido
     sections.forEach(function(section) {
