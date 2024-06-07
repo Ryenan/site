@@ -16,7 +16,7 @@ function apertarCor(itemnavegacao6){
 }
 
 function mostrarDiv() {
-    var escondido = document.getElementById('escondido');
+    var escondido = document.getElementById('escondido1');
     var sections = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
     var botaosubir = document.getElementById('imagembotaoup');
