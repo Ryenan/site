@@ -16,55 +16,37 @@ function apertarCor(itemnavegacao6){
 }
 
 function mostrarDiv() {
-    var escondido = document.getElementById('escondido');
+    var escondido = document.getElementById('escondido1');
     var sections = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
     var botaosubir = document.getElementById('imagembotaoup');
+    var texto1 = document.getElementById('textosescondidosec1');
+    var texto2 = document.getElementById('organizarinstrucoes');
+    var tituloinstrucao = document.getElementById('tituloprojetoescondidocomousar');
+    var baixar = document.getElementById('baixar')
+    var paragrafobaixar = document.getElementById('paragrafobaixeaqui')
 
-    // Alternar a classe 'show' no elemento escondido
     escondido.classList.toggle('show');
     section2.classList.toggle('pull');
     botaosubir.classList.toggle('up');
+    texto1.classList.toggle('show');
+    texto2.classList.toggle('show');
+    tituloinstrucao.classList.toggle('show');    
+    baixar.classList.toggle('show');
+    paragrafobaixar.classList.toggle('show')
 
     if (escondido.classList.contains('show')) {
-        // Se a div está sendo mostrada, mudar o z-index após 1 segundo
         setTimeout(function() {
             escondido.classList.add('zindex');
         }, 1000);
     } else {
-        // Se a div está sendo escondida, remover a classe de z-index
         escondido.classList.remove('zindex');
     }
 
-    // Adicionar ou remover a classe 'expanded' nas seções abaixo do elemento escondido
     sections.forEach(function(section) {
         section.classList.toggle('expanded');
     });
 }
-
-function mostrarDiv2() {
-    var escondido2 = document.getElementById('escondido2');
-    var sections = document.querySelectorAll('.section1');
-    var section2 = document.getElementById('section2');
-    var botaosubir = document.getElementById('imagembotaoup2')
-
-    // Alternar a classe 'show' no elemento escondido
-    escondido2.classList.toggle('show');
-    section2.classList.toggle('pull');
-    botaosubir.classList.toggle('up')
-
-    // Adicionar ou remover a classe 'expanded' nas seções abaixo do elemento escondido
-    sections.forEach(function(section) {
-        section.classList.toggle('expanded');
-    });
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    var escondidos = document.querySelectorAll('.escondido');
-    escondidos.forEach(function(escondido) {
-        escondido.classList.remove('show');
-    });
-});
 
 // CAROSSEL
 

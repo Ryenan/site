@@ -6,12 +6,16 @@ html {
 }
 
 body{
-  background-color: #111213;
+  background: url("https://i.pinimg.com/originals/55/e8/1e/55e81ed4b955587451af5555921d8002.jpg");
   margin: 0;
   padding: 0;
   width: 100%;
   height: 200vh;
   overflow-x: hidden; /* Adicionado para evitar overflow horizontal */
+}
+
+.bodybackground{
+  background-color: #000000ae;
 }
 
 body::-webkit-scrollbar {
@@ -200,19 +204,21 @@ header {
 
 /* ---------------------------------------Section 1------------------------------------------------ */
 
-.section1{
+.section{
   position: relative;
-  margin-top: 5.5%;
   width: 100%;
   background-image: url("https://i.pinimg.com/originals/55/e8/1e/55e81ed4b955587451af5555921d8002.jpg");
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
   height: 86%;
-  transition: margin-bottom 0.3s ease-in-out; 
+  transition: 0.6s ease-in-out; 
   box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   z-index: 999;
+}
+
+#section1{
+  margin-top: 5.5%;
 }
 
 .section1bg{
@@ -226,7 +232,7 @@ header {
 }
 
 .section1.expanded{
-  margin-bottom: 70vh;
+  margin-bottom: 10vh;
 }
 
 #visual {
@@ -323,23 +329,30 @@ header {
   transform: rotate(180deg);
 }
 
-#escondido{
+.escondido{
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: rgba(48, 43, 52, 0.841);
-  width: 100%;
+  background-color: #1f2123;
   height: 60vh;
-  opacity: 0;
-  top: -110vh;
+  opacity: 1;
   transition: opacity 1s ease-in-out, transform 0.6s ease-in-out;
   border-color: white;
   z-index: 10;
 }
 
-#escondido.show{
-  opacity: 1;
-  transform: translateY(110vh);
+#escondido1{
+  top: -55vh;
+  width: 00%;
+  left: 75%;
+  transition: ease-in-out 1s;
+}
+
+#escondido1.show{
+  transform: translateY(55vh);
+  left: 0%;
+  width: 100%;
+  transition: ease-in-out 1s;
 }
 
 #tituloprojetoescondido {
@@ -355,6 +368,12 @@ header {
   width: 50%;
   color: white;
   margin-left: 3%;
+  opacity: 0;
+  transition: ease-in-out 1s;
+}
+
+#textosescondidosec1.show{
+  opacity: 1;
 }
 
 #paragrafoprojetoescondido {
@@ -382,6 +401,12 @@ header {
   flex-direction: column;
   gap: 10%;
   color: white;
+  transition: all ease-in-out 1s;
+  opacity: 0;
+}
+
+#organizarinstrucoes.show{
+  opacity: 1;
 }
 
 #tituloprojetoescondidocomousar {
@@ -390,22 +415,34 @@ header {
   top: 5vh;
   position: relative;
   color: white;
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+#tituloprojetoescondidocomousar.show{
+  opacity: 1;
 }
 
 #baixar{
   position: relative;
-  left: 80%;
+  left: 82.5%;
   border: 0.1vh white solid;
   background-color: transparent;
   color: white;
-  width: 30vh;
-  height: 10vh;
+  width: 20vh;
+  height: 7vh;
   font-size: 3.5vh;
   top: 4vh;
   font-weight: bold;
   font-family: 'Epilogue','sans serif';
   cursor: pointer;
   z-index: 30;
+  opacity: 0;
+  transition: all ease-in-out 3s;
+}
+
+#baixar.show{
+  opacity: 1;
 }
 
 #paragrafobaixeaqui{
@@ -415,64 +452,12 @@ header {
   position: relative;
   top: 4vh;
   left: 84%;
-}
-
-/* ---------------------------------------Section 2------------------------------------------------ */
-
-
-.section2.pull{
-  margin-top: 90vh;
-}
-
-.section2{
-  position: relative;
-  justify-content: center;
-  width: 100%;
-  background-color: #190029;
-  height: 107vh;
-  transition: margin-bottom 0.3s ease-in-out; 
-  border: 0.1vh solid white;
-  box-sizing: border-box;
-  border-left: 0;
-  border-right: 0;
-  margin-top: 5%;
-}
-
-#escondido2{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: rgba(52, 6, 89, 0.841);
-  width: 100%;
-  height: 70vh;  
-  padding-bottom: 2vh;
-  overflow: hidden;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(2vh);
-  top: 2vh;
-  border-color: white;
+  transition: all ease-in-out 2s;
 }
 
-#botaoexpandir2{
-  background-color: transparent;
-  border: none;
-  position: relative;
-  left: 25%;
-  cursor: pointer;
-  padding-top: 14%;
-  width: 50%;
-  height: 50%;
-}
-
-#imagembotaoup2{
-  transition: transform 0.5s ease-in-out;
-  transform-origin: center;
-  width: 5vh;
-}
-
-#imagembotaoup.up2{
-  transform: rotate(180deg);
+#paragrafobaixeaqui.show{
+  opacity: 1;
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
@@ -616,3 +601,4 @@ iframe{
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
+
