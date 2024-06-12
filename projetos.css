@@ -212,6 +212,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 86%;
+<<<<<<< HEAD
   transition: 0.6s ease-in-out; 
   box-sizing: border-box;
   z-index: 999;
@@ -219,11 +220,13 @@ header {
 
 #section1{
   margin-top: 5.5%;
+=======
   transition: margin-bottom 0.3s ease-in-out; 
   border: 0.1vh solid white;
   box-sizing: border-box;
   border-left: 0;
   border-right: 0;
+>>>>>>> parent of a03ff2f (terminei projetos)
 }
 
 .section1bg{
@@ -327,6 +330,12 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+<<<<<<< HEAD
+  background-color: #1f2123;
+  height: 60vh;
+  opacity: 1;
+  transition: opacity 1s ease-in-out, transform 0.6s ease-in-out;
+=======
   background-color: rgba(52, 6, 89, 0.841);
   width: 100%;
   height: 70vh;  
@@ -336,11 +345,24 @@ header {
   transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
   transform: translateY(2vh);
   top: 2vh;
+>>>>>>> parent of a03ff2f (terminei projetos)
   border-color: white;
 }
 
+<<<<<<< HEAD
+#escondido1{
+  top: -60vh;
+  width: 100%;
+  transition: ease-in-out 1s;
+}
+
+#escondido1.show{
+  transform: translateY(60vh);
+  transition: ease-in-out 1s;
+=======
 #escondido.show{
   opacity: 1;
+>>>>>>> parent of a03ff2f (terminei projetos)
 }
 
 #tituloprojetoescondido {
@@ -407,6 +429,11 @@ header {
   font-weight: bold;
   font-family: 'Epilogue','sans serif';
   cursor: pointer;
+<<<<<<< HEAD
+  z-index: 30;
+  transition: all ease-in-out 3s;
+=======
+>>>>>>> parent of a03ff2f (terminei projetos)
 }
 
 #paragrafobaixeaqui{
