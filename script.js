@@ -42,37 +42,6 @@ function mostrarDiv() {
     });
 }
 
-function mostrarDiv2() {
-    var escondido2 = document.getElementById('escondido2');
-    var sections2 = document.querySelectorAll('.section2');
-    var section3 = document.getElementById('section3');
-    var botaosubir2 = document.getElementById('imagembotaoup2')
-
-    // Alternar a classe 'show' no elemento escondido
-    escondido2.classList.toggle('show');
-    botaosubir2.classList.toggle('up');
-    section3.classList.toggle('pull');
-
-    if (escondido2.classList.contains('show')) {
-        setTimeout(function() {
-            escondido2.classList.add('zindex');
-        }, 1000);
-    } else {
-            escondido2.classList.remove('zindex');
-    }
-
-    sections2.forEach(function(section) {
-        section.classList.toggle('expanded');
-    });
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    var escondidos = document.querySelectorAll('.escondido');
-    escondidos.forEach(function(escondido) {
-        escondido.classList.remove('show');
-    });
-});
-
 // CAROSSEL
 
 const list = document.querySelector(".list");
