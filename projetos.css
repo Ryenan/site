@@ -342,16 +342,13 @@ header {
 }
 
 #escondido1{
-  top: -55vh;
-  width: 00%;
-  left: 75%;
+  top: -60vh;
+  width: 100%;
   transition: ease-in-out 1s;
 }
 
 #escondido1.show{
-  transform: translateY(55vh);
-  left: 0%;
-  width: 100%;
+  transform: translateY(60vh);
   transition: ease-in-out 1s;
 }
 
@@ -368,12 +365,7 @@ header {
   width: 50%;
   color: white;
   margin-left: 3%;
-  opacity: 0;
   transition: ease-in-out 1s;
-}
-
-#textosescondidosec1.show{
-  opacity: 1;
 }
 
 #paragrafoprojetoescondido {
@@ -402,11 +394,6 @@ header {
   gap: 10%;
   color: white;
   transition: all ease-in-out 1s;
-  opacity: 0;
-}
-
-#organizarinstrucoes.show{
-  opacity: 1;
 }
 
 #tituloprojetoescondidocomousar {
@@ -415,12 +402,7 @@ header {
   top: 5vh;
   position: relative;
   color: white;
-  opacity: 0;
   transition: all ease-in-out 1s;
-}
-
-#tituloprojetoescondidocomousar.show{
-  opacity: 1;
 }
 
 #baixar{
@@ -437,12 +419,7 @@ header {
   font-family: 'Epilogue','sans serif';
   cursor: pointer;
   z-index: 30;
-  opacity: 0;
   transition: all ease-in-out 3s;
-}
-
-#baixar.show{
-  opacity: 1;
 }
 
 #paragrafobaixeaqui{
@@ -452,12 +429,27 @@ header {
   position: relative;
   top: 4vh;
   left: 84%;
-  opacity: 0;
   transition: all ease-in-out 2s;
 }
 
-#paragrafobaixeaqui.show{
-  opacity: 1;
+#section2{
+  top: -60vh;
+  transition: all ease-in-out 1s;
+}
+
+#section2.pull{
+  transition: all ease-in-out 1s;
+  transform: translateY(60vh);
+}
+
+#imagembotaoup2{
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  width: 5vh;
+}
+
+#imagembotaoup2.up{
+  transform: rotate(180deg);
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/

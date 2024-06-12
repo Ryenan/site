@@ -17,23 +17,13 @@ function apertarCor(itemnavegacao6){
 
 function mostrarDiv() {
     var escondido = document.getElementById('escondido1');
-    var sections = document.querySelectorAll('.section1');
+    var sections1 = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
     var botaosubir = document.getElementById('imagembotaoup');
-    var texto1 = document.getElementById('textosescondidosec1');
-    var texto2 = document.getElementById('organizarinstrucoes');
-    var tituloinstrucao = document.getElementById('tituloprojetoescondidocomousar');
-    var baixar = document.getElementById('baixar')
-    var paragrafobaixar = document.getElementById('paragrafobaixeaqui')
 
     escondido.classList.toggle('show');
     section2.classList.toggle('pull');
     botaosubir.classList.toggle('up');
-    texto1.classList.toggle('show');
-    texto2.classList.toggle('show');
-    tituloinstrucao.classList.toggle('show');    
-    baixar.classList.toggle('show');
-    paragrafobaixar.classList.toggle('show')
 
     if (escondido.classList.contains('show')) {
         setTimeout(function() {
@@ -43,7 +33,7 @@ function mostrarDiv() {
         escondido.classList.remove('zindex');
     }
 
-    sections.forEach(function(section) {
+    sections1.forEach(function(section) {
         section.classList.toggle('expanded');
     });
 }
