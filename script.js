@@ -19,10 +19,11 @@ function mostrarDiv() {
     var escondido = document.getElementById('escondido1');
     var sections1 = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
-    var botaosubir = document.getElementById('imagembotaoup');
+    var botaosubir = document.getElementById('imagembotaoup')
 
     escondido.classList.toggle('show');
     section2.classList.toggle('pull');
+<<<<<<< HEAD
     botaosubir.classList.toggle('up');
 
     if (escondido.classList.contains('show')) {
@@ -32,6 +33,9 @@ function mostrarDiv() {
     } else {
         escondido.classList.remove('zindex');
     }
+=======
+    botaosubir.classList.toggle('up')
+>>>>>>> parent of a03ff2f (terminei projetos)
 
     sections1.forEach(function(section) {
         section.classList.toggle('expanded');
