@@ -212,7 +212,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 86%;
-<<<<<<< HEAD
   transition: 0.6s ease-in-out; 
   box-sizing: border-box;
   z-index: 999;
@@ -220,13 +219,6 @@ header {
 
 #section1{
   margin-top: 5.5%;
-=======
-  transition: margin-bottom 0.3s ease-in-out; 
-  border: 0.1vh solid white;
-  box-sizing: border-box;
-  border-left: 0;
-  border-right: 0;
->>>>>>> parent of a03ff2f (terminei projetos)
 }
 
 .section1bg{
@@ -250,6 +242,7 @@ header {
   margin-bottom: 2%;
   transition: all 0.3s ease;
   position: relative;
+  top: -5vh;
 }
 
 #linha2{
@@ -294,6 +287,17 @@ header {
   top: 10%;
 }
 
+#vermais{
+  justify-content: center;
+  align-items: center;
+  font-family: 'Epilogue', 'sans-serif';
+  position: relative;
+  top: 5.5vh;
+  font-size: 1.5vh;
+  font-style: italic;
+  left: 27.7vh;
+}
+
 #palavraschaves {
   display: flex;
   justify-content: center;
@@ -301,7 +305,7 @@ header {
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 600;
   position: relative;
-  right: 5%;  
+  right: 7%;  
   text-shadow: 1px 1px 2px #8731b2;
 }
 
@@ -310,7 +314,6 @@ header {
   border: none;
   position: relative;
   cursor: pointer;
-  padding-top: 50%;
   width: 5vh;
   height: 5vh;
   left: 45vh;
@@ -330,26 +333,14 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-<<<<<<< HEAD
   background-color: #1f2123;
   height: 60vh;
   opacity: 1;
   transition: opacity 1s ease-in-out, transform 0.6s ease-in-out;
-=======
-  background-color: rgba(52, 6, 89, 0.841);
-  width: 100%;
-  height: 70vh;  
-  padding-bottom: 2vh;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(2vh);
-  top: 2vh;
->>>>>>> parent of a03ff2f (terminei projetos)
   border-color: white;
+  z-index: 10;
 }
 
-<<<<<<< HEAD
 #escondido1{
   top: -60vh;
   width: 100%;
@@ -359,10 +350,6 @@ header {
 #escondido1.show{
   transform: translateY(60vh);
   transition: ease-in-out 1s;
-=======
-#escondido.show{
-  opacity: 1;
->>>>>>> parent of a03ff2f (terminei projetos)
 }
 
 #tituloprojetoescondido {
@@ -385,6 +372,8 @@ header {
   font-size: 1.6vh;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
+  position: relative;
+  top: 5vh;
 }
 
 #organizartexto {
@@ -397,7 +386,6 @@ header {
   position: relative;
   width: 50%;
   right: 1vh;
-  top: 5vh;
 }
 
 #organizarinstrucoes {
@@ -412,6 +400,7 @@ header {
   font-family: 'Epilogue', sans-serif;
   font-size: 3.5vh;
   top: 5vh;
+  position: relative;
   color: white;
   transition: all ease-in-out 1s;
 }
@@ -425,15 +414,12 @@ header {
   width: 20vh;
   height: 7vh;
   font-size: 3.5vh;
-  top: 10vh;
+  top: 4vh;
   font-weight: bold;
   font-family: 'Epilogue','sans serif';
   cursor: pointer;
-<<<<<<< HEAD
   z-index: 30;
   transition: all ease-in-out 3s;
-=======
->>>>>>> parent of a03ff2f (terminei projetos)
 }
 
 #paragrafobaixeaqui{
@@ -441,7 +427,7 @@ header {
   font-size: 1.5vh;
   color: white;
   position: relative;
-  top: 10vh;
+  top: 4vh;
   left: 84%;
   transition: all ease-in-out 2s;
 }
@@ -577,14 +563,14 @@ iframe{
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 2vh;
-  color: transparent;
+  font-size: 1.5vh;
+  color: white;
   font-weight: bold;
   transition: ease-in-out 0.5s;
 }
 
 .btncarousel:hover{
-  color: white;
+  font-size: 3vh;
 }
 
 #buttoncarousel{
