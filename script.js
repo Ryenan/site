@@ -17,6 +17,7 @@ function apertarCor(itemnavegacao6){
 
 function mostrarDiv() {
     var escondido = document.getElementById('escondido1');
+    var escondido2pull = document.getElementById('escondido2')
     var sections1 = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
     var botaosubir = document.getElementById('imagembotaoup');
@@ -38,6 +39,51 @@ function mostrarDiv() {
     });
 }
 
+function mostrarDiv2() {
+    var escondido2 = document.getElementById('escondido2');
+    var sections2 = document.querySelectorAll('.section2');
+    var section3 = document.getElementById('section3');
+    var botaosubir2 = document.getElementById('imagembotaoup2');
+
+    escondido2.classList.toggle('show');
+    botaosubir2.classList.toggle('up');
+    section3.classList.toggle('pull');
+
+    if (escondido2.classList.contains('show')) {
+        setTimeout(function() {
+            escondido2.classList.add('zindex');
+        }, 1000);
+    } else {
+        escondido2.classList.remove('zindex');
+    }
+
+    sections2.forEach(function(section) {
+        section.classList.toggle('expanded');
+    });
+}
+
+function mostrarDiv3() {
+    var escondido3 = document.getElementById('escondido3');
+    var sections3 = document.querySelectorAll('.section3');
+    var section4 = document.getElementById('section4');
+    var botaosubir3 = document.getElementById('imagembotaoup3');
+
+    escondido3.classList.toggle('show');
+    botaosubir3.classList.toggle('up');
+    section4.classList.toggle('pull');
+
+    if (escondido3.classList.contains('show')) {
+        setTimeout(function() {
+            escondido3.classList.add('zindex');
+        }, 1000);
+    } else {
+        escondido3.classList.remove('zindex');
+    }
+
+    sections3.forEach(function(section) {
+        section.classList.toggle('expanded');
+    });
+}
 // CAROSSEL
 
 const list = document.querySelector(".list");

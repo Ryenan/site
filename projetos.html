@@ -45,6 +45,76 @@
             <div id="visual">
                 <h1 id="tituloprojeto">Gerenciador da empresa Sola-pé</h1>
                 <div id="linha2">
+                    <div id="buttoncarousel">        
+                        <button onclick="handleClick('previous')" class="btncarousel btnvoltar" type="button">></button>
+                        <button onclick="handleClick('next')" class="btncarousel btnpassar" type="button">></button>  
+                        </div>
+                            <div id="backgroundcarousel">
+                                    <section id="carousel">
+                                        <div class="slider">
+                                            <ul class="list">
+                                                <li class="item item1"><div class="conteudo"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/UIbCBMPU1dU?autoplay=1&mute=1&loop=1&playlist=UIbCBMPU1dU" frameborder="0" allow="autoplay; encrypted-media"></iframe></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/Telalogin.png" alt="Tela de login"></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/abalogistica.png" alt="Aba de logística"></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/abatarefas.png" alt="Aba de tarefas"></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/Aba de inventário.png" alt="Aba de inventário"></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/Cadastrachamados.png" alt="Aba para cadastrar chamados"></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/abaTI.png" alt="Aba Tecnologia da informação"></div></li>
+                                                <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/abaRH.png" alt="Aba de RH"></div></li>
+                                                <li class="item item5"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/Cadastrodefuncionários.png" alt="Aba de cadastrar funcionário"></div></li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </div>
+                        <div id="textosec1">
+                            <p id="paragrafoprojeto">O sistema é dividido em três setores, direcionando o usuário à tela correspondente após o login. Na aba de Logística, é possível gerenciar o estoque com tabelas editáveis. A aba de TI permite atendimento ágil de chamados de qualquer setor. Na aba de RH, pode-se gerenciar dados dos funcionários, incluindo login e informações financeiras. 
+                            </p>
+                            <p id="palavraschaves">
+                                Palavras chaves: Dashboard, Banco de dados, CRUD.
+                            </p>
+                            <p id="vermais">Ver mais</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="botaoexpandir" onclick="mostrarDiv()"><img id="imagembotaoup" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
+                </div>
+        </section>
+            <div class="escondido" id="escondido1">
+                    <div id="organizartexto">
+                        <div id="textosescondidosec1">
+                            <h1 id="tituloprojetoescondido">Mais informações</h1>
+                            <p id="paragrafo1" class="ptext paragrafoprojetoescondido1"> Este sistema é o resultado de um projeto inovador desenvolvido durante o curso Programador de Sistemas no Senac. Em colaboração com dois colegas, criamos uma empresa fictícia chamada "Sola-pé", especializada na fabricação de calçados. Nosso objetivo foi desenvolver um sistema de gerenciamento que integrasse todos os setores da empresa, facilitando a manipulação e consulta de dados de forma eficiente. O sistema foi projetado para oferecer uma visão holística e integrada dos principais setores da empresa, incluindo Logística, Recursos Humanos (RH), Tecnologia da Informação (TI) e Produção. </p>
+                            <p class="ptext paragrafoprojetoescondido1"> <b>Logística:</b> Este módulo oferece controle detalhado do estoque, incluindo a gestão de inventário e o encaminhamento dos produtos. Ele permite uma supervisão eficiente dos recursos disponíveis e das necessidades de produção.</p>
+                            <p class="ptext paragrafoprojetoescondido1"> <b>Recursos Humanos (RH):</b> Esta seção gerencia as informações dos funcionários, incluindo controle de acesso através de logins personalizados, além da gestão do fluxo de caixa da empresa, garantindo a saúde financeira e administrativa.</p>                                
+                            <p class="ptext paragrafoprojetoescondido1"> <b>Tecnologia da Informação (TI):</b> Responsável pelo suporte técnico, este módulo administra os chamados de assistência técnica, monitorando e resolvendo problemas relacionados à infraestrutura de TI, garantindo o bom funcionamento dos sistemas e a continuidade das operações.</p>                                
+                            <p class="ptext paragrafoprojetoescondido1"> <b>Produção:</b> Focado na operacionalização das tarefas, este módulo oferece uma interface detalhada que lista todas as informações relacionadas às atividades de produção, garantindo que cada tarefa seja realizada com precisão e dentro dos prazos estipulados.</p>          
+                        </div>
+                    <div id="instrucoes">
+                        <div id="organizarinstrucoes">
+                            <h1 id="tituloprojetoescondidocomousar">Como usar:</h1>
+                            <p id="paragrafo1" class="paragrafoprojetoescondidocomousar">
+                                Você terá de logar em alguma conta, aqui estão alguns usuários:<br><br>
+                                <b>Logística:</b> Ryênan <br><br>
+                                <b>Rh:</b> Ermeson <br><br>
+                                <b>T.I:</b> Eduardo <br><br>
+                                <b>Produção:</b> João <br><br>
+                                <i>obs: A senha de todos estes usuários é <b>"123"</b></i> <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <p id="paragrafobaixeaqui1">Clique para baixar</p>
+                    <button id="baixar1"><a class="linkbaixar" rel="noopener" target="_blank" href="https://www.mediafire.com/file/slifwl1j4q6x9fy/Dashboard_Solape.rar/file" class="link-navegacao">BAIXAR</a></button>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------------------------------------------------------->
+        <section class="section" id="section2">
+            <div class="section1bg">
+            <div id="visual">
+                <h1 id="tituloprojeto">exercitationem aspernatur sed! Eveniet animi f</h1>
+                <div id="linha2">
                 <div id="backgroundcarousel">
                         <section id="carousel">
                             <div class="slider">
@@ -63,7 +133,7 @@
                         <button onclick="handleClick('next')" class="btncarousel btnpassar" type="button">></button>  
                     </div>
                         <div id="textosec1">
-                            <p id="paragrafoprojeto">O sistema é dividido em três setores, direcionando o usuário à tela correspondente após o login. Na aba de Logística, é possível gerenciar o estoque com tabelas editáveis. A aba de TI permite atendimento ágil de chamados de qualquer setor. Na aba de RH, pode-se gerenciar dados dos funcionários, incluindo login e informações financeiras. 
+                            <p id="paragrafoprojeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis hic quidem soluta autem officia aperiam expedita, iste quis eaque accusamus impedit nulla qui natus modi voluptatem suscipit nesciunt veritatis? 
                             </p>
                             <p id="palavraschaves">
                                 Palavras chaves: Gerenciador, Banco de dados, CRUD.
@@ -73,10 +143,10 @@
                     </div>
                 </div>
                 <div>
-                    <button id="botaoexpandir" onclick="mostrarDiv()"><img id="imagembotaoup" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
+                    <button id="botaoexpandir" onclick="mostrarDiv2()"><img id="imagembotaoup2" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
                 </div>
         </section>
-            <div class="escondido" id="escondido1">
+            <div class="escondido" id="escondido2">
                     <div id="organizartexto">
                         <div id="textosescondidosec1">
                             <h1 id="tituloprojetoescondido">Mais informações</h1>
@@ -102,11 +172,11 @@
                 </div>
             </div>
         </section>
-        <!-------------------------------------------------------------------------------->
-        <section class="section" id="section2">
+        
+        <section class="section" id="section3">
             <div class="section1bg">
             <div id="visual">
-                <h1 id="tituloprojeto">Gerenciador da empresa Sola-pé</h1>
+                <h1 id="tituloprojeto">exercitationem aspernatur sed! Eveniet animi f</h1>
                 <div id="linha2">
                 <div id="backgroundcarousel">
                         <section id="carousel">
@@ -136,10 +206,10 @@
                     </div>
                 </div>
                 <div>
-                    <button id="botaoexpandir" onclick="mostrarDiv()"><img id="imagembotaoup2" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
+                    <button id="botaoexpandir" onclick="mostrarDiv3()"><img id="imagembotaoup3" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
                 </div>
         </section>
-            <div class="escondido" id="escondido2">
+            <div class="escondido" id="escondido3">
                     <div id="organizartexto">
                         <div id="textosescondidosec1">
                             <h1 id="tituloprojetoescondido">Mais informações</h1>
@@ -165,7 +235,6 @@
                 </div>
             </div>
         </section>
-
         </main>
         <script src="script.js"></script>
     </div>

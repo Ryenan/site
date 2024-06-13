@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 
+.ptext {
+  text-indent: 30px; /* Define o recuo de 30 pixels no início de cada parágrafo */
+}
+
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: -999;
 }
 
 body{
@@ -10,8 +18,10 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
+  box-sizing: border-box;
   height: 200vh;
   overflow-x: hidden; /* Adicionado para evitar overflow horizontal */
+  z-index: -999;
 }
 
 .bodybackground{
@@ -211,7 +221,6 @@ header {
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
-  height: 86%;
   transition: 0.6s ease-in-out; 
   box-sizing: border-box;
   z-index: 999;
@@ -231,9 +240,6 @@ header {
   background-color: #000000ae;
 }
 
-.section1.expanded{
-  margin-bottom: 10vh;
-}
 
 #visual {
   display: flex;
@@ -350,6 +356,7 @@ header {
 #escondido1.show{
   transform: translateY(60vh);
   transition: ease-in-out 1s;
+  margin-bottom: 34vh;
 }
 
 #tituloprojetoescondido {
@@ -368,12 +375,38 @@ header {
   transition: ease-in-out 1s;
 }
 
-#paragrafoprojetoescondido {
+#paragrafo1{
+  position: relative;
+  top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.paragrafoprojetoescondido {
   font-size: 1.6vh;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
   position: relative;
-  top: 5vh;
+  margin-bottom: 0.01vh;
+  text-align: justify;
+}
+
+.paragrafoprojetoescondido1 {
+  font-size: 1.4vh;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 400;
+  position: relative;
+  margin: 0.3vh;
+  text-align: justify;
+}
+
+.paragrafoprojetoescondidocomousar{
+  font-size: 1.4vh;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 400;
+  position: relative;
+  margin: 0.3vh;
+  text-align: justify;
+  top: -1.5vh;
 }
 
 #organizartexto {
@@ -408,18 +441,43 @@ header {
 #baixar{
   position: relative;
   left: 82.5%;
+  top: 4vh;
   border: 0.1vh white solid;
   background-color: transparent;
   color: white;
   width: 20vh;
   height: 7vh;
   font-size: 3.5vh;
-  top: 4vh;
   font-weight: bold;
   font-family: 'Epilogue','sans serif';
   cursor: pointer;
   z-index: 30;
   transition: all ease-in-out 3s;
+}
+
+#baixar1{
+  position: relative;
+  left: 82.5%;
+  margin-top: -15vh;
+  border: 0.1vh white solid;
+  background-color: transparent;
+  color: white;
+  width: 20vh;
+  height: 7vh;
+  font-size: 3.5vh;
+  font-weight: bold;
+  font-family: 'Epilogue','sans serif';
+  cursor: pointer;
+  z-index: 30;
+  transition: all ease-in-out 3s;
+}
+
+.linkbaixar{
+  font-size: 3.5vh;
+  font-weight: bold;
+  font-family: 'Epilogue','sans serif';
+  text-decoration: none;
+  color: white;
 }
 
 #paragrafobaixeaqui{
@@ -432,6 +490,17 @@ header {
   transition: all ease-in-out 2s;
 }
 
+#paragrafobaixeaqui1{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.5vh;
+  color: white;
+  position: relative;
+  top: -15vh;
+  left: 84%;
+  transition: all ease-in-out 2s;
+}
+/* --------------------------------------------------------- SECTION 2 -------------------------------------------------------------- */
+
 #section2{
   top: -60vh;
   transition: all ease-in-out 1s;
@@ -439,7 +508,8 @@ header {
 
 #section2.pull{
   transition: all ease-in-out 1s;
-  transform: translateY(60vh);
+  transform: translateY(25vh);
+  margin-bottom: 24.5vh;
 }
 
 #imagembotaoup2{
@@ -452,17 +522,69 @@ header {
   transform: rotate(180deg);
 }
 
+#escondido2{
+  top: -120vh;
+  width: 100%;
+  transition: ease-in-out 1s;
+  position: relative;
+}
+
+#escondido2.show{
+  margin-bottom: 34vh;
+  transform: translateY(60vh);
+  transition: ease-in-out 1s;
+}
+
+#section3{
+  top: -120vh;
+  transition: all ease-in-out 1s;
+}
+
+#section3.pull{
+  transition: all ease-in-out 1s;
+  transform: translateY(25vh);
+  margin-bottom: 24.5vh;
+}
+
+#imagembotaoup3{
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  width: 5vh;
+}
+
+#imagembotaoup3.up{
+  transform: rotate(180deg);
+}
+
+#escondido3{
+  top: -180vh;
+  width: 100%;
+  transition: ease-in-out 1s;
+  position: relative;
+}
+
+
+#escondido3.show{
+  transform: translateY(60vh);
+  transition: ease-in-out 1s;
+  margin-bottom: 59vh;
+}
+
+
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
 /* CAROUSEL */
 /* INICIO */
 
 #backgroundcarousel {
-  overflow-x: hidden;
+  top: 3vh;
+  overflow: hidden;
   position: relative;
   height: 100%;
   width: 90vh;
-  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-bottom: 0;
+  box-shadow: #8731b2 0px 0px 0px 2px inset, rgb(0, 0, 0) 10px -10px 0px -3px, #712995 10px -10px, rgb(0, 0, 0) 20px -20px 0px -3px, #4a1b62 20px -20px, rgb(0, 0, 0) 30px -30px 0px -3px, #3c1650 30px -30px, rgb(0, 0, 0) 40px -40px 0px -3px, #2e113d 40px -40px;
 }
 #backgroundcarousel::-webkit-scrollbar {
   display: none;
@@ -474,13 +596,15 @@ header {
 
 .list{
   width: 100%;
-  height: 100%;
+  height: 40vh;
   display: flex;
   gap: 1.16vh;
   margin: 0;
+  padding: 0;
   scrollbar-width: none;
   list-style: none;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -492,14 +616,16 @@ header {
 }
 
 .item{
+  object-position: center;
   flex-shrink: 0;
-  width: 105%;
+  width: 100%;
   height: 100%;
   scroll-snap-align: center;
   border-radius: 1.16vh;
   margin: 0;
   box-sizing: border-box;
   color: white;
+  border-radius: 1.16vh;
 }
 
 iframe{
@@ -526,15 +652,18 @@ iframe{
   display: flex;
   align-items: center;
   justify-content: center;;
-  height: 50vh;
+  height: 40vh;
   font-family: sans-serif;
   font-size: 4.67vh;
   font-weight: bold;
-  background-color: blue;
+  background-color: transparent;
 }
 
-.conteudo:hover{ /* revisar isso */
-  transform: (1.1);
+.conteudo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center; 
 }
 
 #carousel{
@@ -543,7 +672,6 @@ iframe{
   position: relative;
   padding: 0;
   box-sizing: border-box;
-  border-radius: 1.16vh;
   margin: 0;
   opacity: 1;
   transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
@@ -552,13 +680,11 @@ iframe{
   align-items: center;
 }
 
-
 .btncarousel{
   position: absolute;
   top: 75%;
   width: 15vh;
   height: 0.3vh;
-  left: 5vh;
   transform: translateY(-50%);
   background: transparent;
   border: none;
@@ -567,6 +693,9 @@ iframe{
   color: white;
   font-weight: bold;
   transition: ease-in-out 0.5s;
+  border-top-left-radius: 2vh;
+  border-bottom-left-radius: 2vh; 
+  z-index: 10;
 }
 
 .btncarousel:hover{
@@ -580,16 +709,17 @@ iframe{
 .btnvoltar{
   background: linear-gradient(to left, #000, transparent);
   transform: rotateY(180deg);
-  height: 50vh;
+  height: 5vh;
   width: 4vh;
+  top: 20vh;
 }
 
 .btnpassar{
   background: linear-gradient(to left, #000, transparent);
-  left: 76vh;
-  height: 50vh;
+  left: 71vh;
+  height: 5vh;
   width: 4vh;
-  top: 25vh;
+  top: 22.6vh;
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
