@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
         obrigado.classList.add('abrir')
 
         obrigado.addEventListener('click', (e) => {
-            if(e.target.id == "fecharObrigado" || e.target.id == 'janelacontato')
+            if(e.target.id == "fecharcon" || e.target.id == 'janelacontato')
                 obrigado.classList.remove('abrir')
         })
     }
