@@ -42,9 +42,9 @@ a{
 header {
     font-family: 'Epilogue', 'sans-serif';
     overflow: hidden; 
-}
-
-.barra-navegacao {
+  }
+  
+  .barra-navegacao {
     position: fixed;
     z-index: 1000; 
     display: flex;
@@ -55,16 +55,18 @@ header {
     width: 100%;
     overflow: hidden; 
     height: 10vh;
-}
-
-.barra-navegacao a{
+  }
+  
+  .barra-navegacao .animacao{    
     color: white;
     text-decoration: none;
     position: relative;
+    font-size: 2.2vh;
+    font-family: 'Epilogue', 'sans-serif';
     transition: color 0.3s ease;
-}
-
-.barra-navegacao a::after{
+  }
+  
+  .barra-navegacao .animacao::after{
     content: " ";
     width: 0%;
     height: 0.29vh;
@@ -74,22 +76,22 @@ header {
     bottom: -1.45vh;
     display: flex;
     transition: width 0.3s ease-in-out;
-}
-
-.barra-navegacao a:hover::after{
+  }
+  
+  .barra-navegacao .animacao:hover::after{
     width: 60%;
-}
-
-.barra-navegacao a:active, .barra-navegacao a:focus {
+  }
+  
+  .barra-navegacao .animacao:active, .barra-navegacao .animacao:focus {
     color: #808080; 
     outline: none;
-}
-
-.barra-navegacao :not(a:active){
+  }
+  
+  .barra-navegacao :not(.animacao:active){
     color: white;
-}
-
-#botaologo {
+  }
+  
+  #botaologo {
     background: none;
     border: none;
     font-family: 'Epilogue', 'sans-serif';
@@ -97,73 +99,71 @@ header {
     font-size: 2.2vh;
     font-weight: bold;
     left: 5%;
-}
-
-#botaologo.tremor{
+  }
+  
+  #botaologo.tremor{
     animation: tremor 1s;
-}
-
-@keyframes tremor{
+  }
+  
+  @keyframes tremor{
     0% { transform: rotate(0deg); }
     25% { transform: rotate(5deg); }
     50% { transform: rotate(0eg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-}
+  }
+    
   
-
-.lista-navegacao {
+  .lista-navegacao {
     display: flex;
     align-items: center;
     position: relative;
     right: 2%;
-}
-
-.item-navegacao {
-    cursor: pointer;
+  }
+  
+  .item-navegacao {
     margin: 0 2.19vh;
     transition: transform 0.3s ease-in-out;
-}
-
-.item-navegacao:hover{
+    cursor: pointer;
+  }
+  
+  .item-navegacao:hover{
     transform: scale(1.1);
-}
-
-
-.link-navegacao {
+  }
+  
+  .link-navegacao {
     text-decoration: none;
     font-size: 2.2vh;
     color: white;
     font-weight: 400;
     transition: transform 0.3s ease-in-out;
     position: relative;
-}
-
-.link-navegacao:hover{
+  }
+  
+  .link-navegacao:hover{
     transform: scale(1.1);
-}
-
-.lista-lista-navegacao {
+  }
+  
+  .lista-lista-navegacao {
     display: flex;
     list-style: none;
     justify-content: center;
-}
-
-.menu-icone {
+  }
+  
+  .menu-icone {
     background: transparent;
     border: none;
     cursor: pointer;
-}
-
-#baixarCV{
+  }
+  
+  #baixarCV{
     background-color: transparent;
-    color: white;
     border-color: #190029;
     border: solid;
     border-width: 0.29vh;
     font-size: 1.9vh;
     font-weight: 1000;
-    color: rgb(167, 0, 167);
+    color: #a700a7;
     height: 5.5vh;
     cursor: pointer;
     position: relative;
@@ -172,51 +172,62 @@ header {
     padding: 0;
     margin: 0;
     right: 5%;
+    display: inline-block;
+    overflow: hidden;
     transition: transform 0.5s ease;
-}
-
-#baixarCV.up{
+  }
+  
+  #baixarCV a{
+    padding-top: 5%;
+    color: #a700a7;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; 
+    height: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  #baixarCV.up{
     transform: scale(1.1);
-}
-
-.menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
+  }
+  
+  .menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
     display: none;
-}
-
-@media screen and (max-width: 730px){
+  }
+  
+  @media screen and (max-width: 730px){
     .lista-navegacao{
-        display: none;
+      display: none;
     }
     #baixarCV{
-        display: none;
+      display: none;
     }
     .barra-navegacao{
-        padding: 0.15vh 0.4vh;
+      padding: 0.15vh 0.4vh;
     }
     .menu-mobileicone{
-        display: block;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
     }
     .menumobile ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 0.1vh;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 0.1vh;
     }
     .menumobile .item-navegacao{
-        display: block;
-        padding: 0.1vh 0.2vh;
+      display: block;
+      padding: 0.1vh 0.2vh;
     }    
-    .menumobile .botaocurriculo-mobile button{
-        width: 100%;
+      .menumobile .botaocurriculo-mobile button{
+      width: 100%;
     }
-
     .open{
-        display: block;
+     display: block;
     }
-}
+  }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -256,7 +267,7 @@ header {
 .euimagem {
     position: relative;
     top: 15vh;
-    width: 80vh;
+    width: 61vh;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
 }
 
@@ -538,11 +549,41 @@ header {
     display: none;
 }
 
+.cliquecarousel{
+    position: absolute;
+    display: flex;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    background-color: #000000b6;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    font-size: 15vh;
+    cursor: pointer;
+    top: 0vh;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    left: 0vh;
+}
+
+.cliquecarousel a{
+    color: white;
+}
+
+.cliquecarousel:hover{
+    opacity: 1;
+}
+
 .item{
     flex-shrink: 0;
     width: 80%;
     height: 75vh;
-    background-color: #FFF;
+    background-color: transparent;
     scroll-snap-align: center;
     border-radius: 1.16vh;
     margin: 0;
@@ -572,9 +613,12 @@ header {
     font-weight: bold;
 }
 
-.conteudo:hover{ /* revisar isso */
-    transform: (1.1);
-}
+.conteudo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+  }
 
 #carousel{
     font-family: 'Epilogue', sans-serif;
@@ -583,7 +627,6 @@ header {
     background: linear-gradient(to bottom, #202225, #111213); /* Adicionando um background ao carrossel */
     padding: 0;
     box-sizing: border-box;
-    border-radius: 1.16vh;
     margin: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
@@ -597,24 +640,45 @@ header {
   
 .btncarousel{
     position: absolute;
-    top: 50%;
+    top: 75%;
     width: 15vh;
     height: 0.3vh;
     transform: translateY(-50%);
     background: transparent;
     border: none;
     cursor: pointer;
-    font-size: 2vh;
-}
+    font-size: 1.5vh;
+    color: white;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    border-top-left-radius: 2vh;
+    border-bottom-left-radius: 2vh; 
+    z-index: 10;
+  }
   
-.btnvoltar{
-    left: 0.15vh;
-    transform: rotate(180deg);
-}
+  .btncarousel:hover{
+    font-size: 3vh;
+  }
   
-.btnpassar{
-    right: 0.15vh;
-}
+  #buttoncarousel{
+    position: absolute;
+  }
+  
+  .btnvoltar{
+    background: linear-gradient(to left, #000, transparent);
+    transform: rotateY(180deg);
+    height: 75vh;
+    width: 4vh;
+    top: 0vh;
+  }
+  
+  .btnpassar{
+    background: linear-gradient(to left, #000, transparent);
+    left: 189vh;
+    height: 75vh;
+    width: 4vh;
+    top: 37.6vh;
+  }
   
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 

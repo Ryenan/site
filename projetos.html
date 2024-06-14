@@ -13,11 +13,11 @@
             <button class="botao-logo" id="botaologo"><p>Ryênan Aragão Rodrigues</p></button>
             <div class="lista-navegacao">
                 <ul class="lista-lista-navegacao">
-                    <li class="item-navegacao" id="inicionavegacao"><a href="https://ryenan.github.io/Site/" rel="noopener" class="link-navegacao">Início</a></li>
-                    <li class="item-navegacao"><a href="projetos.html" rel="noopener" class="link-navegacao">Projetos</a></li>
-                    <li class="item-navegacao"><a href="certificados.html" rel="noopener" class="link-navegacao">Certificados</a></li>
-                    <li class="item-navegacao"><a onclick="abrirContato()" rel="noopener" class="link-navegacao">Contato</a></li>
-                    <li class="item-navegacao"><a href="sobremim.html" rel="noopener" class="link-navegacao">Sobre mim</a></li>
+                    <li class="item-navegacao" id="inicionavegacao"><a class="animacao" href="https://ryenan.github.io/Site/" rel="noopener" class="link-navegacao">Início</a></li>
+                    <li class="item-navegacao"><a class="animacao" href="projetos.html" rel="noopener" class="link-navegacao">Projetos</a></li>
+                    <li class="item-navegacao"><a class="animacao" href="certificados.html" rel="noopener" class="link-navegacao">Certificados</a></li>
+                    <li class="item-navegacao"><a class="animacao" onclick="abrirContato()" rel="noopener" class="link-navegacao">Contato</a></li>
+                    <li class="item-navegacao"><a class="animacao" href="sobremim.html" rel="noopener" class="link-navegacao">Sobre mim</a></li>
                 </ul>
             </div>
             <button class="botaocurriculo" id="baixarCV"><a href="imgs/Currículo - Ryênan.pdf" rel="noopener" target="_blank">Baixar currículo</a></button>
@@ -44,13 +44,13 @@
             <div class="section1bg">
             <div id="visual">
                 <h1 id="tituloprojeto">Gerenciador da empresa Sola-pé</h1>
-                <div id="linha2">
+                <div class="linha2">
                     <div id="buttoncarousel">        
-                        <button onclick="handleClick('previous')" class="btncarousel btnvoltar" type="button">></button>
-                        <button onclick="handleClick('next')" class="btncarousel btnpassar" type="button">></button>  
+                        <button onclick="handleClick('previous', 'carousel1')" class="btncarousel btnvoltar" type="button">></button>
+                        <button onclick="handleClick('next', 'carousel1')" class="btncarousel btnpassar" type="button">></button>  
                         </div>
-                            <div id="backgroundcarousel">
-                                    <section id="carousel">
+                            <div id="backgroundcarousel" class="backgroundcarousel carousel1">
+                                    <section id="carousel1">
                                         <div class="slider">
                                             <ul class="list">
                                                 <li class="item item1"><div class="conteudo"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/UIbCBMPU1dU?autoplay=1&mute=1&loop=1&playlist=UIbCBMPU1dU" frameborder="0" allow="autoplay; encrypted-media"></iframe></div></li>
@@ -64,21 +64,20 @@
                                                 <li class="item item5"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/Solape/Cadastrodefuncionários.png" alt="Aba de cadastrar funcionário"></div></li>
                                             </ul>
                                         </div>
-                                    </section>
+                                        </section>
                                 </div>
-                        <div id="textosec1">
-                            <p id="paragrafoprojeto">O sistema é dividido em três setores, direcionando o usuário à tela correspondente após o login. Na aba de Logística, é possível gerenciar o estoque com tabelas editáveis. A aba de TI permite atendimento ágil de chamados de qualquer setor. Na aba de RH, pode-se gerenciar dados dos funcionários, incluindo login e informações financeiras. 
-                            </p>
-                            <p id="palavraschaves">
-                                Palavras chaves: Dashboard, Banco de dados, CRUD.
-                            </p>
-                            <p id="vermais">Ver mais</p>
+                                <div id="textosec1">
+                                    <p id="paragrafoprojeto">O sistema é dividido em três setores, direcionando o usuário à tela correspondente após o login. Na aba de Logística, é possível gerenciar o estoque com tabelas editáveis. A aba de TI permite atendimento ágil de chamados de qualquer setor. Na aba de RH, pode-se gerenciar dados dos funcionários, incluindo login e informações financeiras. 
+                                    </p>
+                                    <p id="palavraschaves">
+                                        Palavras chaves: Dashboard, Banco de dados, CRUD.
+                                    </p>
+                                    <p id="vermais">Ver mais</p>
+                                </div>
                         </div>
                     </div>
                 </div>
-                <div>
                     <button id="botaoexpandir" onclick="mostrarDiv()"><img id="imagembotaoup" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
-                </div>
         </section>
             <div class="escondido" id="escondido1">
                     <div id="organizartexto">
@@ -112,40 +111,41 @@
         <!-------------------------------------------------------------------------------->
         <section class="section" id="section2">
             <div class="section1bg">
-            <div id="visual">
-                <h1 id="tituloprojeto">exercitationem aspernatur sed! Eveniet animi f</h1>
-                <div id="linha2">
-                <div id="backgroundcarousel">
-                        <section id="carousel">
-                            <div class="slider">
-                                <ul class="list">
-                                    <li class="item item1"><div class="conteudo"><iframe width="100%" height="100%"src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1&playlist=tgbNymZ7vqY&"></iframe></div></li>
-                                    <li class="item"><div class="conteudo">Projeto 2</div></li>
-                                    <li class="item"><div class="conteudo">Projeto 3</div></li>
-                                    <li class="item"><div class="conteudo">Projeto 4</div></li>
-                                    <li class="item item5"><div class="conteudo">Projeto 5</div></li>
-                                </ul>
-                            </div>
-                        </section>
-                    </div>
+                <div id="visual">
+                    <h1 id="tituloprojeto">Projeto - Biblioteca Senac Sobral (Power Bi)</h1>
+                    <div class="linha2">
                     <div id="buttoncarousel">        
-                        <button onclick="handleClick('previous')" class="btncarousel btnvoltar" type="button">></button>
-                        <button onclick="handleClick('next')" class="btncarousel btnpassar" type="button">></button>  
+                        <button onclick="handleClick('previous', 'carousel2')" class="btncarousel btnvoltar" type="button">></button>
+                        <button onclick="handleClick('next', 'carousel2')" class="btncarousel btnpassar" type="button">></button>  
                     </div>
-                        <div id="textosec1">
-                            <p id="paragrafoprojeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis hic quidem soluta autem officia aperiam expedita, iste quis eaque accusamus impedit nulla qui natus modi voluptatem suscipit nesciunt veritatis? 
-                            </p>
-                            <p id="palavraschaves">
-                                Palavras chaves: Gerenciador, Banco de dados, CRUD.
-                            </p>
-                            <p id="vermais">Ver mais</p>
+                            <div id="backgroundcarousel2 carousel2" class="backgroundcarousel">
+                                <section id="carousel2">
+                                    <div class="slider">
+                                        <ul class="list">
+                                            <li class="item item1"><div class="conteudo"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/UIbCBMPU1dU?autoplay=1&mute=1&loop=1&playlist=UIbCBMPU1dU" frameborder="0" allow="autoplay; encrypted-media"></iframe></div></li>
+                                            <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Tela Inicial.png" alt="Aba de inventário"></div></li>
+                                            <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Inscrições.png" alt="Aba de tarefas"></div></li>
+                                            <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Circulação.png" alt="Tela de login"></div></li>
+                                            <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Empréstimos.png" alt="Aba de logística"></div></li>
+                                            <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Vizualizações.png" alt="Aba para cadastrar chamados"></div></li>
+                                            <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Geral.png" alt="Aba Tecnologia da informação"></div></li>
+                                            <li class="item item5"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Resumo.png" alt="Aba de cadastrar funcionário"></div></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                            <div id="textosec1">
+                                <p id="paragrafoprojeto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis hic quidem soluta autem officia aperiam expedita, iste quis eaque accusamus impedit nulla qui natus modi voluptatem suscipit nesciunt veritatis? 
+                                </p>
+                                <p id="palavraschaves">
+                                    Palavras chaves: Gerenciador, Banco de dados, CRUD.
+                                </p>
+                                <p id="vermais">Ver mais</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
                     <button id="botaoexpandir" onclick="mostrarDiv2()"><img id="imagembotaoup2" src="https://img.icons8.com/?size=100&id=vWfZDy77AbIq&format=png&color=FFFFFF" alt="Expandir Div"></button>
-                </div>
-        </section>
+            </section>
             <div class="escondido" id="escondido2">
                     <div id="organizartexto">
                         <div id="textosescondidosec1">
@@ -177,9 +177,13 @@
             <div class="section1bg">
             <div id="visual">
                 <h1 id="tituloprojeto">exercitationem aspernatur sed! Eveniet animi f</h1>
-                <div id="linha2">
-                <div id="backgroundcarousel">
-                        <section id="carousel">
+                    <div id="buttoncarousel">        
+                        <button onclick="handleClick('previous', 'carousel3')" class="btncarousel btnvoltar" id="botaocarousel3" type="button">></button>
+                        <button onclick="handleClick('next', 'carousel3')" class="btncarousel btnpassar" id="botaocarousel3-2" type="button">></button>  
+                    </div>
+                <div class="linha2">
+                    <div class="backgroundcarousel" id="backgroundcarousel3 carousel3">
+                        <section id="carousel3">
                             <div class="slider">
                                 <ul class="list">
                                     <li class="item item1"><div class="conteudo"><iframe width="100%" height="100%"src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1&playlist=tgbNymZ7vqY&"></iframe></div></li>
@@ -188,13 +192,8 @@
                                     <li class="item"><div class="conteudo">Projeto 4</div></li>
                                     <li class="item item5"><div class="conteudo">Projeto 5</div></li>
                                 </ul>
-                            </div>
                         </section>
-                    </div>
-                    <div id="buttoncarousel">        
-                        <button onclick="handleClick('previous')" class="btncarousel btnvoltar" type="button">></button>
-                        <button onclick="handleClick('next')" class="btncarousel btnpassar" type="button">></button>  
-                    </div>
+                        </div>
                         <div id="textosec1">
                             <p id="paragrafoprojeto">O sistema é dividido em três setores, direcionando o usuário à tela correspondente após o login. Na aba de Logística, é possível gerenciar o estoque com tabelas editáveis. A aba de TI permite atendimento ágil de chamados de qualquer setor. Na aba de RH, pode-se gerenciar dados dos funcionários, incluindo login e informações financeiras. 
                             </p>
@@ -203,6 +202,7 @@
                             </p>
                             <p id="vermais">Ver mais</p>
                         </div>
+                    </div>
                     </div>
                 </div>
                 <div>

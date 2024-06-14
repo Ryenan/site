@@ -14,14 +14,14 @@
             <button class="botao-logo" id="botaologo"><p>Ryênan Aragão Rodrigues</p></button>
             <div class="lista-navegacao">
                 <ul class="lista-lista-navegacao">
-                    <li class="item-navegacao" id="inicionavegacao"><a href="https://ryenan.github.io/Site/" rel="noopener" class="link-navegacao">Início</a></li>
-                    <li class="item-navegacao"><a href="projetos.html" rel="noopener" class="link-navegacao">Projetos</a></li>
-                    <li class="item-navegacao"><a href="certificados.html" rel="noopener" class="link-navegacao">Certificados</a></li>
-                    <li class="item-navegacao"><a onclick="abrirContato()" rel="noopener" class="link-navegacao">Contato</a></li>
-                    <li class="item-navegacao"><a href="sobremim.html" rel="noopener" class="link-navegacao">Sobre mim</a></li>
+                    <li class="item-navegacao" id="inicionavegacao"><a class="animacao" href="https://ryenan.github.io/Site/" rel="noopener" class="link-navegacao">Início</a></li>
+                    <li class="item-navegacao"><a class="animacao" href="projetos.html" rel="noopener" class="link-navegacao">Projetos</a></li>
+                    <li class="item-navegacao"><a class="animacao" href="certificados.html" rel="noopener" class="link-navegacao">Certificados</a></li>
+                    <li class="item-navegacao"><a class="animacao" onclick="abrirContato()" rel="noopener" class="link-navegacao">Contato</a></li>
+                    <li class="item-navegacao"><a class="animacao" href="sobremim.html" rel="noopener" class="link-navegacao">Sobre mim</a></li>
                 </ul>
             </div>
-            <button class="botaocurriculo" id="baixarCV" >Baixar currículo</button>
+            <button class="botaocurriculo" id="baixarCV"><a href="imgs/Currículo - Ryênan.pdf" rel="noopener" target="_blank">Baixar currículo</a></button>
         </nav>    
     <div class="menumobile">
         <ul class="lista-navegacao-mobile">
@@ -32,7 +32,7 @@
             <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Sobre mim</a></li>
         </ul>
     </div>
-    <button id="baixarCV-mobile">Baixar currículo</button>
+    <button id="baixarCV-mobile"><a href="imgs/Currículo - Ryênan.pdf" rel="noopener" target="_blank">Baixar currículo</a></button>
             </div>
                 </div>
             </nav>
@@ -90,10 +90,8 @@
             <section id="carousel">
                 <div class="slider">
                     <ul class="list">
-                        <li class="item item1"><div class="conteudo">Projeto 1</div></li>
-                        <li class="item"><div class="conteudo">Projeto 2</div></li>
-                        <li class="item"><div class="conteudo">Projeto 3</div></li>
-                        <li class="item"><div class="conteudo">Projeto 4</div></li>
+                        <li class="item item1"><div class="conteudo"><div class="cliquecarousel"><a href="projetos.html" rel=”noopener”>Clique para ver mais projetos</a></div><img src="imgs/Projetos/Solape/Telalogin.png" alt="Projeto Sola-Pé"></div></li>
+                        <li class="item"><div class="conteudo"><img src="imgs/Projetos/PowerBi(Biblioteca)/Tela Inicial.png" alt="Projeto PowerBi(Biblioteca)"></div></li>
                         <li class="item item5"><div class="conteudo">Projeto 5</div></li>
                     </ul>
                     <button onclick="handleClick('previous')" class="btncarousel btnvoltar" type="button">➜</button>

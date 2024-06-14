@@ -29,7 +29,6 @@ body::-webkit-scrollbar{
 
 /* HEADER */
 /* INICIO */
-
 header {
   font-family: 'Epilogue', 'sans-serif';
   overflow: hidden; 
@@ -48,14 +47,16 @@ header {
   height: 10vh;
 }
 
-.barra-navegacao a{
+.barra-navegacao .animacao{    
   color: white;
   text-decoration: none;
   position: relative;
+  font-size: 2.2vh;
+  font-family: 'Epilogue', 'sans-serif';
   transition: color 0.3s ease;
 }
 
-.barra-navegacao a::after{
+.barra-navegacao .animacao::after{
   content: " ";
   width: 0%;
   height: 0.29vh;
@@ -67,16 +68,16 @@ header {
   transition: width 0.3s ease-in-out;
 }
 
-.barra-navegacao a:hover::after{
+.barra-navegacao .animacao:hover::after{
   width: 60%;
 }
 
-.barra-navegacao a:active, .barra-navegacao a:focus {
+.barra-navegacao .animacao:active, .barra-navegacao .animacao:focus {
   color: #808080; 
   outline: none;
 }
 
-.barra-navegacao :not(a:active){
+.barra-navegacao :not(.animacao:active){
   color: white;
 }
 
@@ -101,7 +102,7 @@ header {
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
-
+  
 
 .lista-navegacao {
   display: flex;
@@ -119,7 +120,6 @@ header {
 .item-navegacao:hover{
   transform: scale(1.1);
 }
-
 
 .link-navegacao {
   text-decoration: none;
@@ -148,13 +148,12 @@ header {
 
 #baixarCV{
   background-color: transparent;
-  color: white;
   border-color: #190029;
   border: solid;
   border-width: 0.29vh;
   font-size: 1.9vh;
   font-weight: 1000;
-  color: rgb(167, 0, 167);
+  color: #a700a7;
   height: 5.5vh;
   cursor: pointer;
   position: relative;
@@ -163,7 +162,19 @@ header {
   padding: 0;
   margin: 0;
   right: 5%;
+  display: inline-block;
+  overflow: hidden;
   transition: transform 0.5s ease;
+}
+
+#baixarCV a{
+  padding-top: 5%;
+  color: #a700a7;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%; 
+  height: 100%; 
+  box-sizing: border-box; 
 }
 
 #baixarCV.up{
@@ -176,36 +187,35 @@ header {
 
 @media screen and (max-width: 730px){
   .lista-navegacao{
-      display: none;
+    display: none;
   }
   #baixarCV{
-      display: none;
+    display: none;
   }
   .barra-navegacao{
-      padding: 0.15vh 0.4vh;
+    padding: 0.15vh 0.4vh;
   }
   .menu-mobileicone{
-      display: block;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
   .menumobile ul{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 0.1vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0.1vh;
   }
   .menumobile .item-navegacao{
-      display: block;
-      padding: 0.1vh 0.2vh;
+    display: block;
+    padding: 0.1vh 0.2vh;
   }    
-  .menumobile .botaocurriculo-mobile button{
-      width: 100%;
+    .menumobile .botaocurriculo-mobile button{
+    width: 100%;
   }
-
   .open{
-      display: block;
+   display: block;
   }
 }
 

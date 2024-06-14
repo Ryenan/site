@@ -7,34 +7,72 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="barra-navegacao">
-            <button class="botao-logo" id="botaologo"><p>Ryênan Aragão Rodrigues</p></button>
-            <div class="lista-navegacao">
-                <ul class="lista-lista-navegacao">
-                    <li class="item-navegacao" id="inicionavegacao"><a href="https://ryenan.github.io/Portifolio-Ryenan/" rel="noopener" class="link-navegacao">Início</a></li>
-                    <li class="item-navegacao"><a href="projetos.html" rel="noopener" class="link-navegacao">Projetos</a></li>
-                    <li class="item-navegacao"><a href="certificados.html" rel="noopener" class="link-navegacao">Certificados</a></li>
-                    <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Contato</a></li>
-                    <li class="item-navegacao"><a href="sobremim.html" rel="noopener" class="link-navegacao">Sobre mim</a></li>
-                </ul>
-            </div>
-            <button class="botaocurriculo" id="baixarCV" >Baixar currículo</button>
-        </nav>    
-    <div class="menumobile">
-        <ul class="lista-navegacao-mobile">
-            <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Início</a></li>
-            <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Projetos</a></li>
-            <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Certificados</a></li>
-            <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Contato</a></li>
-            <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Sobre mim</a></li>
-        </ul>
-    </div>
-    <button id="baixarCV-mobile">Baixar currículo</button>
-            </div>
+    <!-------------------------------------------------- MENU ------------------------------------------------------>
+    <main>
+        <header>
+            <nav class="barra-navegacao">
+                <button class="botao-logo" id="botaologo"><p>Ryênan Aragão Rodrigues</p></button>
+                <div class="lista-navegacao">
+                    <ul class="lista-lista-navegacao">
+                        <li class="item-navegacao" id="inicionavegacao"><a class="animacao" href="https://ryenan.github.io/Site/" rel="noopener" class="link-navegacao">Início</a></li>
+                        <li class="item-navegacao"><a class="animacao" href="projetos.html" rel="noopener" class="link-navegacao">Projetos</a></li>
+                        <li class="item-navegacao"><a class="animacao" href="certificados.html" rel="noopener" class="link-navegacao">Certificados</a></li>
+                        <li class="item-navegacao"><a class="animacao" onclick="abrirContato()" rel="noopener" class="link-navegacao">Contato</a></li>
+                        <li class="item-navegacao"><a class="animacao" href="sobremim.html" rel="noopener" class="link-navegacao">Sobre mim</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+                <button class="botaocurriculo" id="baixarCV"><a href="imgs/Currículo - Ryênan.pdf" rel="noopener" target="_blank">Baixar currículo</a></button>
+            </nav>    
+        <div class="menumobile">
+            <ul class="lista-navegacao-mobile">
+                <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Início</a></li>
+                <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Projetos</a></li>
+                <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Certificados</a></li>
+                <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Contato</a></li>
+                <li class="item-navegacao"><a href="" rel="noopener" class="link-navegacao">Sobre mim</a></li>
+            </ul>
+        </div>
+        <button id="baixarCV-mobile"><a href="imgs/Currículo - Ryênan.pdf" rel="noopener" target="_blank">Baixar currículo</a></button>
+                </div>
+                    </div>
+                </nav>
+            </header>    
+        </main>
+    <div onclick="abrirContato()" class="janelacontato" id="janelacontato">
+        <div class="jancontato">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Me envie um email</h1>
+            <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome:</label>
+                <input id="nameform" type="text" name="name" placeholder="Digite seu nome" required>
+                <label>Email:</label>
+                <input id="emailform" type="text" name="email" placeholder="Digite seu email" required>
+                <label>Mensagem:</label>
+                <textarea name="message" id="textform" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <div id="baixoform">
+                    <div id="redessociaisemail">
+                        <p>Ou me contate por:</p>
+                        <div id="iconsredessociaisemail">
+                            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap">
+                            <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="Linkedin">
+                            <img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord">
+                        </div>
+                    </div>
+                    <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
+                </div>
+                <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
+                <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Site/">
+
+                <div onclick="obrigadoContato()" id="obrigadoContato">
+                    <button class="fechar" id="fecharcon">X</button>
+                    <h1>Email enviado!</h1>
+                    <p>Muito obrigado pelo o contato!</p>
+                    <img id="iconeobrigadocontato" src="https://img.icons8.com/?size=100&id=71474&format=png&color=000000" alt="Icone de email">
+                </div>
+            </form>
+        </div>
+    </div>
+
 <body>
     <script src="script.js"></script>    
 </body>

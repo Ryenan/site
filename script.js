@@ -90,11 +90,23 @@ const list = document.querySelector(".list");
 const item = document.querySelector(".item");
 const itemWidth = item.offsetWidth + 8; // Width + gap
 
-function handleClick(direction) {
-    if (direction === "previous") {
-        list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+function handleClick(direction, carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const list = carousel.querySelector('.list');
+    const items = list.querySelectorAll('.item');
+    const itemWidth = items[0].offsetWidth;
+    const currentScroll = list.scrollLeft;
+
+    if (direction === 'next') {
+        list.scrollTo({
+            left: currentScroll + itemWidth,
+            behavior: 'smooth'
+        });
     } else {
-        list.scrollBy({ left: itemWidth, behavior: "smooth" });
+        list.scrollTo({
+            left: currentScroll - itemWidth,
+            behavior: 'smooth'
+        });
     }
 }
 
