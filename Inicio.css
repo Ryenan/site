@@ -386,7 +386,6 @@ header {
     transform: scale(1.1);
 }
 
-
 #habil.show {
     opacity: 1;
     transform: translateY(0);

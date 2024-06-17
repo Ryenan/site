@@ -236,10 +236,13 @@ header {
   transition: 0.6s ease-in-out; 
   box-sizing: border-box;
   z-index: 999;
+  padding: 0;
+  margin: 0;
 }
 
 #section1{
   margin-top: 5.5%;
+  height: 86vh;
 }
 
 .section1bg{
@@ -250,6 +253,8 @@ header {
   width: 100%;
   height: 86vh;
   background-color: #000000ae;
+  padding: 0;
+  margin: 0;
 }
 
 .linha2{
@@ -367,6 +372,7 @@ header {
   transition: ease-in-out 1s;
 }
 
+
 #escondido1.show{
   transform: translateY(60vh);
   transition: ease-in-out 1s;
@@ -390,6 +396,12 @@ header {
 }
 
 #paragrafo1{
+  position: relative;
+  top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#paragrafo2{
   position: relative;
   top: 5vh;
   padding-bottom: 5vh;
@@ -526,12 +538,22 @@ header {
   margin-bottom: 24.5vh;
 }
 
+#botaoexpandirsec2{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  width: 5vh;
+  height: 5vh;
+}
+
 #imagembotaoup2{
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
-  width: 50vh;
-  left: 15vw;
-  top: 25vh;
+  position: absolute;
+  width: 5vh;
+  left: 30.6vw;
+  top: -3vh;
 }
 
 #imagembotaoup2.up{
@@ -552,8 +574,11 @@ header {
 }
 
 #section3{
+  position: relative;
   top: -120vh;
+  height: 86vh;
   transition: all ease-in-out 1s;
+  margin: 0;
 }
 
 #section3.pull{
@@ -566,6 +591,8 @@ header {
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
   width: 5vh;
+  top: -5.5vh;
+  position: relative;
 }
 
 #imagembotaoup3.up{
@@ -582,7 +609,7 @@ header {
 #escondido3.show{
   transform: translateY(60vh);
   transition: ease-in-out 1s;
-  margin-bottom: 59vh;
+  margin-bottom: 34vh;
 }
 
 #botaocarousel3{
@@ -594,6 +621,53 @@ header {
   position: relative;
   top: 47.5vh;
   left: 43vw;
+}
+
+
+#section4{
+  top: -180vh;
+  transition: all ease-in-out 1s;
+}
+
+#section4.pull{
+  transition: all ease-in-out 1s;
+  transform: translateY(25vh);
+  margin-bottom: 24.5vh;
+}
+
+#botaoexpandirsec4{
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  width: 5vh;
+  height: 5vh;
+}
+
+#imagembotaoup4{
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  position: absolute;
+  width: 5vh;
+  left: 30.6vw;
+  top: -10vh;
+}
+
+#imagembotaoup4.up{
+  transform: rotate(180deg);
+}
+
+#escondido4{
+  top: -240vh;
+  width: 100%;
+  transition: ease-in-out 1s;
+  position: relative;
+}
+
+#escondido4.show{
+  margin-bottom: 34vh;
+  transform: translateY(60vh);
+  transition: ease-in-out 1s;
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/

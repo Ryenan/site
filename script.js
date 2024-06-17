@@ -84,6 +84,30 @@ function mostrarDiv3() {
         section.classList.toggle('expanded');
     });
 }
+
+function mostrarDiv4() {
+    var escondido4 = document.getElementById('escondido4');
+    var sections4 = document.querySelectorAll('.section4');
+    var section5 = document.getElementById('section5');
+    var botaosubir4 = document.getElementById('imagembotaoup4');
+
+    escondido4.classList.toggle('show');
+    botaosubir4.classList.toggle('up');
+    section5.classList.toggle('pull');
+
+    if (escondido4.classList.contains('show')) {
+        setTimeout(function() {
+            escondido3.classList.add('zindex');
+        }, 1000);
+    } else {
+        escondido4.classList.remove('zindex');
+    }
+
+    sections4.forEach(function(section) {
+        section.classList.toggle('expanded');
+    });
+}
+
 // CAROSSEL
 
 const list = document.querySelector(".list");
@@ -213,6 +237,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+
 
 
 // Aba contato

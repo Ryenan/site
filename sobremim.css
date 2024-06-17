@@ -7,18 +7,18 @@
 html{
   scroll-behavior: smooth;
   scrollbar-width: none;
-}
-
-main{
-  background-color: #111213;
+  
 }
 
 body{
-  background-color:black;
+  background: linear-gradient(#000000, #190029);
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 body::-webkit-scrollbar{
@@ -219,6 +219,99 @@ header {
    display: block;
   }
 }
+
+/* Section --------------------------------------------------- */
+
+#seçao1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 15vh;
+}
+
+#manutecao{
+  position: absolute;
+  width: 100%;
+  height: 100vh;  
+}
+
+#manutecao img{
+  width: 100%;
+  height: 100%;
+  padding-top: 10vh;
+}
+
+.varalfotos{
+  position: relative;
+  display: flex;
+  gap: 20vh;
+}
+
+figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+
+.wave {
+  float: left;
+  margin: 0.2vh;
+  animation: wave  ease-in-out 1s infinite alternate;
+  transform-origin: center -3.6vh;
+}
+
+.wave:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.wave img {
+  border: 0.5vh solid #f8f8f8;
+  display: block;
+  width: 20vh;
+  height: 25vh;
+}
+
+.wave figcaption {
+  text-align: center;
+}
+
+.wave:after{
+  content: '';
+  position: absolute;
+  width: 2vh; 
+  height: 2vh;
+  border: 0.15vh solid #ffffff;
+  top: -1vh; 
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+       
+.wave:before{
+  content: '';
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+        
+@keyframes wave {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
