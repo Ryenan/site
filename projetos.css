@@ -552,7 +552,7 @@ header {
   transform-origin: center;
   position: absolute;
   width: 5vh;
-  left: 30.6vw;
+  left: 30.6%;
   top: -3vh;
 }
 
@@ -623,7 +623,6 @@ header {
   left: 43vw;
 }
 
-
 #section4{
   top: -180vh;
   transition: all ease-in-out 1s;
@@ -649,7 +648,7 @@ header {
   transform-origin: center;
   position: absolute;
   width: 5vh;
-  left: 30.6vw;
+  left: 30.6%;
   top: -10vh;
 }
 

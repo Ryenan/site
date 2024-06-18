@@ -13,7 +13,7 @@ textarea{
 }
 
 main {
-    background-color: #111213;
+    background-color: #202225;
 }
 
 body {
@@ -512,172 +512,50 @@ header {
 /* CAROUSEL */
 /* INICIO */
 
-#backgroundcarousel {
-    background-color: #202225;
-    overflow-x: hidden;
-}
-#backgroundcarousel::-webkit-scrollbar {
-        display: none;
-}
-
-.slider {
+.carousel{
+    box-shadow: 0.2vh 0.2vh 0.4vh black;
     overflow: hidden;
-}
-
-.list{
-    width: 100%;
-    height: 75vh;
+    height: 70vh;
+    width: 90vw;
+    border-radius: 0.5vh;
     display: flex;
-    gap: 1.16vh;
-    padding: 0 2.33vh;
-    margin: 0;
-    scrollbar-width: none;
-    list-style: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    box-sizing: border-box;
-}
-
-.list ul{
-    background-color: linear-gradient(to bottom, #2c2e32, #202225);
-}
-
-.list::-webkit-scrollbar{
-    display: none;
-}
-
-.cliquecarousel{
-    position: absolute;
-    display: flex;
-    color: white;
-    font-family: 'Epilogue', sans-serif;
-    background-color: #000000b6;
-    height: 100%;
-    width: 100vw;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 7vh;
-    font-size: 15vh;
-    cursor: pointer;
-    top: 0vh;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    left: 0vh;
+    position: relative;
 }
-
-.cliquecarousel a{
-    color: white;
-}
-
-.cliquecarousel:hover{
-    opacity: 1;
-}
-
-.item{
-    flex-shrink: 0;
-    width: 80%;
-    height: 75vh;
-    background-color: transparent;
-    scroll-snap-align: center;
-    border-radius: 1.16vh;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.item.empty {
-    background-color: transparent; 
-    width: calc(80% + 2.33vh);
-}
-
-.item1{
-    margin-left: 1vh;
-}
-
-.item5{
-    margin-right: 1vh;
-}
-
-.conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-family: sans-serif;
-    font-size: 4.67vh;
-    font-weight: bold;
-}
-
-.conteudo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; 
-  }
 
 #carousel{
-    font-family: 'Epilogue', sans-serif;
-    width: 100%;
-    position: relative;
-    background: linear-gradient(to bottom, #202225, #111213); /* Adicionando um background ao carrossel */
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
-    transform: translateY(10.2vh);
 }
 
 #carousel.show{
     opacity: 1;
-    transform: translateY(0vh);
 }
-  
-.btncarousel{
-    position: absolute;
-    top: 75%;
-    width: 15vh;
-    height: 0.3vh;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 1.5vh;
-    color: white;
-    font-weight: bold;
-    transition: ease-in-out 0.5s;
-    border-top-left-radius: 2vh;
-    border-bottom-left-radius: 2vh; 
-    z-index: 10;
-  }
-  
-  .btncarousel:hover{
-    font-size: 3vh;
-  }
-  
-  #buttoncarousel{
-    position: absolute;
-  }
-  
-  .btnvoltar{
-    background: linear-gradient(to left, #000, transparent);
-    transform: rotateY(180deg);
-    height: 75vh;
-    width: 4vh;
-    top: 0vh;
-  }
-  
-  .btnpassar{
-    background: linear-gradient(to left, #000, transparent);
-    left: 189vh;
-    height: 75vh;
-    width: 4vh;
-    top: 37.6vh;
-  }
+
+#backgroundcarrossel{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1.5vh;
+}
+
+.slider{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
   
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -685,7 +563,7 @@ header {
 /* INICIO */
 
 .section3{
-    background-color: #111213;
+    background:linear-gradient(#202225, #111213) ;
     width: 100%;
     height: 105vh;
 }

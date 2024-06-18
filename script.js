@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var postit = document.getElementById("postit");
 
     // Váriaveis carousel
-    var carousel = document.getElementById ("carousel");
+    var carousel = document.getElementById("carousel");
 
     // Variáveis section 3
 
@@ -235,10 +235,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
 });
-
-
 
 // Aba contato
 
