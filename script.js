@@ -1,3 +1,21 @@
+const imgs = document.getElementById("imagem");
+const img = document.querySelectorAll("#imagem img");
+
+let idx = 0;
+
+function carrossel(){
+    idx++;
+
+    if(idx > img.length - 1){
+        idx = 0
+    }
+
+    imgs.style.transform = `translateX(${-idx * 80}vw)`;
+}
+
+setInterval(carrossel, 2500);
+
+
 function menuShow(){
     let menumobile = document.querySelector('.menumobile')
     if (menumobile.classList.contains('open')){
@@ -17,7 +35,6 @@ function apertarCor(itemnavegacao6){
 
 function mostrarDiv() {
     var escondido = document.getElementById('escondido1');
-    var escondido2pull = document.getElementById('escondido2')
     var sections1 = document.querySelectorAll('.section1');
     var section2 = document.getElementById('section2');
     var botaosubir = document.getElementById('imagembotaoup');

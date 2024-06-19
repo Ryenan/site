@@ -72,7 +72,6 @@
                                     <p id="palavraschaves">
                                         Palavras chaves: Dashboard, Banco de dados, CRUD.
                                     </p>
-                                    <p id="vermais">Ver mais</p>
                                 </div>
                         </div>
                     </div>
@@ -120,7 +119,7 @@
                             <div id="backgroundcarousel2 carousel2" class="backgroundcarousel">
                                 <section id="carousel2">
                                     <div class="slider">
-                                        <ul class="list">
+                                        <ul class="list" id="carousel2list">
                                             <li class="item item1"><div class="conteudo"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/egrz_j5SspM?autoplay=1&mute=1&loop=1&playlist=egrz_j5SspM" frameborder="0" allow="autoplay; encrypted-media"></iframe></div></li>
                                             <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Tela Inicial.png" alt="Aba de inventário"></div></li>
                                             <li class="item"><div class="conteudo"><img width="100%" height="100%" src="imgs/Projetos/PowerBi(Biblioteca)/Inscrições.png" alt="Aba de tarefas"></div></li>
@@ -139,7 +138,6 @@
                                 <p id="palavraschaves">
                                     Palavras chaves: Análise de dados, Banco de dados, .
                                 </p>
-                                <p id="vermais">Ver mais</p>
                             </div>
                         </div>
                     </div>
@@ -196,7 +194,6 @@
                             <p id="palavraschaves">
                                 Palavras chaves: Lorem, ipsum, dolor.
                             </p>
-                            <p id="vermais">Ver mais</p>
                         </div>
                     </div>
                     </div>
@@ -258,7 +255,6 @@
                                 <p id="palavraschaves">
                                     Palavras chaves: Lorem, ipsum, dolor.
                                 </p>
-                                <p id="vermais">Ver mais</p>
                             </div>
                         </div>
                     </div>
@@ -307,16 +303,31 @@
                     <div id="baixoform">
                         <div id="redessociaisemail">
                             <p>Ou me contate por:</p>
-                            <div id="iconsredessociaisemail">
-                                <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap">
-                                <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="Linkedin">
-                                <img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord">
+                            <div class="redesociaisstyle" id="iconsredessociaisemail">
+                                <a href="https://api.whatsapp.com/send/?phone=5588992642364&text&type=phone_number&app_absent=0" target="_blank" rel=”noopener”>
+                                    <li style="--cor1: #4ef08a; --cor2: #1e5432;">
+                                        <span class="icon"><img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap"></span>
+                                        <span class="text">(88) 99264-2364</span>
+                                    </li>
+                                </a>
+                                <a href="https://t.me/ryenann" target="_blank" rel=”noopener”>
+                                    <li style="--cor1: #1a8694; --cor2: #3164c3;">
+                                        <span class="icon"><img src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000" alt="Telegram"></span>
+                                        <span class="text">(88) 99264-2364</span>
+                                    </li>
+                                </a>
+                                <a href="https://discordapp.com/channels/@me/ryenan" target="_blank" rel=”noopener”>
+                                    <li style="--cor1: #7289da; --cor2: #3d4a79;">
+                                        <span class="icon"><img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord"></span>
+                                        <span class="text">ryenan</span>
+                                    </li>
+                                </a>
                             </div>
                         </div>
                         <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
                     </div>
                     <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
-                    <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Site/projetos.html">
+                    <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Site/">
 
                     <div onclick="obrigadoContato()" id="obrigadoContato">
                         <button class="fechar" id="fecharcon">X</button>
@@ -327,7 +338,6 @@
                 </form>
             </div>
         </div>
-
         <script src="script.js"></script>
     </div>
 </body>

@@ -423,8 +423,8 @@ header {
 }
 
 #botaoenviarform{
-  position: relative;
-  left: 73.5%;
+  position: absolute;
+  left: 87%;
   width: 15vh;
   height: 6vh;
   font-size: 3vh;
@@ -445,6 +445,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  position: relative;
+  top: 10vh;
 }
 
 #iconsredessociaisemail{
@@ -452,6 +454,13 @@ header {
   flex-direction: row;
   gap: 2vh;
   justify-content: center;
+}
+
+#iconsredessociaisemail img{
+  display: flex;
+  flex-direction: row;
+  width: 3.5vh;
+  cursor: pointer;
 }
 
 #iconsredessociaisemail img{
@@ -530,4 +539,73 @@ header {
 
 #iconeobrigadocontato{
   width: 5vh;
+}
+
+.redesociaisstyle{
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  gap: 4vh;
+}
+
+.redesociaisstyle li{
+  width: 6vh;
+  height: 6vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0.5vh 1.5vh;
+  border-radius: 6vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all .2s ease-in-out;
+}
+
+.redesociaisstyle li span{
+  position: absolute;
+}
+
+.redesociaisstyle li:hover{
+  width: 18vh;
+}
+
+.redesociaisstyle li .icon{
+  color: #ccc;
+  font-size: 2.2em;
+  transform: scale(1);
+  transition-delay: .5s;
+  transition: .5s ease-in-out;
+}
+
+.redesociaisstyle li:hover .icon{
+  transform: scale(0);
+}
+
+.redesociaisstyle li .text{
+  color: #FFF;
+  font-size: 1.8vh;
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  transition-delay: .2s;
+  font-family: 'Epilogue', 'sans-seriff';
+  text-align: center;
+}
+
+.redesociaisstyle li:hover .text{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.redesociaisstyle li::before{
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+  inset: 0;
+  opacity: 0;
+  border-radius: 6vh;
+  transition: all .2s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.redesociaisstyle li:hover::before{
+  opacity: 1;
 }
