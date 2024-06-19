@@ -291,6 +291,19 @@ header {
   transition: .5s;
 }
 
+.tras{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7vh;
+}
+
+.tras p, .tras h1{
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
 .frente,.tras{
   position: absolute;
   width: 100%;
@@ -372,7 +385,7 @@ header {
 
 .jancontato{
   width: 60%;
-  height: 75vh;
+  height: 70vh;
   min-width: 45vh;
   min-height: 60vh;
   background-color: #151618dc;
