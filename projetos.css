@@ -22,10 +22,20 @@ body{
   height: 200vh;
   overflow-x: hidden; 
   z-index: -999;
+  background-size: contain;
+  background-position: center;
 }
 
 .bodybackground{
   background-color: #000000ae;
+}
+
+.backgroundbody{
+  background-color: #000000ae;
+  position: absolute;
+  width: 100vw;
+  height: 6vh;
+  top: 268.6vh;
 }
 
 body::-webkit-scrollbar {
@@ -628,6 +638,7 @@ header {
 #section4{
   top: -180vh;
   transition: all ease-in-out 1s;
+  display: none;
 }
 
 #section4.pull{
@@ -663,6 +674,7 @@ header {
   width: 100%;
   transition: ease-in-out 1s;
   position: relative;
+  display: none;
 }
 
 #escondido4.show{
@@ -857,7 +869,7 @@ iframe{
 
 .jancontato{
   width: 60%;
-  height: 60vh;
+  height: 75vh;
   min-width: 45vh;
   min-height: 60vh;
   background-color: #151618dc;
