@@ -247,6 +247,7 @@ header {
 #seçao1 p{
   font-family: 'Montserrat','sans-seriff';
   font-size: 2vh;
+  text-shadow: 0 0 0.1vh 0.1vh rgb(0, 0, 0);
 }
 
 .informacoes{
