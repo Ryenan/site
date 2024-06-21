@@ -228,15 +228,9 @@ document.addEventListener("DOMContentLoaded", function() {
             textossobremim.classList.remove("show");      
             postit.classList.remove("show");
         }
-        // Rolagem carousel 3
-        if (porcentagemRolagem > 45){
-            carousel.classList.add("show");
-        } else {
-            carousel.classList.remove("show");
-        }
 
         // Rolagem section 3
-        if (porcentagemRolagem > 78){
+        if (porcentagemRolagem > 70){
             postit2.classList.add("show");
             frase.classList.add("show");
         } else {
