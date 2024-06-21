@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="sobremim.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre mim</title>
 </head>
 <body>
     <!-------------------------------------------------- MENU ------------------------------------------------------>
@@ -39,47 +39,129 @@
             </header>
             
     <!-------------------------------------SECTION------------------------------------------------------------------------------------------------------>
-<div id="manutecao">
-    <img src="https://www.altafloresta.mt.leg.br/imprensa/noticias/segunda-noticia/image" alt="">
-        
-    </div>
-        </main>
-    <div onclick="abrirContato()" class="janelacontato" id="janelacontato">
-        <div class="jancontato">
-            <button class="fechar" id="fechar">X</button>
-            <h1>Me envie um email</h1>
-            <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
-                <label>Nome:</label>
-                <input id="nameform" type="text" name="name" placeholder="Digite seu nome" required>
-                <label>Email:</label>
-                <input id="emailform" type="text" name="email" placeholder="Digite seu email" required>
-                <label>Mensagem:</label>
-                <textarea name="message" id="textform" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-                <div id="baixoform">
-                    <div id="redessociaisemail">
-                        <p>Ou me contate por:</p>
-                        <div id="iconsredessociaisemail">
-                            <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap">
-                            <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="Linkedin">
-                            <img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord">
-                        </div>
+            <section id="seçao1">
+                <div class="informacoes">
+                    <h1>Ryênan Aragão Rodrigues</h1>
+                    <p class="ptext">Sou desenvolvedor desde dezembro de 2023. No momento, ainda não me considero especialista em nada. Estou focado em estudar um pouco de desenvolvimento para desktop, mobile e web, para entender um pouco de cada área. Em tudo que faço, tento conhecer o mínimo de todos os aspectos para conseguir executar bem a minha parte. Isso se aplica desde um jogo de vôlei até projetos; sou uma pessoa muito versátil..</p>
+                    <p class="ptext">Sou entusiasta da tecnologia e possuo um curso técnico em redes de computadores. Já fui editor de vídeo, designer e atuei em diversas outras áreas voltadas para a tecnologia da informação. Porém, a programação conquistou meu coração. Gosto muito de tudo que envolve lógica e adoro desenvolver. Sempre fico realizado ao ver o resultado de algo que demorei para terminar; na programação, a satisfação que sinto ao ver um projeto finalizado é diferente, é algo melhor.</p>
+                    <p class="ptext">Busco evoluir cada vez mais meus conhecimentos. No momento atual da minha vida, não estou priorizando dinheiro ou status; estou em busca de oportunidades que me permitam realizar meus sonhos. Sou uma pessoa muito detalhista e observadora em tudo, e, para mim, a felicidade está nos detalhes. Afinal, no meu espelho mora um gênio que realiza desejos.</p>
+                </div>
+                <div class="minhafoto">
+                    <div class="card">
+                        <img src="imgs/fotoseu/eusol.png" alt="Eu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
                 </div>
-                <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
-                <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Site/">
+            </section>
+            <div class="audio-player">
+                <button id="playPauseBtn">▶</button>
+                <p>Resiliência - Tribo da Periferia</p>
+                <input type="range" id="seekBar" value="0" max="100">
+                <div id="contmusic"><span id="currentTime">0:00</span> / <span id="duration">00:00</span></div>
+            </div>
+                <audio id="myAudio">
+                    <source src="imgs/Tribo da Periferia - RESILIÊNCIA.mp3" type="audio/mp3">
+                    Seu navegador não suporta a tag de áudio.
+                </audio>
 
-                <div onclick="obrigadoContato()" id="obrigadoContato">
-                    <button class="fechar" id="fecharcon">X</button>
-                    <h1>Email enviado!</h1>
-                    <p>Muito obrigado pelo o contato!</p>
-                    <img id="iconeobrigadocontato" src="https://img.icons8.com/?size=100&id=71474&format=png&color=000000" alt="Icone de email">
-                </div>
-            </form>
+
+
+        </main>
+        <div onclick="abrirContato()" class="janelacontato" id="janelacontato">
+            <div class="jancontato">
+                <button class="fechar" id="fechar">X</button>
+                <h1>Me envie um email</h1>
+                <form id="meuFormulario" action="https://api.staticforms.xyz/submit" method="post">
+                    <label>Nome:</label>
+                    <input id="nameform" type="text" name="name" placeholder="Digite seu nome" required>
+                    <label>Email:</label>
+                    <input id="emailform" type="text" name="email" placeholder="Digite seu email" required>
+                    <label>Mensagem:</label>
+                    <textarea name="message" id="textform" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <div id="baixoform">
+                        <div id="redessociaisemail">
+                            <p>Ou me contate por:</p>
+                            <div class="redesociaisstyle" id="iconsredessociaisemail">
+                                <a href="https://api.whatsapp.com/send/?phone=5588992642364&text&type=phone_number&app_absent=0" target="_blank" rel=”noopener”>
+                                    <li style="--cor1: #4ef08a; --cor2: #1e5432;">
+                                        <span class="icon"><img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Whatssap"></span>
+                                        <span class="text">(88) 99264-2364</span>
+                                    </li>
+                                </a>
+                                <a href="https://t.me/ryenann" target="_blank" rel=”noopener”>
+                                    <li style="--cor1: #1a8694; --cor2: #3164c3;">
+                                        <span class="icon"><img src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000" alt="Telegram"></span>
+                                        <span class="text">(88) 99264-2364</span>
+                                    </li>
+                                </a>
+                                <a href="https://discordapp.com/channels/@me/ryenan" target="_blank" rel=”noopener”>
+                                    <li style="--cor1: #7289da; --cor2: #3d4a79;">
+                                        <span class="icon"><img src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000" alt="Discord"></span>
+                                        <span class="text">ryenan</span>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+                        <button id="botaoenviarform" onclick="obrigadoContato()" type="submit">Enviar</button>
+                    </div>
+                    <input type="hidden" name="accessKey" value="25a47d5a-0484-4a00-adce-5bcbd4d6d9cf">
+                    <input type="hidden" name="redirectTo" value="https://ryenan.github.io/Site/">
+
+                    <div onclick="obrigadoContato()" id="obrigadoContato">
+                        <button class="fechar" id="fecharcon">X</button>
+                        <h1>Email enviado!</h1>
+                        <p>Muito obrigado pelo o contato!</p>
+                        <img id="iconeobrigadocontato" src="https://img.icons8.com/?size=100&id=71474&format=png&color=000000" alt="Icone de email">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-
-<body>
     <script src="script.js"></script>    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.getElementById("myAudio");
+        var playPauseBtn = document.getElementById("playPauseBtn");
+        var seekBar = document.getElementById("seekBar");
+        var muteBtn = document.getElementById("muteBtn");
+        var currentTimeDisplay = document.getElementById("currentTime");
+        var durationDisplay = document.getElementById("duration");
+    
+        audio.addEventListener("loadedmetadata", function() {
+            var durationMinutes = Math.floor(audio.duration / 60);
+            var durationSeconds = Math.floor(audio.duration % 60);
+            if (durationSeconds < 10) durationSeconds = "0" + durationSeconds;
+            durationDisplay.textContent = durationMinutes + ":" + durationSeconds;
+        });
+    
+        playPauseBtn.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.textContent = "II";
+            } else {
+                audio.pause();
+                playPauseBtn.textContent = "▶";
+            }
+        });
+    
+        audio.addEventListener("timeupdate", function() {
+            var value = (audio.currentTime / audio.duration) * 100;
+            seekBar.value = value;
+    
+            var currentMinutes = Math.floor(audio.currentTime / 60);
+            var currentSeconds = Math.floor(audio.currentTime % 60);
+            if (currentSeconds < 10) currentSeconds = "0" + currentSeconds;
+    
+            currentTimeDisplay.textContent = currentMinutes + ":" + currentSeconds;
+        });
+    
+        seekBar.addEventListener("input", function() {
+            var time = audio.duration * (seekBar.value / 100);
+            audio.currentTime = time;
+        });
+    });
+        </script>
 </body>
 </html>
