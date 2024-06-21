@@ -255,26 +255,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Aba contato
+function abrirContato(){
+    const contatar = document.getElementById("janelacontato")
 
-    function abrirContato(){
-        const contatar = document.getElementById("janelacontato")
+    contatar.classList.add('abrir')
 
-        contatar.classList.add('abrir')
-
-        contatar.addEventListener('click', (e) => {
+    contatar.addEventListener('click', (e) => {
             if(e.target.id == "fechar" || e.target.id == 'janelacontato')
                 contatar.classList.remove('abrir')
         })
     }
 
-    function obrigadoContato(){
-        const obrigado = document.getElementById("obrigadoContato")
+function obrigadoContato(){
+    const obrigado = document.getElementById("obrigadoContato")
 
-        obrigado.classList.add('abrir')
+    obrigado.classList.add('abrir')
 
-        obrigado.addEventListener('click', (e) => {
+    obrigado.addEventListener('click', (e) => {
             if(e.target.id == "fecharcon" || e.target.id == 'janelacontato')
                 obrigado.classList.remove('abrir')
         })
     }
     
+

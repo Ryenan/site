@@ -292,6 +292,7 @@ header {
     top: 4.37vh;
     text-align: center;
     transition: transform 0.9s ease-in-out;
+    text-shadow: #8731b2 1px 0 10px;
 }
 
 #textao:hover{
@@ -586,6 +587,10 @@ header {
 /* CAROUSEL */
 /* INICIO */
 
+#imagemblibioteca{
+    width: 90vw;
+}
+
 #ancoraprojetos{
     opacity: 0;
     background-color: #000000db;
@@ -797,7 +802,7 @@ header {
 
 .jancontato{
     width: 60%;
-    height: 60vh;
+    height: 65vh;
     min-width: 45vh;
     min-height: 60vh;
     background-color: #151618dc;
@@ -825,7 +830,7 @@ header {
 #meuFormulario input,textarea{
     padding: 0.5vh;
     margin-bottom: 1.5vh;
-    font-size: 14px;
+    font-size: 1.4vh;
     font-family: 'Epilogue', 'sans-serif';
     transition: all 0.5s;
     outline: none;

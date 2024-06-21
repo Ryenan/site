@@ -189,6 +189,7 @@ header {
   .lista-navegacao{
     display: none;
   }
+
   #baixarCV{
     display: none;
   }
@@ -211,7 +212,7 @@ header {
     display: block;
     padding: 0.1vh 0.2vh;
   }    
-    .menumobile .botaocurriculo-mobile button{
+  .menumobile .botaocurriculo-mobile button{
     width: 100%;
   }
   .open{
@@ -385,7 +386,7 @@ header {
 
 .jancontato{
   width: 60%;
-  height: 60vh;
+  height: 65vh;
   min-width: 45vh;
   min-height: 60vh;
   background-color: #151618dc;
@@ -413,7 +414,7 @@ header {
 #meuFormulario input,textarea{
   padding: 0.5vh;
   margin-bottom: 1.5vh;
-  font-size: 14px;
+  font-size: 1.4vh;
   font-family: 'Epilogue', 'sans-serif';
   transition: all 0.5s;
   outline: none;
