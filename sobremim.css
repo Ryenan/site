@@ -232,7 +232,7 @@ header {
   color: white;
   padding-left: 15vh;
   text-align: justify;
-  gap: 10%;
+  gap: 8%;
 }
 
 #seçao1 h1{
@@ -244,7 +244,7 @@ header {
   text-shadow: #8731b2 1px 0 10px;
 }
 
-#seçao1 p{
+.pp{
   font-family: 'Montserrat','sans-seriff';
   font-size: 2vh;
   text-shadow: 0 0 0.1vh 0.1vh rgb(0, 0, 0);
@@ -252,7 +252,11 @@ header {
 
 .informacoes{
   position: relative;
-  top: 50%;
+  top: 64%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 1vh;
+  padding: 3vh;
+  padding-bottom: 7.5vh;
 }
 
 .minhafoto{
@@ -265,6 +269,8 @@ header {
   width: 55vh;
   height: 65vh;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 1vh;
 }
 
 .card img{
@@ -361,17 +367,14 @@ header {
 .audio-player {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1vh;
   background: transparent;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 1vh;
   color: white;
   width: 50.3vw;
   height: 6vh;
   position: relative;
-  top: 28vh;
-  left: 8%;
+  top: 4vh;
   font-family: monospace, 'sans-seriff';
   display: flex;
   justify-content: center;
@@ -380,8 +383,9 @@ header {
 .audio-player p{
   position: absolute;
   bottom: 2.9vh;
-  left: 4.8vw;
+  left: 4.3vw;
   font-weight: bold;
+  font-size: 1.3vh;
 }
 
 .audio-player button {
@@ -392,7 +396,7 @@ header {
   font-weight: bold;
   font-size: 3vh;
   padding-top: 0.6vh;
-  border-radius: 5px;
+  border-radius: 0.5vh;
   cursor: pointer;
   height: 4.3vh;
   width: 4vh;
