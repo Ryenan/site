@@ -157,13 +157,13 @@ header {
   }
   
   #baixarCV{
-    background-color: #a700a7;
-    border-color: #ffffff;
+    background-color: transparent;
+    border-color: #190029;
     border: solid;
-    border-radius: 0.5vh;
-    border-width: 0.30vh;
+    border-width: 0.29vh;
     font-size: 1.9vh;
     font-weight: 1000;
+    color: #a700a7;
     height: 5.5vh;
     cursor: pointer;
     position: relative;
@@ -171,7 +171,7 @@ header {
     top: 2.2vh;
     padding: 0;
     margin: 0;
-    right: 7%;
+    right: 5%;
     display: inline-block;
     overflow: hidden;
     transition: transform 0.5s ease;
@@ -179,7 +179,7 @@ header {
   
   #baixarCV a{
     padding-top: 5%;
-    color: #ffffff;
+    color: #a700a7;
     text-decoration: none;
     display: inline-block;
     width: 100%; 
