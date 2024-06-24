@@ -425,11 +425,64 @@ header {
     opacity: 1;
 }
 
+@media screen and (max-width: 730px){
+    
+    #textosec1{
+        width: 10vh;
+    }
+
+    #textao{
+        width: 50vh;
+        padding-bottom: 1.5vh;
+        font-size: 4.5vh;
+    }
+
+    #Ryenanhigh{
+        font-size: 4.5vh;
+    }
+
+    #paragrafo{
+        font-size: 1.4vh;
+        width: 40vh;
+    }
+
+    .section1{
+        padding-bottom: 50vh;
+    }
+
+    #textaoredes{
+        width: 40vh;
+        font-size: 1.4vh;
+    }
+
+    #redessociais{
+        width: 40vh;
+    }
+
+    #redessociais img{
+        max-width: 4vh;
+    }
+
+    #redessociais li{
+        
+    }
+
+    #containersobre{
+        flex-direction: column-reverse;
+        height: 150vh;
+        padding-bottom: 50vh;
+        top: 1vh;
+    }
+
+
+}
+
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
 /* SECTION 2 */
 /* INICIO */
+
 
 .section2 {
     display: block;
