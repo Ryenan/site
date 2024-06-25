@@ -649,13 +649,21 @@ header {
 
 @media screen and (max-width: 730px){
 
+    .section2{
+        height: 80vh;
+    }
+
+    #habil{
+        font-size: 4.5vh;
+    }
+
     .Containerlinguaguem{
         flex-direction: column;
     }
 
     #htmlcss, #jsicon, #csharpicon, #mysqlicon{
-        max-width: 9vh;
-        bottom: 4vh;
+        max-width: 7.5vh;
+        bottom: 4.5vh;
     }
 
     .linguagem{
@@ -673,8 +681,8 @@ header {
     }
 
     #postit{
-        width: 40vh;
-
+        width: 35vh;
+        top: -10vh;
         position: relative;
     }
 
@@ -835,7 +843,7 @@ header {
     justify-content: center;
 }
 
-#txtrodape{
+.txtrodape{
     position: relative;
     text-align: center;
     padding-top: 5vh;
@@ -843,13 +851,48 @@ header {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; 
 }
 
-#txtrodape:hover{
+.txtrodape:hover{
     transform: scale(1.1);
 }
 
 #txtlinkicons8{
     color: #a0a0a0;
     font-weight: bold;
+}
+
+@media screen and (max-width: 730px){
+    
+    .section3{
+        height: 30vh;
+    }
+    
+    #frase{
+        width: 30vh;
+        font-size: 1.1vh;
+        top: 5vh;
+        left: 21vh;
+    }
+
+    #postit2{
+        width: 15vh;
+        left: 4vh;
+    }
+
+    .rodape{
+        width: 56.2vh;
+        gap: 4vh;
+        height: 8vh;
+    }
+
+    .txtrodape{
+        font-size: 1.4vh;
+        top: -4.5vh;
+    }
+
+    #txtroda1, #txtroda2{
+        display: none;
+    }
+
 }
 
 .voltarparaotop{
