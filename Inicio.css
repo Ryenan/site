@@ -227,6 +227,9 @@ header {
     .open{
      display: block;
     }
+    #botaologo{
+        font-size: 1.8vh;
+    }
   }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
@@ -314,6 +317,7 @@ header {
     width: 70vh;
     color: #c0c0c0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
+    font-weight: 400;
 }
 
 #paragrafo:hover{
@@ -335,6 +339,7 @@ header {
     top: 14.59vh;
     align-items: center;
     justify-content: center;
+    right: 2%;
 }
 
 #redessociais img{
@@ -447,16 +452,18 @@ header {
     }
 
     .section1{
-        padding-bottom: 50vh;
+        height: 100vh;
     }
 
     #textaoredes{
         width: 40vh;
-        font-size: 1.4vh;
+        font-size: 1.1vh;
+        top: 45.4vh;
     }
 
     #redessociais{
         width: 40vh;
+        top: 45.4vh;
     }
 
     #redessociais img{
@@ -464,16 +471,26 @@ header {
     }
 
     #redessociais li{
-        
+        max-width: 4vh;
+        max-height: 4vh;
+    }
+
+    #redessociais ul{
+        right: 8%;
     }
 
     #containersobre{
         flex-direction: column-reverse;
         height: 150vh;
-        padding-bottom: 50vh;
-        top: 1vh;
+        top: -50vh;
     }
 
+    .euimagem{
+        top: -50vh;
+        width: 20vh;
+        z-index: -99;
+        display: none;
+    }
 
 }
 
@@ -629,6 +646,40 @@ header {
 #postit.show:hover{
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 730px){
+
+    .Containerlinguaguem{
+        flex-direction: column;
+    }
+
+    #htmlcss, #jsicon, #csharpicon, #mysqlicon{
+        max-width: 9vh;
+        bottom: 4vh;
+    }
+
+    .linguagem{
+        font-size: 1.4vh;
+        flex-direction: row;
+        gap: 5vh;
+        position: relative;
+        bottom: 5.2vh;
+    }
+    
+    .linguagens{
+        position: relative;
+        flex-direction: column;
+        left: -22vh;
+    }
+
+    #postit{
+        width: 40vh;
+
+        position: relative;
+    }
+
+}
+
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
