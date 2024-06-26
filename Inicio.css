@@ -190,6 +190,12 @@ header {
   #baixarCV.up{
     transform: scale(1.1);
   }
+
+  .itemmobile{
+    font-size: 1.2vh;
+    position: relative;
+    top: 5vh;
+  }
   
   .menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
     display: none;
@@ -197,38 +203,127 @@ header {
   
   @media screen and (max-width: 730px){
     .lista-navegacao{
-      display: none;
+        display: none;
     }
     #baixarCV{
-      display: none;
+        display: none;
     }
     .barra-navegacao{
-      padding: 0.15vh 0.4vh;
+        padding: 0.15vh 0.4vh;
+        width: 100%;
     }
+    .menu-icone{
+        background-color: transparent;
+        width: 7vh;
+    }
+
     .menu-mobileicone{
-      display: block;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
+
+    .menu-mobileicone button{
+        background-color: transparent;
+        border: none;
+        top: 1.5vh;
+        right: 1vh;
+        position: relative;
+    }
+
+    .menumobile{
+        background: black;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+        position: fixed;
+        z-index: 100;
+        height: 75vh;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
     .menumobile ul{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 0.1vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 4%;
+        height: 50vh;
+        border-radius: 20%;
+        z-index: 100;
+        top: -3vh;
+        transform: translateY(0vh);
+        
     }
     .menumobile .item-navegacao{
-      display: block;
-      padding: 0.1vh 0.2vh;
+        display: block;
     }    
-      .menumobile .botaocurriculo-mobile button{
-      width: 100%;
+    .menumobile .botaocurriculo-mobile button{
+        width: 100%;
     }
+
+    #baixarCV-mobile{
+        background-color: transparent;
+        border-color: #190029;
+        border: solid;
+        border-width: 0.29vh;
+        font-size: 1.8vh;
+        font-weight: 1000;
+        color: #a700a7;
+        height: 105vh;
+        cursor: pointer;
+        position: relative;
+        width: 50vw;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+        font-size: 2.8vh;
+        font-weight: bold;
+        font-family: 'Epilogue', sans-seriff;
+        top: 7vh;
+    }
+
+    #baixarCV-mobile a{
+        padding-top: 10%;
+        color: #a700a7;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%; 
+        height: 100%; 
+        box-sizing: border-box; 
+    }
+
     .open{
-     display: block;
+        transition: all 1s ease-in-out;
+        position: fixed;
+        transform: translateY(-65vh);
     }
+
     #botaologo{
         font-size: 1.8vh;
+    }
+
+    .link-navegacao{
+        font-size: 2.5vh;
+        bottom: 0.5vh;
+    }
+
+    .item-navegacao{
+        padding: 3vh;
+        width: 105vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
     }
   }
 
@@ -260,7 +355,8 @@ header {
     gap: 4vh;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
-    transform: translateY(10.21vh);}
+    transform: translateY(10.21vh);
+}
 
 #containersobre.show{
     opacity: 1;
@@ -863,34 +959,47 @@ header {
 @media screen and (max-width: 730px){
     
     .section3{
-        height: 30vh;
+        height: 7vh;
     }
     
     #frase{
-        width: 30vh;
-        font-size: 1.1vh;
-        top: 5vh;
-        left: 21vh;
+        width: auto;
+        font-size: 1.5vh;
+        top: 0vh;
+        left: 0vh;
+        display: none;
     }
 
     #postit2{
-        width: 15vh;
-        left: 4vh;
+        width: 6vh;
+        left: 25.5vh;
+        top: -16vh;
+        display: none;
     }
 
     .rodape{
-        width: 56.2vh;
+        width: 100%;
         gap: 4vh;
         height: 8vh;
+        justify-content: center;
+        align-items: center;
     }
 
     .txtrodape{
         font-size: 1.4vh;
-        top: -4.5vh;
+        top: -2.5vh;
     }
 
     #txtroda1, #txtroda2{
         display: none;
+    }
+
+    .voltarparaotop img{
+        max-width: 6vh;
+    }
+
+    .voltarparotop{
+        right: 5vh;
     }
 
 }

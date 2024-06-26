@@ -18,6 +18,7 @@ setInterval(carrossel, 2500);
 
 function menuShow(){
     let menumobile = document.querySelector('.menumobile')
+    
     if (menumobile.classList.contains('open')){
         menumobile.classList.remove('open');
     } else {
