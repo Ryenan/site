@@ -234,35 +234,46 @@ header {
 
     .menumobile{
         background: black;
-        border-radius: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: all 1s ease-in-out;
         position: fixed;
         z-index: 100;
-        height: 75vh;
+        height: 55vh;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transform: translateY(-60vh);
+        text-align: start;
+    }
+
+    .lista-navegacao-mobile img{
+        padding-right: 1.5vh;
     }
 
     .menumobile ul{
         display: flex;
         flex-direction: column;
-        text-align: center;
         justify-content: center;
         align-items: center;
         position: relative;
-        right: 4%;
+        right: 5%;
         height: 50vh;
         border-radius: 20%;
         z-index: 100;
-        top: -3vh;
-        transform: translateY(0vh);
-        
+        text-transform: uppercase;
+        top: -2.5vh;
     }
+    
+    #itemmobile5{
+        border-bottom: solid rgba(255, 255, 255, 0.198) 0.1vh;
+    }
+
     .menumobile .item-navegacao{
         display: block;
+        text-align: start;
+        left: 7%;
+        border-top: solid rgba(255, 255, 255, 0.198) 0.1vh;
     }    
     .menumobile .botaocurriculo-mobile button{
         width: 100%;
@@ -273,13 +284,11 @@ header {
         border-color: #190029;
         border: solid;
         border-width: 0.29vh;
-        font-size: 1.8vh;
-        font-weight: 1000;
         color: #a700a7;
-        height: 105vh;
+        height: 10vh;
+        width: 60vw;
         cursor: pointer;
         position: relative;
-        width: 50vw;
         padding: 0;
         margin: 0;
         display: inline-block;
@@ -288,11 +297,11 @@ header {
         font-size: 2.8vh;
         font-weight: bold;
         font-family: 'Epilogue', sans-seriff;
-        top: 7vh;
+        top: 1vh;
     }
 
     #baixarCV-mobile a{
-        padding-top: 10%;
+        padding-top: 12.5%;
         color: #a700a7;
         text-decoration: none;
         display: inline-block;
@@ -304,7 +313,7 @@ header {
     .open{
         transition: all 1s ease-in-out;
         position: fixed;
-        transform: translateY(-65vh);
+        transform: translateY(5vh);
     }
 
     #botaologo{
