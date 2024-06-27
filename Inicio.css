@@ -279,37 +279,6 @@ header {
         width: 100%;
     }
 
-    #baixarCV-mobile{
-        background-color: transparent;
-        border-color: #190029;
-        border: solid;
-        border-width: 0.29vh;
-        color: #a700a7;
-        height: 10vh;
-        width: 60vw;
-        cursor: pointer;
-        position: relative;
-        padding: 0;
-        margin: 0;
-        display: inline-block;
-        overflow: hidden;
-        transition: transform 0.5s ease;
-        font-size: 2.8vh;
-        font-weight: bold;
-        font-family: 'Epilogue', sans-seriff;
-        top: 1vh;
-    }
-
-    #baixarCV-mobile a{
-        padding-top: 12.5%;
-        color: #a700a7;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%; 
-        height: 100%; 
-        box-sizing: border-box; 
-    }
-
     .open{
         transition: all 1s ease-in-out;
         position: fixed;
@@ -417,7 +386,7 @@ header {
     position: relative;
     height: 25%;
     font-size: 2vh;
-    background-color: #050008;
+    background-color: #050008ae;
     border-radius: 1vh;
     top: -0.1vh;
 }
@@ -432,22 +401,19 @@ header {
     width: 16.9vw;
     height: 50vh;
     position: relative;
-    bottom: 1vh;
     z-index: -1;
     overflow: hidden;
-    border-radius: 1vh;
+    
 }
 
 #carousel2{
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
     opacity: 1;
     width: 16.9vw;
-    height: 50vh;
+    height: 18.34vh;
     position: relative;
-    bottom: 1vh;
     z-index: -1;
     overflow: hidden;
-    border-radius: 1vh;
 }
 
 .slider{
@@ -460,6 +426,22 @@ header {
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.titulovermaismobile{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafovermaismobile{
+    font-size: 1.4vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5vh;
+    font-family: 'Epilogue', sans-serif;
+    color: rgba(255, 255, 255, 0.423);
 }
 
 #containersobre {
@@ -650,6 +632,7 @@ header {
 @media screen and (max-width: 730px){
     
     #textosec1{
+        top: 20vh;
         width: 10vh;
     }
 
@@ -699,7 +682,7 @@ header {
     #containersobre{
         flex-direction: column-reverse;
         height: 150vh;
-        top: -50vh;
+        top: -40vh;
     }
 
     .euimagem{
@@ -707,6 +690,30 @@ header {
         width: 20vh;
         z-index: -99;
         display: none;
+    }
+
+    .botaoprojetos{
+        width: 100vw;
+        flex-direction: column;
+        gap: 4vh;
+        top: 3vh;
+    }
+
+    .botaoprojetos button{
+        width: 70vw;
+    }
+
+    .botaoprojetos a{
+        opacity: 0;
+        display: none;
+    }
+
+    #carousel{
+        width: 104%;
+    }
+
+    #carousel2{
+        width: 104%;
     }
 
 }
@@ -879,40 +886,33 @@ header {
     }
 
     #htmlcss, #jsicon, #csharpicon, #mysqlicon{
-        max-width: 7.5vh;
-        bottom: 4.5vh;
+        max-width: 6vh;
+        bottom: 3.5vh;
     }
 
     .linguagem{
-        font-size: 1.4vh;
+        font-size: 1.2vh;
         flex-direction: row;
-        gap: 5vh;
+        gap: 4vh;
         position: relative;
         bottom: 5.2vh;
     }
     
     .linguagens{
+        width: 100%;
         position: relative;
         flex-direction: column;
-        left: -22vh;
+        left: -28%;
     }
 
     #postit{
+        left: -4%;
         width: 35vh;
         top: -10vh;
         position: relative;
     }
 
 }
-
-
-/* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
-
-/* CAROUSEL */
-/* INICIO */
-
-
-
   
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -1022,16 +1022,17 @@ header {
     }
 
     .rodape{
-        width: 100%;
+        width: 98%;
         gap: 4vh;
         height: 8vh;
         justify-content: center;
         align-items: center;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     .txtrodape{
-        font-size: 1.4vh;
-        top: -2.5vh;
+        font-size: 1.3vh;
     }
 
     #txtroda1, #txtroda2{

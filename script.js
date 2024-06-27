@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Rolagem section 1
-        if (porcentagemRolagem > 35) { 
+        if (porcentagemRolagem > 75) { 
             containersobre.classList.remove("show");
         } else {
             containersobre.classList.add("show");
