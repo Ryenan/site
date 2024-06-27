@@ -733,6 +733,8 @@ header {
 
 .section2 {
     display: block;
+    justify-items: center;
+    align-items: center;
     background: linear-gradient(to bottom, #000000, #202225);
     height: 125vh;
     overflow-x: hidden; 
@@ -918,11 +920,13 @@ header {
     }
 
     #textossobremim{
-        right: 110%;
         bottom: 0vh;
+        right: 49.4vh;
+        
     }
 
 }
+
   
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 
