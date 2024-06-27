@@ -227,7 +227,7 @@ header {
 
 .body{
   background:linear-gradient(#202225, #150a1b) ;
-  height: 195vh;
+  height: 220vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +345,7 @@ header {
 }
 
 #frente7{
-  background-image: url(imgs/certificados/Network\ and\ security.png);
+  background-image: url(imgs/certificados/CertificadoPowerBi.png);
   background-size: 100%;
 }
 

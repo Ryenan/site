@@ -10,11 +10,27 @@ function carrossel(){
         idx = 0
     }
 
-    imgs.style.transform = `translateX(${-idx * 80}vw)`;
+    imgs.style.transform = `translateX(${-idx * 100}%)`;
 }
 
 setInterval(carrossel, 2500);
 
+const imgs2 = document.getElementById("imagem2");
+const img2 = document.querySelectorAll("#imagem2 img");
+
+let idx2 = 0;
+
+function carrossel2() {
+    idx2++;
+
+    if (idx2 > img2.length - 1) {
+        idx2 = 0;
+    }
+
+    imgs2.style.transform = `translateX(${-idx2 * 100}%)`;
+}
+
+setInterval(carrossel2, 2500);
 
 function menuShow(){
     let menumobile = document.querySelector('.menumobile')
@@ -189,9 +205,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var habil = document.getElementById("habil");
     var textossobremim = document.getElementById("textossobremim");
     var postit = document.getElementById("postit");
-
-    // Váriaveis carousel
-    var carousel = document.getElementById("carousel");
 
     // Variáveis section 3
 
