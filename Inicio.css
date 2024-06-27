@@ -350,6 +350,56 @@ header {
     overflow: hidden; 
 }
 
+.botaoprojetos{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 6vh;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botaoprojetos button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    height: 30vh;
+    font-size: 2.8vh;
+    font-family: 'Epilogue', 'sans-serif';
+    background: linear-gradient(#5c227941, #43086736);
+    border: none;
+    font-weight: bold;
+    border-radius: 1vh;
+    color: white;
+    overflow: hidden;
+}
+
+.botaoprojetos a{
+    color: white;
+    opacity: 0;
+    position: absolute;
+    border-radius: 1vh;
+    height: 30vh;
+    width: 20vw;
+    z-index: 1;
+}
+
+.h1projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    position: relative;
+    height: 25%;
+    font-size: 2vh;
+    background-color: black;
+    border-radius: 1vh;
+    top: -0.1vh;
+}
+
 #containersobre {
     display: flex;
     justify-content: center;
@@ -433,12 +483,11 @@ header {
     top: 16vh;
     font-family: 'Epilogue', sans-serif;
     position: relative;
-    font-size: 2.5vh;
+    font-size: 2.0vh;
     text-align: center;
 }
 
 #redessociais{
-    width: 40vh;
     position: relative;
     display: flex;
     top: 14.59vh;
