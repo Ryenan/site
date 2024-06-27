@@ -340,10 +340,10 @@ header {
     background: transparent;
     border: none;
     font-weight: bold;
-    border-radius: 1vh;
     color: white;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    border-radius: 12%;
 }
 
 .botaoprojetos button:hover{
@@ -354,9 +354,8 @@ header {
     color: transparent;
     opacity: 0;
     position: absolute;
-    border-radius: 1vh;
-    height: 23.8vh;
-    width: 17vw;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.772);
@@ -366,6 +365,7 @@ header {
     align-items: center;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .botaoprojetos a p{
@@ -392,6 +392,10 @@ header {
 }
 
 #imagemblibioteca{
+    width: 100%;
+}
+
+#imagemcertificadoultima{
     width: 100%;
 }
 
@@ -439,7 +443,7 @@ header {
     font-size: 1.4vh;
     padding: 0;
     margin: 0;
-    margin-top: 0.5vh;
+    margin-top: 2vh;
     font-family: 'Epilogue', sans-serif;
     color: rgba(255, 255, 255, 0.423);
 }
@@ -485,7 +489,6 @@ header {
     position: relative;
     top: 6vh;
 }
-
 
 #textao {
     font-family: 'Epilogue', 'sans-serif';
@@ -716,6 +719,9 @@ header {
         width: 104%;
     }
 
+    .paragrafovermaismobile{
+        margin-top: 0.5vh;
+    }
 }
 
 
@@ -765,7 +771,8 @@ header {
     flex-direction: column;
     position: relative;
     top: 22vh;
-    width: 100vh;
+    width: 100%;
+    height: auto;
     font-family: 'Epilogue', 'sans-serif';
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
@@ -902,14 +909,17 @@ header {
         width: 100%;
         position: relative;
         flex-direction: column;
-        left: -28%;
     }
 
     #postit{
-        left: -4%;
         width: 35vh;
         top: -10vh;
         position: relative;
+    }
+
+    #textossobremim{
+        right: 110%;
+        bottom: 0vh;
     }
 
 }
