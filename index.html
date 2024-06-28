@@ -24,13 +24,17 @@
             </div>
             <button class="botaocurriculo" id="baixarCV"><a href="imgs/Currículo - Ryênan.pdf" rel="noopener" target="_blank">Baixar currículo</a></button>
             <div class="menu-mobileicone">
-                <button onclick="menuShow()"><img class="menu-icone" src="imgs/icons/icons8-menu-quadrado-2-64.png" alt=""></button>
+                <button id="btn-menu" onclick="menuShow(); animar()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
             </div>
         </nav>    
 
     <div class="menumobile" id="menu-mobile">
         <ul class="lista-navegacao-mobile">
-            <li class="item-navegacao itemmobile"><img src="imgs/icons/ideiafavicon.png" alt=""><a href="" rel="noopener" class="link-navegacao">Início</a></li>
+            <li class="item-navegacao itemmobile" id="menuinicio"><img src="imgs/icons/ideiafavicon.png" alt=""><a href="" rel="noopener" class="link-navegacao" id="linkinicio">Início</a></li>
             <li class="item-navegacao itemmobile"><img src="imgs/icons/toolboxfavicon.png" alt=""><a href="" rel="noopener" class="link-navegacao">Projetos</a></li>
             <li class="item-navegacao itemmobile"><img src="imgs/icons/contatosfavicon.png" alt=""><a href="" rel="noopener" class="link-navegacao">Certificados</a></li>
             <li class="item-navegacao itemmobile"><img src="imgs/icons/icons8-mailbox-32.png" alt=""><a href="" rel="noopener" class="link-navegacao">Contato</a></li>

@@ -156,6 +156,36 @@ header {
     border: none;
     cursor: pointer;
   }
+
+  #btn-menu{
+    width: 7vh;
+    height: 7vh;
+    background: transparent;
+  }
+
+  .menu-mobileicone button.ativaranimacao .hamburger:nth-child(1){
+    transform: translateY(1.3vh) rotate(-45deg);
+  }
+  
+  .menu-mobileicone button.ativaranimacao .hamburger:nth-child(3){
+    transform: translateY(-1.5vh) rotate(45deg);
+  }
+  
+  .menu-mobileicone button.ativaranimacao .hamburger:nth-child(2){
+    width: 0;
+    opacity: 0;
+  }
+
+  .hamburger{
+    width: 5vh;
+    height: 0.6vh;
+    background-color: #FFF;
+    display: block;
+    margin: 0.8vh auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.5s;
+  }
   
   #baixarCV{
     background-color: transparent;
@@ -237,6 +267,10 @@ header {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        width: 10vh;
+        height: 10vh;
+        
+
     }
 
     .menu-mobileicone button{
@@ -307,7 +341,7 @@ header {
     }
 
     #botaologo{
-        font-size: 1.8vh;
+        font-size: 2vh;
     }
 
     .link-navegacao{
@@ -820,7 +854,6 @@ header {
     font-family: 'Epilogue', sans-serif;
     position: relative;
     width: 100%;
-    left: 49vh;
 }
 
 .linguagem{
@@ -933,6 +966,7 @@ header {
         width: 100%;
         position: relative;
         flex-direction: column;
+        left: 49vh;
     }
 
     #postit{
@@ -946,6 +980,11 @@ header {
         right: 49.4vh;
         
     }
+
+    #menuinicio{
+        background:linear-gradient(to left, #520754, #200a2f);
+    }
+
 
 }
 

@@ -1,3 +1,8 @@
+function animar(){
+    const buttaoanimar = document.getElementById('btn-menu');
+    buttaoanimar.classList.toggle('ativaranimacao')
+}
+
 const imgs = document.getElementById("imagem");
 const img = document.querySelectorAll("#imagem img");
 
@@ -23,7 +28,7 @@ let idx2 = 0;
 function carrossel2() {
     idx2++;
 
-    if (idx2 > img2.length - 1) {
+    if (idx2 > img2.length - 1){
         idx2 = 0;
     }
 
@@ -49,12 +54,15 @@ function menuShow(){
         navmobile.classList.add('box');
     }
 
-    if (subirbo.classList.contains('sumir')){
-        subirbo.classList.remove('sumir');
-    } else {    
-        subirbo.classList.add('sumir');
+        if (subirbo.classList.contains('sumir')){
+            setTimeout(() =>{
+                subirbo.classList.remove('sumir');
+            }, 1000);
+        } else {    
+            subirbo.classList.add('sumir');
+            
+        }
     }
-}
 
 function apertarCor(itemnavegacao6){
     var cordotexto = document.getElementById('itemnavegacao')
