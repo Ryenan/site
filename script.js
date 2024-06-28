@@ -34,11 +34,18 @@ setInterval(carrossel2, 2500);
 
 function menuShow(){
     let menumobile = document.querySelector('.menumobile')
-    
+    let navmobile = document.querySelector('.barra-navegacao')
+
     if (menumobile.classList.contains('open')){
         menumobile.classList.remove('open');
     } else {
         menumobile.classList.add('open');
+    }
+
+    if (navmobile.classList.contains('box')){
+        navmobile.classList.remove('box');
+    } else {
+        navmobile.classList.add('box');
     }
 }
 

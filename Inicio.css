@@ -55,7 +55,8 @@ header {
     width: 100%;
     overflow: hidden; 
     height: 10vh;
-  }
+    transition: all 1s ease-in-out;
+}
   
   .barra-navegacao .animacao{    
     color: white;
@@ -287,7 +288,7 @@ header {
     .menumobile .item-navegacao{
         display: block;
         text-align: start;
-        left: 7%;
+        left: 5%;
         border-top: solid rgba(255, 255, 255, 0.198) 0.1vh;
     }    
     .menumobile .botaocurriculo-mobile button{
@@ -298,6 +299,11 @@ header {
         transition: all 1s ease-in-out;
         position: fixed;
         transform: translateY(5vh);
+    }
+
+    .box{
+        transition: all 1s ease-in-out;
+        box-shadow: 0vh 0vh 0vh 0vh transparent;
     }
 
     #botaologo{
@@ -313,6 +319,7 @@ header {
         padding: 2vh;
         width: 105vw;
         height: 30vh;
+    
         display: flex;
         justify-content: center;
         text-align: center;
