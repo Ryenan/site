@@ -1095,7 +1095,7 @@ header {
     z-index: 100;
     top: 15%;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0s 0.3s; 
+    transition: opacity 0.3s ease-in-out, transform 1s ease-in-out, visibility 0s 0.3s; 
     transform: translateY(10.21vh); 
 }
 
@@ -1103,14 +1103,18 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%; /* Deixa o botão redondo */
+    border-radius: 50%;
 }
 
 .voltarparaotop.show{
-    visibility: visible; /* Torna visível */
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    visibility: visible; 
+    transition: opacity 0.3s ease-in-out, transform 1s ease-in-out;
     opacity: 1;
     transform: translateY(0);
+}
+
+.sumir{
+    display: none;
 }
 
 .janelacontato{

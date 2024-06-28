@@ -35,6 +35,7 @@ setInterval(carrossel2, 2500);
 function menuShow(){
     let menumobile = document.querySelector('.menumobile')
     let navmobile = document.querySelector('.barra-navegacao')
+    let subirbo = document.querySelector('.voltarparaotop')
 
     if (menumobile.classList.contains('open')){
         menumobile.classList.remove('open');
@@ -46,6 +47,12 @@ function menuShow(){
         navmobile.classList.remove('box');
     } else {
         navmobile.classList.add('box');
+    }
+
+    if (subirbo.classList.contains('sumir')){
+        subirbo.classList.remove('sumir');
+    } else {    
+        subirbo.classList.add('sumir');
     }
 }
 
