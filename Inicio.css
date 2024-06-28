@@ -39,12 +39,12 @@ a{
 /* HEADER */
 /* INICIO */
 
-header {
+header{
     font-family: 'Epilogue', 'sans-serif';
     overflow: hidden; 
-  }
+}
   
-  .barra-navegacao {
+.barra-navegacao{
     position: fixed;
     z-index: 1000; 
     display: flex;
@@ -58,16 +58,16 @@ header {
     transition: all 1s ease-in-out;
 }
   
-  .barra-navegacao .animacao{    
+.barra-navegacao .animacao{    
     color: white;
     text-decoration: none;
     position: relative;
     font-size: 2.2vh;
     font-family: 'Epilogue', 'sans-serif';
     transition: color 0.3s ease;
-  }
+}
   
-  .barra-navegacao .animacao::after{
+.barra-navegacao .animacao::after{
     content: " ";
     width: 0%;
     height: 0.29vh;
@@ -77,22 +77,22 @@ header {
     bottom: -1.45vh;
     display: flex;
     transition: width 0.3s ease-in-out;
-  }
+}
   
-  .barra-navegacao .animacao:hover::after{
+.barra-navegacao .animacao:hover::after{
     width: 60%;
-  }
+}
   
-  .barra-navegacao .animacao:active, .barra-navegacao .animacao:focus {
+.barra-navegacao .animacao:active, .barra-navegacao .animacao:focus{
     color: #808080; 
     outline: none;
-  }
+}
   
-  .barra-navegacao :not(.animacao:active){
+.barra-navegacao :not(.animacao:active){
     color: white;
-  }
+}
   
-  #botaologo {
+#botaologo{
     background: none;
     border: none;
     font-family: 'Epilogue', 'sans-serif';
@@ -100,83 +100,83 @@ header {
     font-size: 2.2vh;
     font-weight: bold;
     left: 5%;
-  }
+}
   
-  #botaologo.tremor{
+#botaologo.tremor{
     animation: tremor 1s;
-  }
+}
   
-  @keyframes tremor{
+@keyframes tremor{
     0% { transform: rotate(0deg); }
     25% { transform: rotate(5deg); }
     50% { transform: rotate(0eg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-  }
+}
     
   
-  .lista-navegacao {
+.lista-navegacao{
     display: flex;
     align-items: center;
     position: relative;
     right: 2%;
-  }
+}
   
-  .item-navegacao {
+.item-navegacao{
     margin: 0 2.19vh;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-  }
+}
   
-  .item-navegacao:hover{
+.item-navegacao:hover{
     transform: scale(1.1);
-  }
+}
   
-  .link-navegacao {
+.link-navegacao{
     text-decoration: none;
     font-size: 2.2vh;
     color: white;
     font-weight: 400;
     transition: transform 0.3s ease-in-out;
     position: relative;
-  }
+}
   
-  .link-navegacao:hover{
+.link-navegacao:hover{
     transform: scale(1.1);
   }
   
-  .lista-lista-navegacao {
+.lista-lista-navegacao{
     display: flex;
     list-style: none;
     justify-content: center;
-  }
+}
   
-  .menu-icone {
+.menu-icone{
     background: transparent;
     border: none;
     cursor: pointer;
-  }
+}
 
-  #btn-menu{
+#btn-menu{
     width: 7vh;
     height: 7vh;
     background: transparent;
-  }
+}
 
-  .menu-mobileicone button.ativaranimacao .hamburger:nth-child(1){
+.menu-mobileicone button.ativaranimacao .hamburger:nth-child(1){
     transform: translateY(1.3vh) rotate(-45deg);
-  }
+}
   
-  .menu-mobileicone button.ativaranimacao .hamburger:nth-child(3){
+.menu-mobileicone button.ativaranimacao .hamburger:nth-child(3){
     transform: translateY(-1.5vh) rotate(45deg);
-  }
+}
   
-  .menu-mobileicone button.ativaranimacao .hamburger:nth-child(2){
+.menu-mobileicone button.ativaranimacao .hamburger:nth-child(2){
     width: 0;
     opacity: 0;
-  }
+}
 
-  .hamburger{
+.hamburger{
     width: 5vh;
     height: 0.6vh;
     background-color: #FFF;
@@ -185,9 +185,9 @@ header {
     position: relative;
     transform-origin: center;
     transition: 0.5s;
-  }
+}
   
-  #baixarCV{
+#baixarCV{
     background-color: transparent;
     border-color: #190029;
     border: solid;
@@ -206,9 +206,9 @@ header {
     display: inline-block;
     overflow: hidden;
     transition: transform 0.5s ease;
-  }
+}
   
-  #baixarCV a{
+#baixarCV a{
     padding-top: 5%;
     color: #a700a7;
     text-decoration: none;
@@ -216,23 +216,23 @@ header {
     width: 100%; 
     height: 100%; 
     box-sizing: border-box; 
-  }
+}
   
-  #baixarCV.up{
+#baixarCV.up{
     transform: scale(1.1);
-  }
+}
 
-  .itemmobile{
+.itemmobile{
     font-size: 1.2vh;
     position: relative;
     top: 5vh;
-  }
+}
   
-  .menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
+.menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
     display: none;
-  }
+}
 
-  .redessociaismobile{
+.redessociaismobile{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,13 +240,13 @@ header {
     width: 100%;
     gap: 2.5vh;
     top: 2%;
-  }
+}
 
-  .redessociaismobile img{
+.redessociaismobile img{
     width: 4vh;
-  }
+}
 
-  @media screen and (max-width: 730px){
+@media screen and (max-width: 730px){
     .lista-navegacao{
         display: none;
     }
@@ -359,7 +359,7 @@ header {
         text-align: center;
         overflow: hidden;
     }
-  }
+}
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
 

@@ -29,6 +29,7 @@ body::-webkit-scrollbar{
 
 /* HEADER */
 /* INICIO */
+
 header {
   font-family: 'Epilogue', 'sans-serif';
   overflow: hidden; 
@@ -45,6 +46,7 @@ header {
   width: 100%;
   overflow: hidden; 
   height: 10vh;
+  transition: all 1s ease-in-out;
 }
 
 .barra-navegacao .animacao{    
@@ -146,6 +148,36 @@ header {
   cursor: pointer;
 }
 
+#btn-menu{
+  width: 7vh;
+  height: 7vh;
+  background: transparent;
+}
+
+.menu-mobileicone button.ativaranimacao .hamburger:nth-child(1){
+  transform: translateY(1.3vh) rotate(-45deg);
+}
+
+.menu-mobileicone button.ativaranimacao .hamburger:nth-child(3){
+  transform: translateY(-1.5vh) rotate(45deg);
+}
+
+.menu-mobileicone button.ativaranimacao .hamburger:nth-child(2){
+  width: 0;
+  opacity: 0;
+}
+
+.hamburger{
+  width: 5vh;
+  height: 0.6vh;
+  background-color: #FFF;
+  display: block;
+  margin: 0.8vh auto;
+  position: relative;
+  transform-origin: center;
+  transition: 0.5s;
+}
+
 #baixarCV{
   background-color: transparent;
   border-color: #190029;
@@ -181,42 +213,142 @@ header {
   transform: scale(1.1);
 }
 
+.itemmobile{
+  font-size: 1.2vh;
+  position: relative;
+  top: 5vh;
+}
+
 .menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
   display: none;
 }
 
+.redessociaismobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  gap: 2.5vh;
+  top: 2%;
+}
+
+.redessociaismobile img{
+  width: 4vh;
+}
+
 @media screen and (max-width: 730px){
   .lista-navegacao{
-    display: none;
+      display: none;
   }
-
   #baixarCV{
-    display: none;
+      display: none;
   }
   .barra-navegacao{
-    padding: 0.15vh 0.4vh;
+      padding: 0.15vh 0.4vh;
+      width: 100%;
   }
+  .menu-icone{
+      background-color: transparent;
+      width: 7vh;
+  }
+
   .menu-mobileicone{
-    display: block;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 10vh;
+      height: 10vh;
+      
+
   }
+
+  .menu-mobileicone button{
+      background-color: transparent;
+      border: none;
+      top: 1.5vh;
+      right: 1vh;
+      position: relative;
+  }
+
+  .menumobile{
+      background: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s ease-in-out;
+      position: fixed;
+      z-index: 100;
+      height: 65vh;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      transform: translateY(-60vh);
+      text-align: start;
+  }
+
+  .lista-navegacao-mobile img{
+      padding-right: 1.5vh;
+  }
+
   .menumobile ul{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 0.1vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 5%;
+      height: 50vh;
+      border-radius: 20%;
+      z-index: 100;
+      text-transform: uppercase;
+      top: -4.3vh;
   }
+  
+  #itemmobile5{
+      border-bottom: solid rgba(255, 255, 255, 0.198) 0.1vh;
+  }
+
   .menumobile .item-navegacao{
-    display: block;
-    padding: 0.1vh 0.2vh;
+      display: block;
+      text-align: start;
+      left: 5%;
+      border-top: solid rgba(255, 255, 255, 0.198) 0.1vh;
   }    
   .menumobile .botaocurriculo-mobile button{
-    width: 100%;
+      width: 100%;
   }
+
   .open{
-   display: block;
+      transition: all 1s ease-in-out;
+      position: fixed;
+      transform: translateY(5vh);
+  }
+
+  .box{
+      transition: all 1s ease-in-out;
+      box-shadow: 0vh 0vh 0vh 0vh transparent;
+  }
+
+  #botaologo{
+      font-size: 2vh;
+  }
+
+  .link-navegacao{
+      font-size: 2.5vh;
+      bottom: 0.5vh;
+  }
+
+  .item-navegacao{
+      padding: 2vh;
+      width: 105vw;
+      height: 30vh;
+  
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
   }
 }
 
@@ -622,4 +754,33 @@ header {
 
 .redesociaisstyle li:hover::before{
   opacity: 1;
+}
+
+@media screen and (max-width: 730px){
+  .body{
+    width: 100vw;
+  }
+  
+  .section1{
+    width: 100vw;
+    flex-direction: column;
+
+  }
+
+  #curriculo{
+    position: relative;
+    width: 90vw;
+    height: 22.5vh;
+    color: black;
+  }
+
+
+
+  .coluna1, .coluna2{
+    width: 5vw;
+    gap: 8vh;
+    padding-left: 2.4vh;
+    padding-top: 2vh;
+  }
+
 }
