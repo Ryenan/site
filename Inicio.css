@@ -200,7 +200,21 @@ header {
   .menumobile, .botao-curriculo-mobile, .menu-mobileicone, #baixarCV-mobile {
     display: none;
   }
-  
+
+  .redessociaismobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    gap: 2.5vh;
+    top: 2%;
+  }
+
+  .redessociaismobile img{
+    width: 4vh;
+  }
+
   @media screen and (max-width: 730px){
     .lista-navegacao{
         display: none;
@@ -235,12 +249,13 @@ header {
     .menumobile{
         background: black;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         transition: all 1s ease-in-out;
         position: fixed;
         z-index: 100;
-        height: 55vh;
+        height: 65vh;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transform: translateY(-60vh);
@@ -262,7 +277,7 @@ header {
         border-radius: 20%;
         z-index: 100;
         text-transform: uppercase;
-        top: -2.5vh;
+        top: -4.3vh;
     }
     
     #itemmobile5{
@@ -295,7 +310,7 @@ header {
     }
 
     .item-navegacao{
-        padding: 3vh;
+        padding: 2vh;
         width: 105vw;
         height: 30vh;
         display: flex;
