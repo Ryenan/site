@@ -131,6 +131,11 @@ header{
 .item-navegacao:hover{
     transform: scale(1.1);
 }
+
+.item-navegacao a{
+    width: 100%;
+    padding-right: 23vh;
+}
   
 .link-navegacao{
     text-decoration: none;
