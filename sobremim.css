@@ -825,3 +825,57 @@ figure img{
 .redesociaisstyle li:hover::before{
   opacity: 1;
 }
+
+@media screen and (max-width: 730px){
+  
+  body{
+    height: 112vh;
+    width: 100vw;
+  }
+  
+  #seçao1{
+    width: 100vw;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  #seçao1 h1{
+    font-size: 5vh;
+    padding-bottom: 28vh;
+  }
+
+  .informacoes{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 33vh;
+    padding-bottom: 5vh;
+  }
+  
+  .pp{
+    font-size: 1.5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .card{
+    width: 50vw;
+    height: 25vh;
+    top: 48.5vh;
+    right: -25vw;
+  }
+
+  .audio-player{
+    width: 100%;
+    padding: 0;
+    top: 2vh;
+  }
+
+  .audio-player p {
+    bottom: 2.35vh;
+    left: 22vw;
+    font-;
+  }
+
+ 
+}

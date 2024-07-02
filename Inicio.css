@@ -352,13 +352,18 @@ header{
     .link-navegacao{
         font-size: 2.5vh;
         bottom: 0.5vh;
+        padding-top: 2.7vh;
+        padding-bottom: 3vh;
+    }
+
+    .item-navegacao a{
+        padding-right: 50vw;
     }
 
     .item-navegacao{
         padding: 2vh;
         width: 105vw;
         height: 30vh;
-    
         display: flex;
         justify-content: center;
         text-align: center;
@@ -390,6 +395,7 @@ header{
     align-items: center;
 }
 
+
 .botaoprojetos button{
     display: flex;
     flex-direction: column;
@@ -404,7 +410,7 @@ header{
     color: white;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-    border-radius: 12%;
+    border-radius: 12%;    
 }
 
 .botaoprojetos button:hover{
@@ -783,6 +789,8 @@ header{
     .paragrafovermaismobile{
         margin-top: 0.5vh;
     }
+
+    
 }
 
 
@@ -1183,8 +1191,6 @@ header{
 .jancontato{
     width: 60%;
     height: 65vh;
-    min-width: 45vh;
-    min-height: 60vh;
     background-color: #151618dc;
     border-radius: 2vh;
     backdrop-filter: blur(10px);
@@ -1339,7 +1345,37 @@ header{
     position: relative;
     bottom: 1.5vh;
 }
-
 #iconeobrigadocontato{
     width: 5vh;
+}
+
+@media screen and (max-width: 730px){
+    #baixoform{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #baixoform p{
+        display: none;
+    }
+
+    #iconsredessociaisemail{
+        gap: 8vw;
+    }
+
+    #botaoenviarform{
+        left: 20%;
+        border: none;
+        font-size: 5vh;
+    }
+
+    .janelacontato{
+        width: 100%;
+        height: 90vh;
+        padding: 1vh;
+        top: 5vh;
+        left: -2.5vw;
+    }
+    
 }
