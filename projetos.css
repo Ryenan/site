@@ -830,11 +830,11 @@ header{
 
 .backgroundcarousel {
   top: 3vh;
-  margin-left: 20vh;
+  margin-left: 10vh;
   overflow: hidden;
   position: relative;
-  height: 100%;
-  width: 100vh;
+  height: 130%;
+  width: 300vh;
   box-shadow: #8731b2 0px 0px 0px 2px inset, rgb(0, 0, 0) 10px -10px 0px -3px, #712995 10px -10px, rgb(0, 0, 0) 20px -20px 0px -3px, #4a1b62 20px -20px, rgb(0, 0, 0) 30px -30px 0px -3px, #3c1650 30px -30px, rgb(0, 0, 0) 40px -40px 0px -3px, #2e113d 40px -40px;
 }
 
