@@ -49,7 +49,7 @@ header{
 
 .barra-navegacao{
   position: fixed;
-  z-index: 1000; 
+  z-index: 1100; 
   display: flex;
   background-color: #000000;
   box-shadow: 0vh 0.43vh 1.45vh #190029;
@@ -133,6 +133,10 @@ header{
 
 .item-navegacao:hover{
   transform: scale(1.1);
+}
+
+.item-navegacao a{
+  width: 100%;    
 }
 
 .link-navegacao{
@@ -292,7 +296,7 @@ header{
       align-items: center;
       transition: all 1s ease-in-out;
       position: fixed;
-      z-index: 100;
+      z-index: 1000;
       height: 65vh;
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -313,7 +317,7 @@ header{
       right: 5%;
       height: 50vh;
       border-radius: 20%;
-      z-index: 100;
+      z-index: 1000;
       text-transform: uppercase;
       top: -4.3vh;
   }
@@ -350,13 +354,18 @@ header{
   .link-navegacao{
       font-size: 2.5vh;
       bottom: 0.5vh;
+      padding-top: 2.7vh;
+      padding-bottom: 3vh;
+  }
+
+  .item-navegacao a{
+      padding-right: 50vw;
   }
 
   .item-navegacao{
       padding: 2vh;
       width: 105vw;
       height: 30vh;
-  
       display: flex;
       justify-content: center;
       text-align: center;
@@ -402,33 +411,28 @@ header{
 .linha2{
   display: flex;
   flex: row;
-  gap: 14%;
+  gap: 4%;
 }
 
-#visual {
+.visual {
   display: flex;
   flex-direction: column;
   margin-bottom: 2%;
   transition: all 0.3s ease;
   position: relative;
   top: -10vh;
-  gap: 14%;
+  gap: 7%;
   width: 100vw;
+  height: 100vh;
 }
 
-
-#visual img {
-  border-radius: 0.5vh;
-  height: 60vh;
-  margin-right: 2%;
-}
 
 #tituloprojeto {
   font-family: 'Epilogue', sans-serif;
   font-size: 7vh;
   text-shadow: #8731b2 1px 0 10px;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 15%;
   color: white;
   padding: 0;
   margin-bottom: 0;
@@ -447,21 +451,20 @@ header{
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 50%;
+  height: 50vh;
   color: white;
   margin-left: 3%;
-  top: 10%;
 }
 
-#vermais{
-  justify-content: center;
-  align-items: center;
+.vermais{
   font-family: 'Epilogue', 'sans-serif';
   position: relative;
-  top: 6.5vh;
   font-size: 1.5vh;
   font-style: italic;
-  left: 38%;
+  top: 1.5vh;
+  left: 0.5vh;
 }
 
 #palavraschaves {
@@ -471,7 +474,6 @@ header{
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 600;
   position: relative;
-  right: 7%;  
   text-shadow: 1px 1px 2px #8731b2;
 }
 
@@ -482,15 +484,13 @@ header{
   cursor: pointer;
   width: 5vh;
   height: 5vh;
-  top: -17vh;
-  left: 79vw;
+  
 }
 
 #imagembotaoup{
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
   width: 5vh;
-  right: 45%;
   position: relative;
 }
 
@@ -521,6 +521,7 @@ header{
   transform: translateY(60vh);
   transition: ease-in-out 1s;
   margin-bottom: 34vh;
+  padding-bottom: 6vh;
 }
 
 #tituloprojetoescondido {
@@ -682,10 +683,21 @@ header{
   margin-bottom: 24.5vh;
 }
 
+#textosec2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 50vh;
+  color: white;
+  margin-left: 3%;
+}
+
 #botaoexpandirsec2{
   background-color: transparent;
   border: none;
-  position: relative;
+  position: relative;;
   cursor: pointer;
   width: 5vh;
   height: 5vh;
@@ -695,7 +707,6 @@ header{
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
   width: 5vh;
-  left: 1400%;
   position: relative;
 }
 
@@ -833,8 +844,8 @@ header{
   margin-left: 10vh;
   overflow: hidden;
   position: relative;
-  height: 130%;
-  width: 300vh;
+  height: 60%;
+  width: 65vw;
   box-shadow: #8731b2 0px 0px 0px 2px inset, rgb(0, 0, 0) 10px -10px 0px -3px, #712995 10px -10px, rgb(0, 0, 0) 20px -20px 0px -3px, #4a1b62 20px -20px, rgb(0, 0, 0) 30px -30px 0px -3px, #3c1650 30px -30px, rgb(0, 0, 0) 40px -40px 0px -3px, #2e113d 40px -40px;
 }
 
@@ -848,9 +859,11 @@ header{
 
 .list{
   width: 100%;
-  height: 40vh;
+  height: 100%;
   display: flex;
   gap: 1.16vh;
+  position: relative;
+  bottom: 12vh;
   margin: 0;
   padding: 0;
   scrollbar-width: none;
@@ -871,7 +884,6 @@ header{
   object-position: center;
   flex-shrink: 0;
   width: 100%;
-  height: 100%;
   scroll-snap-align: center;
   border-radius: 1.16vh;
   margin: 0;
@@ -904,7 +916,7 @@ iframe{
   display: flex;
   align-items: center;
   justify-content: center;;
-  height: 40vh;
+  height: 80vh;
   font-family: sans-serif;
   font-size: 4.67vh;
   font-weight: bold;
@@ -913,9 +925,7 @@ iframe{
 
 .conteudo img{
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center; 
+  height: 70%;
 }
 
 #carousel{
