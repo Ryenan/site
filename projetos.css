@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Montserrat:wght@400;600&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .ptext {
-  text-indent: 30px;
+  text-indent: 30px;  
 }
 
 html {
@@ -19,7 +24,7 @@ body{
   padding: 0;
   width: 100%;
   box-sizing: border-box;
-  height: 150vh;
+  height: 100vh;
   overflow-x: hidden; 
   z-index: -999;
   background-size: contain;
@@ -49,7 +54,7 @@ header{
 
 .barra-navegacao{
   position: fixed;
-  z-index: 1100; 
+  z-index: 1000; 
   display: flex;
   background-color: #000000;
   box-shadow: 0vh 0.43vh 1.45vh #190029;
@@ -296,7 +301,7 @@ header{
       align-items: center;
       transition: all 1s ease-in-out;
       position: fixed;
-      z-index: 1000;
+      z-index: 100;
       height: 65vh;
       width: 100%;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -317,7 +322,7 @@ header{
       right: 5%;
       height: 50vh;
       border-radius: 20%;
-      z-index: 1000;
+      z-index: 100;
       text-transform: uppercase;
       top: -4.3vh;
   }
@@ -371,6 +376,11 @@ header{
       text-align: center;
       overflow: hidden;
   }
+
+  #menuinicio{
+    background:linear-gradient(to left, #520754, #200a2f);
+  }
+
 }
 
 /* ---------------------------------------Body------------------------------------------------ */
@@ -393,7 +403,7 @@ header{
 
 #section1{
   margin-top: 5.5%;
-  height: 86vh;
+  height: 82vh;
 }
 
 .section1bg{
@@ -402,7 +412,7 @@ header{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 86vh;
+  height: 100%;
   background-color: #000000ae;
   padding: 0;
   margin: 0;
@@ -410,8 +420,13 @@ header{
 
 .linha2{
   display: flex;
-  flex: row;
+  flex-direction: row;
   gap: 4%;
+  height: 80vh;
+  position: relative;
+  bottom: 23vh;
+  justify-content: center;
+  align-items: end;
 }
 
 .visual {
@@ -420,19 +435,22 @@ header{
   margin-bottom: 2%;
   transition: all 0.3s ease;
   position: relative;
-  top: -10vh;
   gap: 7%;
   width: 100vw;
   height: 100vh;
+  top: -10vh;
 }
 
+#visual2{
+  top: -5vh;
+}
 
-#tituloprojeto {
+.tituloprojeto {
   font-family: 'Epilogue', sans-serif;
   font-size: 7vh;
   text-shadow: #8731b2 1px 0 10px;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 13%;
   color: white;
   padding: 0;
   margin-bottom: 0;
@@ -463,8 +481,7 @@ header{
   position: relative;
   font-size: 1.5vh;
   font-style: italic;
-  top: 1.5vh;
-  left: 0.5vh;
+  top: 15vh;
 }
 
 #palavraschaves {
@@ -484,7 +501,7 @@ header{
   cursor: pointer;
   width: 5vh;
   height: 5vh;
-  
+  top: 15vh;
 }
 
 #imagembotaoup{
@@ -629,7 +646,7 @@ header{
 #baixar1{
   position: relative;
   left: 82.5%;
-  margin-top: -15vh;
+  margin-top: -8vh;
   border: 0.1vh white solid;
   background-color: transparent;
   color: white;
@@ -670,11 +687,77 @@ header{
   left: 84%;
   transition: all ease-in-out 2s;
 }
+
+@media screen and (max-width: 730px){
+  #paragrafoprojeto{
+    width: 100%;
+    font-size: 1.5vh;
+    left: 0;
+    right: 0;
+  }
+
+  .linha2{
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+  }
+
+  .visual{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #visual1{
+    position: relative;
+    top: 15vh;
+  }
+
+  #backgroundcarousel{
+    position: relative;
+    margin-left: -3.5vh;
+    height: 30%;
+    width: 70vw;
+  }
+
+  #section1{
+    height: 120vh;
+    margin-bottom: 20vh;
+  }
+
+  .tituloprojeto{
+    font-size: 5vh;
+    margin-top: -25vh;
+  }
+
+  .conteudo{
+    height: 1vh;
+    width: 33vh;
+  }
+
+  #paragrafoprojeto{
+    margin: 0;
+    width: 90vw;
+    left: 0;
+    padding-right: 1vh;
+    position: relative;
+    top: 2vh;
+  }
+
+}
+
+
 /* --------------------------------------------------------- SECTION 2 -------------------------------------------------------------- */
 
 #section2{
   top: -60vh;
   transition: all ease-in-out 1s;
+  margin: 0;
+  height: 95vh;
 }
 
 #section2.pull{
@@ -701,6 +784,7 @@ header{
   cursor: pointer;
   width: 5vh;
   height: 5vh;
+  top: 15vh;
 }
 
 #imagembotaoup2{
@@ -844,7 +928,7 @@ header{
   margin-left: 10vh;
   overflow: hidden;
   position: relative;
-  height: 60%;
+  height: 70%;
   width: 65vw;
   box-shadow: #8731b2 0px 0px 0px 2px inset, rgb(0, 0, 0) 10px -10px 0px -3px, #712995 10px -10px, rgb(0, 0, 0) 20px -20px 0px -3px, #4a1b62 20px -20px, rgb(0, 0, 0) 30px -30px 0px -3px, #3c1650 30px -30px, rgb(0, 0, 0) 40px -40px 0px -3px, #2e113d 40px -40px;
 }
@@ -894,7 +978,7 @@ header{
 
 iframe{
   width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover;
   border: none;
 }
@@ -942,14 +1026,9 @@ iframe{
   align-items: center;
 }
 
-#carousel2list{
-  position: relative;
-  margin-top: 2vh;
-}
-
 .btncarousel{
   position: absolute;
-  top: 75%;
+  top: 50%;
   width: 15vh;
   height: 0.3vh;
   transform: translateY(-50%);
@@ -963,6 +1042,7 @@ iframe{
   border-top-left-radius: 2vh;
   border-bottom-left-radius: 2vh; 
   z-index: 10;
+
 }
 
 .btncarousel:hover{
@@ -978,16 +1058,16 @@ iframe{
   transform: rotateY(180deg);
   height: 5vh;
   width: 4vh;
-  top: 20.1vh;
-  left: 20vh;
+  right: 43vw;
+  top: -27.5vh;
 }
 
 .btnpassar{
   background: linear-gradient(to left, #000, transparent);
-  left: 45.3vw;
+  left: 3vw;
   height: 5vh;
   width: 4vh;
-  top: 22.6vh;
+  top: -24.9vh;
 }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/

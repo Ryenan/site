@@ -3,6 +3,11 @@
 /* PARTE DO HTML */
 /* INICIO */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -380,6 +385,7 @@ header{
     flex-direction: row;
     background: linear-gradient(to bottom, #000000, #190029);
     height: 100vh;
+    width: 100%;
     justify-content: center;
     overflow: hidden; 
 }
@@ -455,6 +461,10 @@ header{
     background-color: #050008ae;
     border-radius: 1vh;
     top: -0.1vh;
+}
+
+#projetosh1{
+    height: 65%;
 }
 
 #imagemblibioteca{
@@ -554,6 +564,7 @@ header{
     align-items: center;
     position: relative;
     top: 6vh;
+    gap: 4vh;
 }
 
 #textao {
@@ -587,6 +598,7 @@ header{
     color: #c0c0c0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out;
     font-weight: 400;
+    top: 3vh;
 }
 
 #paragrafo:hover{
@@ -594,7 +606,7 @@ header{
 }
 
 #textaoredes {
-    top: 10vh;
+    top: 8vh;
     font-family: 'Epilogue', sans-serif;
     position: relative;
     font-size: 2.0vh;
@@ -604,10 +616,9 @@ header{
 #redessociais{
     position: relative;
     display: flex;
-    top: 8vh;
+    top: 6vh;
     align-items: center;
     justify-content: center;
-    right: 2%;
 }
 
 #redessociais img{
@@ -1018,14 +1029,15 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    top: 25vh;
+    top: 20vh;
     bottom: 25vh;
     font-size: 3.6vh;
-    left: 20%;
+    left: 35%;
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out, transform 0.9s ease-in-out; 
     transform: translateY(10.21vh); 
+    width: 60%;
 }
 
 #frase.show{
