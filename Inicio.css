@@ -426,8 +426,8 @@ header{
     color: transparent;
     opacity: 0;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 25vh;
+    width: 17vw;
     overflow: hidden;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.772);
@@ -783,11 +783,6 @@ header{
         width: 70vw;
     }
 
-    .botaoprojetos a{
-        opacity: 0;
-        display: none;
-    }
-
     #carousel{
         width: 104%;
     }
@@ -970,6 +965,7 @@ header{
 
     .Containerlinguaguem{
         flex-direction: column;
+        gap: 2vh;
     }
 
     #htmlcss, #jsicon, #csharpicon, #mysqlicon{
