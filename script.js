@@ -1,13 +1,21 @@
 function animar(){
     const buttaoanimar = document.getElementById('btn-menu');
-    const buttaoanimar2 = document.getElementById('btn-menu2');
-    const buttaoanimar3 = document.getElementById('btn-menu3');
-    const buttaoanimar4 = document.getElementById('btn-menu4');
+    buttaoanimar.classList.toggle('ativaranimacao');
+}
 
-    buttaoanimar.classList.toggle('ativaranimacao')
-    buttaoanimar2.classList.toggle('ativaranimacao')
-    buttaoanimar3.classList.toggle('ativaranimacao')
-    buttaoanimar4.classList.toggle('ativaranimacao')
+function animar2(){
+    const buttaoanimar2 = document.getElementById('btn-menu2');
+    buttaoanimar2.classList.toggle('ativaranimacao');
+}
+
+function animar3(){
+    const buttaoanimar3 = document.getElementById('btn-menu3');
+    buttaoanimar3.classList.toggle('ativaranimacao');
+}
+
+function animar4(){
+    const buttaoanimar4 = document.getElementById('btn-menu4');
+    buttaoanimar4.classList.toggle('ativaranimacao');
 }
 
 const imgs = document.getElementById("imagem");

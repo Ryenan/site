@@ -328,7 +328,7 @@ header{
   .menumobile .item-navegacao{
       display: block;
       text-align: start;
-      left: 5%;
+      left: 8%;
       border-top: solid rgba(255, 255, 255, 0.198) 0.1vh;
   }    
   .menumobile .botaocurriculo-mobile button{
