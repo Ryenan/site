@@ -420,9 +420,8 @@ header{
 }
 
 .card img{
-  width: 120%;
+  width: 100%;
   position: relative;
-  right: 10%;
   bottom: 1vh;
 }
 
