@@ -376,6 +376,10 @@ header{
       background:linear-gradient(to left, #520754, #200a2f);
     }
   
+    .voltarparaotop{
+        display: none;
+    }
+
   }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
@@ -721,7 +725,8 @@ header{
 
     #textao{
         width: 50vh;
-        padding-bottom: 1.5vh;
+        padding-bottom: 0;
+        top: 7vh;
         font-size: 4.5vh;
     }
 
@@ -732,6 +737,7 @@ header{
     #paragrafo{
         font-size: 1.4vh;
         width: 40vh;
+        top: 4vh;
     }
 
     .section1{
