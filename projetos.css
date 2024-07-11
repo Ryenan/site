@@ -858,6 +858,13 @@ header{
   transition: ease-in-out 1s;
 }
 
+.section3tampa{
+  width: 100%;
+  background-color: #000000ae;
+  position: relative;
+  bottom: 120vh;
+  height: 13vh;
+  color: transparent;}
 
  
   @media screen and (max-width: 730px){
