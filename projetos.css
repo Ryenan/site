@@ -161,7 +161,7 @@ header{
   cursor: pointer;
 }
 
-#btn-menu{
+#btn-menu2{
   width: 7vh;
   height: 7vh;
   background: transparent;
@@ -375,8 +375,6 @@ header{
       overflow: hidden;
   }
 }
-
-/* ---------------------------------------Body------------------------------------------------ */
 
 /* ---------------------------------------Section 1------------------------------------------------ */
 
@@ -896,7 +894,15 @@ header{
       top: 0vh;
     }
 
- 
+    .section3tampa{
+      width: 100%;
+      background-color: #000000ae;
+      position: relative;
+      bottom: 120vh;
+      height: 13vh;
+      color: transparent;
+    }
+
   }
 
 /* FIM ----------------------------------------------------------------------------------------------------------------------------------*/
