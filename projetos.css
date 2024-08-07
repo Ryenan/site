@@ -389,11 +389,10 @@ header{
   box-sizing: border-box;
   z-index: 995;
   padding: 0;
-  margin: 0;
 }
 
 #section1{
-  margin-top: 5.5%;
+  margin-top: 2%;
   height: 95vh;
 }
 
@@ -429,11 +428,11 @@ header{
   gap: 7%;
   width: 100vw;
   height: 70vh;
-  top: -10vh;
+  top: -18vh;
 }
 
 #visual2{
-  top: -5vh;
+  top: -18vh;
 }
 
 .tituloprojeto {
@@ -701,7 +700,7 @@ header{
 
   #visual1{
     position: relative;
-    top: 25vh;
+    top: 30vh;
     margin-right: 0.4vh;
   }
 
