@@ -69,7 +69,7 @@ function menuShow(){
     }
 
     }
-
+    
 function apertarCor(itemnavegacao6){
     var cordotexto = document.getElementById('itemnavegacao')
 
@@ -78,123 +78,27 @@ function apertarCor(itemnavegacao6){
     }, 500);
 }
 
-function mostrarDiv() {
-    var escondido = document.getElementById('escondido1');
-    var sections1 = document.querySelectorAll('.section1');
-    var section2 = document.getElementById('section2');
-    var botaosubir = document.getElementById('imagembotaoup');
+document.addEventListener('DOMContentLoaded', () => {
 
-    escondido.classList.toggle('show');
-    section2.classList.toggle('pull');
-    botaosubir.classList.toggle('up');
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+  
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 
-    if (escondido.classList.contains('show')) {
-        setTimeout(function() {
-            escondido.classList.add('zindex');
-        }, 1000);
-    } else {
-        escondido.classList.remove('zindex');
-    }
-
-    sections1.forEach(function(section) {
-        section.classList.toggle('expanded');
-    });
-}
-
-function mostrarDiv2() {
-    var escondido2 = document.getElementById('escondido2');
-    var sections2 = document.querySelectorAll('.section2');
-    var section3 = document.getElementById('section3');
-    var botaosubir2 = document.getElementById('imagembotaoup2');
-
-    escondido2.classList.toggle('show');
-    botaosubir2.classList.toggle('up');
-    section3.classList.toggle('pull');
-
-    if (escondido2.classList.contains('show')) {
-        setTimeout(function() {
-            escondido2.classList.add('zindex');
-        }, 1000);
-    } else {
-        escondido2.classList.remove('zindex');
-    }
-
-    sections2.forEach(function(section) {
-        section.classList.toggle('expanded');
-    });
-}
-
-function mostrarDiv3() {
-    var escondido3 = document.getElementById('escondido3');
-    var sections3 = document.querySelectorAll('.section3');
-    var section4 = document.getElementById('section4');
-    var botaosubir3 = document.getElementById('imagembotaoup3');
-
-    escondido3.classList.toggle('show');
-    botaosubir3.classList.toggle('up');
-    section4.classList.toggle('pull');
-
-    if (escondido3.classList.contains('show')) {
-        setTimeout(function() {
-            escondido3.classList.add('zindex');
-        }, 1000);
-    } else {
-        escondido3.classList.remove('zindex');
-    }
-
-    sections3.forEach(function(section) {
-        section.classList.toggle('expanded');
-    });
-}
-
-function mostrarDiv4() {
-    var escondido4 = document.getElementById('escondido4');
-    var sections4 = document.querySelectorAll('.section4');
-    var section5 = document.getElementById('section5');
-    var botaosubir4 = document.getElementById('imagembotaoup4');
-
-    escondido4.classList.toggle('show');
-    botaosubir4.classList.toggle('up');
-    section5.classList.toggle('pull');
-
-    if (escondido4.classList.contains('show')) {
-        setTimeout(function() {
-            escondido3.classList.add('zindex');
-        }, 1000);
-    } else {
-        escondido4.classList.remove('zindex');
-    }
-
-    sections4.forEach(function(section) {
-        section.classList.toggle('expanded');
-    });
-}
-
-// CAROSSEL
-
-const list = document.querySelector(".list");
-const item = document.querySelector(".item");
-const itemWidth = item.offsetWidth + 8; // Width + gap
-
-function handleClick(direction, carouselId) {
-    const carousel = document.getElementById(carouselId);
-    const list = carousel.querySelector('.list');
-    const items = list.querySelectorAll('.item');
-    const itemWidth = items[0].offsetWidth;
-    const currentScroll = list.scrollLeft;
-
-    if (direction === 'next') {
-        list.scrollTo({
-            left: currentScroll + itemWidth,
-            behavior: 'smooth'
-        });
-    } else {
-        list.scrollTo({
-            left: currentScroll - itemWidth,
-            behavior: 'smooth'
-        });
-    }
-}
+});
 
 // ANIMAÇÕES CSS
 
@@ -290,6 +194,39 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+/* MODAIS */
+function abrirModal1(){
+    const contatar = document.getElementById("Modal1")
+
+    contatar.classList.add('abrir')
+
+    contatar.addEventListener('click', (e) => {
+            if(e.target.id == "fechar" || e.target.id == 'Modal1')
+                contatar.classList.remove('abrir')
+        })
+    }
+
+function abrirModal2(){
+    const contatar = document.getElementById("Modal2")
+    
+    contatar.classList.add('abrir')
+    
+    contatar.addEventListener('click', (e) => {
+            if(e.target.id == "fechar" || e.target.id == 'Modal2')
+                contatar.classList.remove('abrir')
+        })
+    }
+    
+function abrirModal3(){
+    const contatar = document.getElementById("Modal3")
+        
+    contatar.classList.add('abrir')
+        
+    contatar.addEventListener('click', (e) => {
+            if(e.target.id == "fechar" || e.target.id == 'Modal3')
+                contatar.classList.remove('abrir')
+        })
+    }
 // Aba contato
 function abrirContato(){
     const contatar = document.getElementById("janelacontato")
