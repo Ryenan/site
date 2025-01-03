@@ -227,7 +227,18 @@ function abrirModal3(){
                 contatar.classList.remove('abrir')
         })
     }
-// Aba contato
+
+function abrirModal4(){
+    const contatar = document.getElementById("Modal4")
+        
+    contatar.classList.add('abrir')
+        
+    contatar.addEventListener('click', (e) => {
+            if(e.target.id == "fechar" || e.target.id == 'Modal4')
+                contatar.classList.remove('abrir')
+        })
+    }
+    // Aba contato
 function abrirContato(){
     const contatar = document.getElementById("janelacontato")
 
