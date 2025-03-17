@@ -23,7 +23,7 @@ body {
   margin: 0;
   width: 100%;
   box-sizing: border-box;
-  height: 100vh;
+  height: 150vh;
   overflow-x: hidden;
   z-index: -999;
   background-size: cover;
@@ -877,6 +877,7 @@ textarea:focus {
 
   main{
     width: 100%;
+    padding-bottom: 70%;
   }
 
   .divP{
@@ -902,7 +903,7 @@ textarea:focus {
 
   #sec1{
     width: 100%;
-    padding-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 20vh;
   }
 
@@ -1051,6 +1052,22 @@ textarea:focus {
       justify-content: center;
       text-align: center;
       overflow: hidden;
+  }
+
+  .swiper img{
+    object-fit: cover;
+  }
+
+  #sec4{
+    margin-top: 30vh;
+  }
+
+  #sec3{
+    margin-top: 35vh;
+  }
+
+  #sec2{
+    margin-top: 30vh;
   }
 
 }

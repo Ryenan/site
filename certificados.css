@@ -342,14 +342,14 @@ header{
   }
 
   .link-navegacao{
-    font-size: 2.5vh;
+    font-size: 2vh;
     bottom: 0.5vh;
     padding-top: 2.7vh;
     padding-bottom: 3vh;
 }
 
   .item-navegacao a{
-      padding-right: 50vw;
+    padding-right: 50vw;
   }
 
   #menuinicio{
